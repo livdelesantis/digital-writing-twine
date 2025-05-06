@@ -32,15 +32,20 @@ tw-link, .enchantment-link {
 	color: #FFFFFF;
 }
 
+tw-story[tags~="the-first-five-folders"] {
+  font-family: 'Cedarville Cursive', cursive;
+  color: #FFFFFF;
+  background-color: #000;
+}
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="begin" color="blue"></tw-tag><tw-tag name="Inspector-Shute" color="purple"></tw-tag><tw-passagedata pid="1" name="Welcome to Who Killed Miss Jones" tags="align-centre miss-jones-background begin" position="600,250" size="100,100">=&gt;&lt;=
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="begin" color="blue"></tw-tag><tw-tag name="Inspector-Shute" color="purple"></tw-tag><tw-tag name="Setting" color="green"></tw-tag><tw-tag name="Evidence" color="red"></tw-tag><tw-tag name="Plot-Progression" color="orange"></tw-tag><tw-tag name="Characters" color="purple"></tw-tag><tw-passagedata pid="1" name="Welcome to Who Killed Miss Jones" tags="align-centre miss-jones-background begin" position="600,250" size="100,100">=&gt;&lt;=
 (transition-depart: &quot;flicker&quot;) [[begin]]
 
 &lt;audio src=&quot;./audio/musicbox.mp3&quot; autoplay loop&gt;&lt;/audio&gt;
-</tw-passagedata><tw-passagedata pid="2" name="begin" tags="Inspector-Shute" position="600,375" size="100,100">(set: $typewriterText to &quot;2025&quot;)
+</tw-passagedata><tw-passagedata pid="2" name="begin" tags="Characters" position="600,375" size="100,100">(set: $typewriterText to &quot;2025&quot;)
 (display: &quot;Typewriter&quot;)
 
-(click-replace: &quot;2025&quot;) [&#39;//&#39;Detective Inspector Shute:&#39;//&#39; Thank you for getting here so promptly.]
+(click-replace: &quot;2025&quot;) [//Detective Inspector Shute:// Thank you for getting here so promptly.]
 
 (click-append: &quot;promptly.&quot;) [ We have compiled all the evidence we&#39;ve gathered over the past forty years into these boxes.]
 
@@ -54,7 +59,7 @@ tw-link, .enchantment-link {
 
 
 
-</tw-passagedata><tw-passagedata pid="3" name="Typewriter" tags="" position="725,250" size="100,100">{
+</tw-passagedata><tw-passagedata pid="3" name="Typewriter" tags="" position="800,200" size="100,100">{
     &lt;!-- Create a variable to track the position within the $typewriterText string --&gt;
     (set: $typewriterPos to 1)
 
@@ -75,7 +80,7 @@ tw-link, .enchantment-link {
             (stop:)
         ]
     ]
-}</tw-passagedata><tw-passagedata pid="4" name="no" tags="" position="625,500" size="100,100">Detective Inspector Shute: Well, you wouldn&#39;t be the first. Some would say that&#39;s why nobody&#39;s found Miss Jones for almost fifty years. Nature hides the dirtiest of deeds in [[Sentry Creek.-&gt;Sentry Creek.]]</tw-passagedata><tw-passagedata pid="5" name="yes" tags="" position="500,500" size="100,100">//&#39;&#39;Detective Inspector Shute:&#39;//&#39; The last bunch of city coppers we had here hadn&#39;t even heard of [[Sentry Creek.-&gt;Sentry Creek.]]</tw-passagedata><tw-passagedata pid="6" name="Sentry Creek." tags="" position="500,625" size="100,100">&#39;&#39;Detective Shute:&#39;&#39; Well, I&#39;ll leave you to it. There&#39;s Jarrah in the metal tin in the kitchen, but you&#39;ll need to bring your own mug. Pub&#39;s open all day, closes at nine-thirty. If you need anything, [[I&#39;ll be in my office.]]
+}</tw-passagedata><tw-passagedata pid="4" name="no" tags="Setting" position="800,500" size="100,100">Detective Inspector Shute: Well, you wouldn&#39;t be the first. Some would say that&#39;s why nobody&#39;s found Miss Jones for almost fifty years. Nature hides the dirtiest of deeds in [[Sentry Creek.-&gt;Sentry Creek.]]</tw-passagedata><tw-passagedata pid="5" name="yes" tags="Setting" position="400,500" size="100,100">//Detective Inspector Shute:// The last bunch of city coppers we had here hadn&#39;t even heard of [[Sentry Creek.-&gt;Sentry Creek.]]</tw-passagedata><tw-passagedata pid="6" name="Sentry Creek." tags="Characters" position="550,500" size="100,100">&#39;&#39;Detective Shute:&#39;&#39; Well, I&#39;ll leave you to it. There&#39;s Jarrah in the metal tin in the kitchen, but you&#39;ll need to bring your own mug. Pub&#39;s open all day, closes at nine-thirty. If you need anything, [[I&#39;ll be in my office.]]
 
 (after: 3s) [&lt;audio src=&quot;./audio/doorclose.mp3&quot; autoplay&gt;&lt;/audio&gt;]
 
@@ -87,12 +92,25 @@ tw-link, .enchantment-link {
 
 
 
-</tw-passagedata><tw-passagedata pid="7" name="did you find us alright?" tags="" position="625,625" size="100,100">[ [[yes]] or [[no]]]</tw-passagedata><tw-passagedata pid="8" name="I&#39;ll be in my office." tags="" position="500,750" size="100,100">You&#39;re alone in the office now. It&#39;s a cramped brown-brick nook in the wall, complete with a droning, wobbly fan, a coffee-stained mug enscribed with World&#39;s Greatest Detective that is holding a few biros, and a large huntsman in the top left corner of the ceiling above your head. On the weathered desk in front of you are two bursting cardboard boxes.
+</tw-passagedata><tw-passagedata pid="7" name="did you find us alright?" tags="Plot-Progression" position="675,600" size="100,100">[ [[yes]] or [[no]]]</tw-passagedata><tw-passagedata pid="8" name="I&#39;ll be in my office." tags="Setting" position="300,625" size="100,100">You&#39;re alone in the tiny alcove now. It&#39;s a cramped brown-brick nook in the wall, complete with a droning, wobbly fan, a coffee-stained mug enscribed with //World&#39;s Greatest Detective// that is holding a few biros. A large huntsman in the top left corner of the ceiling watches you with its eight glossy black eyes. On the weathered desk in front of you are two bursting cardboard boxes.
 
+(after: 2s) [&lt;audio src=&quot;./audio/fan.mp3&quot; autoplay&gt;&lt;/audio&gt;]
 
-(click-replace: &quot;You&#39;re alone in the office now. It&#39;s a cramped brown-brick nook in the wall, complete with a droning, wobbly fan, a coffee-stained mug enscribed with World&#39;s Greatest Detective that is holding a few biros, and a large huntsman in the top left corner of the ceiling above your head. On the weathered desk in front of you are two bursting cardboard boxes.&quot;) [Open the cardboard boxes] 
+(click-append: &quot;two bursting cardboard boxes&quot;) [(go-to: &quot;cardboard boxes&quot;)]</tw-passagedata><tw-passagedata pid="9" name="cardboard boxes" tags="Evidence" position="500,650" size="100,100">There are manila folders stacked ontop of one another. The crinkled corners of sepia toned photographs peer out from beneath newspaper clippings, held together with paperclips. You dig out [[the first five folders]].
 
-(click-replace: &quot;Open the cardboard boxes&quot;) </tw-passagedata></tw-storydata>
+(after: 3s) [&lt;audio src=&quot;./audio/paper.mp3&quot; autoplay&gt;&lt;/audio&gt;]
+
+</tw-passagedata><tw-passagedata pid="10" name="Key to Story Map Colour Coding" tags="" position="400,200" size="100,100">(text-colour:purple)[Purple: Characters]
+(text-colour:orange)[Orange: Plot Progression ]
+(text-colour:green)[Green: Settings and World Building ]
+(text-colour:red)[Red: Evidence ]
+</tw-passagedata><tw-passagedata pid="11" name="the first five folders" tags="Evidence the-first-five-folders" position="500,775" size="100,100">Read (t8n-depart: &quot;flicker&quot;) [[The Autopsy]]
+Read (t8n-depart: &quot;flicker&quot;) [[Carmen]]
+Read (t8n-depart: &quot;flicker&quot;) [[Priscilla]]
+Read (t8n-depart: &quot;flicker&quot;) [[Beverly]]
+Read (t8n-depart: &quot;flicker&quot;) [[Vivian]] 
+
+</tw-passagedata><tw-passagedata pid="12" name="The Autopsy" tags="Evidence" position="900,700" size="100,100"></tw-passagedata><tw-passagedata pid="13" name="Carmen" tags="Inspector-Shute" position="200,900" size="100,100"></tw-passagedata><tw-passagedata pid="14" name="Priscilla" tags="Characters" position="650,900" size="100,100"></tw-passagedata><tw-passagedata pid="15" name="Vivian" tags="Characters" position="400,1000" size="100,100"></tw-passagedata><tw-passagedata pid="16" name="Beverly" tags="Characters" position="950,900" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
