@@ -11,7 +11,7 @@
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Who Killed Miss Jones?.</tw-noscript></noscript></tw-story>
 <tw-storydata name="Who Killed Miss Jones?" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="3E629193-202B-403D-BD76-622DFFA99AB7" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
-tw-begin {
+tw-story[tags~="begin"] {
   font-family: 'Cedarville Cursive', cursive;
   color: #FFFFFF;
   background-color: #000;
@@ -33,22 +33,26 @@ tw-link, .enchantment-link {
 }
 
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Welcome to Who Killed Miss Jones" tags="align-centre miss-jones-background" position="600,250" size="100,100">=&gt;&lt;=
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="begin" color="blue"></tw-tag><tw-tag name="Inspector-Shute" color="purple"></tw-tag><tw-passagedata pid="1" name="Welcome to Who Killed Miss Jones" tags="align-centre miss-jones-background begin" position="600,250" size="100,100">=&gt;&lt;=
 (transition-depart: &quot;flicker&quot;) [[begin]]
 
 &lt;audio src=&quot;./audio/musicbox.mp3&quot; autoplay loop&gt;&lt;/audio&gt;
-</tw-passagedata><tw-passagedata pid="2" name="begin" tags="" position="600,400" size="100,100">(set: $typewriterText to &quot;2025&quot;)
+</tw-passagedata><tw-passagedata pid="2" name="begin" tags="Inspector-Shute" position="600,375" size="100,100">(set: $typewriterText to &quot;2025&quot;)
 (display: &quot;Typewriter&quot;)
 
-(click-replace: &quot;2025&quot;) [Detective Inspector Shute: Thank you for getting here so promptly.]
+(click-replace: &quot;2025&quot;) [&#39;//&#39;Detective Inspector Shute:&#39;//&#39; Thank you for getting here so promptly.]
 
-(click-replace: &quot;Thank you for getting here so promptly.&quot;) [We have compiled all the evidence we&#39;ve gathered over the past twenty years into these boxes]
+(click-append: &quot;promptly.&quot;) [ We have compiled all the evidence we&#39;ve gathered over the past forty years into these boxes.]
 
-(click-replace: &quot;Detective Inspector Shute: We have compiled all the evidence we&#39;ve gathered over the past twenty years into these boxes&quot;) [It&#39;ll be nice to get a fresh set of eyes on it all. Whole place is buzzing since Terry dug up those bones.]
+(click-append: &quot;these boxes.&quot;) [ It&#39;ll be nice to get a fresh set of eyes on it all. Whole place is buzzing since Terry dug up those bones.]
 
-(click-replace: &quot;It&#39;ll be nice to get a fresh set of eyes on it all. Whole place is buzzing since Terry dug up those bones.&quot;) [Anyway, sorry about the mess in here. Can&#39;t really spare too many bodies for cold case investigations in this town. Speaking of, did you find us alright?] 
+(click-append: &quot;those bones.&quot;) [ Anyway, sorry about the mess in here. Can&#39;t really spare too many bodies for cold case investigations in this town. Speaking of, did you find us alright?] 
 
-(click-replace: &quot;Anyway, sorry about the mess in here. Can&#39;t really spare too many bodies for cold case investigations in this town. Speaking of, did you find us alright?&quot;) [ [[yes]] or [[no]]]
+(click-append: &quot;did you find us alright?&quot;) [(go-to: &quot;did you find us alright?&quot;)]
+
+
+
+
 
 </tw-passagedata><tw-passagedata pid="3" name="Typewriter" tags="" position="725,250" size="100,100">{
     &lt;!-- Create a variable to track the position within the $typewriterText string --&gt;
@@ -71,24 +75,24 @@ tw-link, .enchantment-link {
             (stop:)
         ]
     ]
-}</tw-passagedata><tw-passagedata pid="4" name="no" tags="" position="662.5,525" size="100,100">Detective Inspector Shute: Well, you wouldn&#39;t be the first. Some would say that&#39;s why nobody&#39;s found Miss Jones for almost fifty years. Nature hides the dirtiest of deeds in [[Sentry Creek.-&gt;Sentry Creek.]]</tw-passagedata><tw-passagedata pid="5" name="yes" tags="" position="475,525" size="100,100">Detective Inspector Shute: The last bunch of city coppers we had here hadn&#39;t even heard of [[Sentry Creek.-&gt;Sentry Creek.]]</tw-passagedata><tw-passagedata pid="6" name="Sentry Creek." tags="" position="475,650" size="100,100">Detective Shute: Well, I&#39;ll leave you to it. There&#39;s Jarrah in the metal tin in the kitchen, but you&#39;ll need to bring your own mug. Pub&#39;s open all day, closes at nine-thirty. If you need anything, I&#39;ll be in my office. 
+}</tw-passagedata><tw-passagedata pid="4" name="no" tags="" position="625,500" size="100,100">Detective Inspector Shute: Well, you wouldn&#39;t be the first. Some would say that&#39;s why nobody&#39;s found Miss Jones for almost fifty years. Nature hides the dirtiest of deeds in [[Sentry Creek.-&gt;Sentry Creek.]]</tw-passagedata><tw-passagedata pid="5" name="yes" tags="" position="500,500" size="100,100">//&#39;&#39;Detective Inspector Shute:&#39;//&#39; The last bunch of city coppers we had here hadn&#39;t even heard of [[Sentry Creek.-&gt;Sentry Creek.]]</tw-passagedata><tw-passagedata pid="6" name="Sentry Creek." tags="" position="500,625" size="100,100">&#39;&#39;Detective Shute:&#39;&#39; Well, I&#39;ll leave you to it. There&#39;s Jarrah in the metal tin in the kitchen, but you&#39;ll need to bring your own mug. Pub&#39;s open all day, closes at nine-thirty. If you need anything, [[I&#39;ll be in my office.]]
 
-&lt;audio src=&quot;./audio/doorclose.mp3&quot; autoplay&gt;&lt;/audio&gt;
+(after: 3s) [&lt;audio src=&quot;./audio/doorclose.mp3&quot; autoplay&gt;&lt;/audio&gt;]
 
-(click-replace: &quot;Detective Shute: Well, I&#39;ll leave you to it. There&#39;s Jarrah in the metal tin in the kitchen, but you&#39;ll need to bring your own mug. Pub&#39;s open all day, closes at nine-thirty. If you need anything, I&#39;ll be in my office.&quot;) [You&#39;re alone in the office now. It&#39;s a cramped brown-brick nook in the wall, complete with a droning, wobbly fan, a coffee-stained mug enscribed with World&#39;s Greatest Detective that is holding a few biros, and a large huntsman in the top left corner of the ceiling above your head. On the weathered desk in front of you are two bursting cardboard boxes.]
+
+
+
+
+
+
+
+
+</tw-passagedata><tw-passagedata pid="7" name="did you find us alright?" tags="" position="625,625" size="100,100">[ [[yes]] or [[no]]]</tw-passagedata><tw-passagedata pid="8" name="I&#39;ll be in my office." tags="" position="500,750" size="100,100">You&#39;re alone in the office now. It&#39;s a cramped brown-brick nook in the wall, complete with a droning, wobbly fan, a coffee-stained mug enscribed with World&#39;s Greatest Detective that is holding a few biros, and a large huntsman in the top left corner of the ceiling above your head. On the weathered desk in front of you are two bursting cardboard boxes.
+
 
 (click-replace: &quot;You&#39;re alone in the office now. It&#39;s a cramped brown-brick nook in the wall, complete with a droning, wobbly fan, a coffee-stained mug enscribed with World&#39;s Greatest Detective that is holding a few biros, and a large huntsman in the top left corner of the ceiling above your head. On the weathered desk in front of you are two bursting cardboard boxes.&quot;) [Open the cardboard boxes] 
 
-(click-replace: &quot;Open the cardboard boxes&quot;) 
-
-
-
-
-
-
-
-
-</tw-passagedata></tw-storydata>
+(click-replace: &quot;Open the cardboard boxes&quot;) </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
