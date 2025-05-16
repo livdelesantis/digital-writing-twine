@@ -35,7 +35,25 @@ tw-link, .enchantment-link {
 
 
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">/*! Image Map Resizer (imageMapResizer.min.js ) - v1.0.10 - 2019-04-10
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Load imageMapResize library
+let script = document.createElement('script');
+script.src = "https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js";
+document.head.appendChild(script);
+
+// Run resize after passage is shown
+$(document).on('passageend', function() {
+  $('map').imageMapResize();
+
+  // Optional: handle clicks on areas
+  $('area').on('click', function(e){
+    e.preventDefault();
+    window.story.show(this.alt); // Replace with actual passage name logic if needed
+  });
+});
+
+
+
+/*! Image Map Resizer (imageMapResizer.min.js ) - v1.0.10 - 2019-04-10
  *  Desc: Resize HTML imageMap to scaled image.
  *  Copyright: (c) 2019 David J. Bradshaw - dave@bradshaw.net
  *  License: MIT
@@ -126,7 +144,7 @@ Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;
 &lt;img src=&quot;./images/autopsy1.jpg&quot; usemap=&quot;#image-map&quot;&gt;
 
 &lt;map name=&quot;image-map&quot;&gt;
-    &lt;area target=&quot;&quot; alt=&quot;Terry&#39;s House&quot; title=&quot;Terry&#39;s House&quot; href=&quot;&quot; coords=&quot;740,1048,1210,1598&quot; shape=&quot;rect&quot; style=&quot;max-width:75%; height:auto;&quot;&gt;
+    &lt;area target=&quot;&quot; alt=&quot;Terry&#39;s House&quot; title=&quot;Terry&#39;s House&quot; href=&quot;&quot; coords=&quot;740,1048,1210,1598&quot; shape=&quot;rect&quot;&gt;
 &lt;/map&gt;
 
 &lt;script&gt;
@@ -144,6 +162,10 @@ Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;
  $(&#39;map&#39;).imageMapResize();
 &lt;/script&gt;
 
+&lt;img src=&quot;./images/autopsy1.jpg&quot; usemap=&quot;#image-map&quot; style=&quot;max-width:100%; height:auto;&quot;&gt;
+&lt;map name=&quot;image-map&quot;&gt;
+    &lt;area alt=&quot;TerrysHouse&quot; title=&quot;Terry&#39;s House&quot; href=&quot;#&quot; coords=&quot;740,1048,1210,1598&quot; shape=&quot;rect&quot;&gt;
+&lt;/map&gt;
 
 &lt;div style=&quot;display:none;&quot;
 [[Terry&#39;s House]]&gt;
