@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Who Killed Miss Jones?.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Who Killed Miss Jones?" startnode="19" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="3E629193-202B-403D-BD76-622DFFA99AB7" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Corinthia:wght@400;700&family=Meddon&family=Nothing+You+Could+Do&family=Pinyon+Script&family=Zeyada&display=swap');
+<tw-storydata name="Who Killed Miss Jones?" startnode="77" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="3E629193-202B-403D-BD76-622DFFA99AB7" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Corinthia:wght@400;700&family=Meddon&family=Nothing+You+Could+Do&family=Pinyon+Script&family=Zeyada&display=swap');
 
 tw-story[tags~="begin"] {
   font-family: 'Cedarville Cursive', cursive;
@@ -25,6 +25,12 @@ tw-story[tags~="miss-jones-background"] {  /* the tag added in step 2 */
 
 tw-story[tags~="Carmen's-Journal"] {  /* the tag added in step 2 */
   background-image: url(./images/papertexture.jpg);  /* the image added in step 1 */
+  background-size: cover;  /* cover the whole element */
+  background-repeat: no-repeat;  /* do not repeat the background image */
+}
+
+tw-story[tags~="Dr-Hepworth"] {  /* the tag added in step 2 */
+  background-image: url(./images/drhepworth.jpg);  /* the image added in step 1 */
   background-size: cover;  /* cover the whole element */
   background-repeat: no-repeat;  /* do not repeat the background image */
 }
@@ -361,7 +367,7 @@ Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;
 
 (text-color: &quot;black&quot;) [It is 2:30 am. The house is dark. She is beginning to pack the car, for a weekend away, perhaps, down the coast somewhere. Throwing clothes into the suitcase in great handfuls.] (click-replace: &quot;for a weekend away&quot;) [to run away]
 
-(text-color: &quot;black&quot;) [I am beginning to wonder whether she has escaped him once and for all.] (click-replace: &quot;she has escaped him once and for all&quot;) [the rich man is lurking somewhere in the dark in his silent car, waiting and watching, [[just like me]]
+(text-color: &quot;black&quot;) [I am beginning to wonder whether she has escaped him once and for all.] (click-replace: &quot;she has escaped him once and for all&quot;) [the rich man is lurking somewhere in the dark in his silent car, waiting and watching, [[just like me]]]
 
 
 
@@ -369,10 +375,16 @@ Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;
 
 (text-color: &quot;black&quot;) [The house is empty. He broke his way in through the front door.] (click-replace: &quot;The house is empty&quot;) [But the house isn&#39;t empty. Her shadow is there, the silhouette nearing the window. Closer and closer. I can see her trapped behind the glass]
 
-(text-color: &quot;black&quot;) [He is coming up the stairs now. One-two, buckle my shoe, three- four, knock at the door. The door bursts open and there&#39;s nothing but an empty room filled with pale moonlight.] (click-replace: &quot;there&#39;s nothing but an empty room filled with pale moonlight&quot;) [Miss Jones is thudding at the glass, screaming at me. Her breath is fogging the glass and I can hear myself screaming back. My palms are redenned from beating the window to reach her.] 
+(text-color: &quot;black&quot;) [He is coming up the stairs now. One-two, buckle my shoe, three- four, knock at the door. The door bursts open and there&#39;s nothing but an empty room filled with pale moonlight.] (click-replace: &quot;there&#39;s nothing but an empty room filled with pale moonlight&quot;) [Miss Jones is thudding at the glass, screaming at me. Her breath is fogging the glass and I can hear myself screaming back. My palms are redenned from beating the window to reach her] 
 
 (text-color: &quot;black&quot;) [Footsteps are thudding up the stairs in my own house and I am being restrained, hands hooked under my armpits, dragging me back to my own bed.]
-(click-append: &quot;dragging me back to my own bed&quot;) [ and my mother is shouting into my ear with her sour breath that I am having [[another nightmare]]]</tw-passagedata><tw-passagedata pid="79" name="another nightmare" tags="Evidence" position="200,2200" size="100,100"></tw-passagedata></tw-storydata>
+(click-append: &quot;dragging me back to my own bed&quot;) [ and my mother is shouting into my ear with her sour breath that I am having [[another nightmare]]]</tw-passagedata><tw-passagedata pid="79" name="another nightmare" tags="Evidence Dr-Hepworth" position="200,2200" size="100,100">(text-color: &quot;black&quot;) [//From the office of Dr Christoph Hepworth, received on the 5th of October, 1964//]
+
+(text-color: &quot;black&quot;) [Dear Mr Elliott,] 
+
+--- 
+
+(text-color: &quot;black&quot;) [I am writing to inform you of the latest developments in your daughter&#39;s psychiatric counselling. I have prescribed a stronger dose of Phenobarbital in the hopes that it will lessen these instances of insomnia and sleep-walking you have dictated to me. It is important to note that side effects may include:] (text-style: &quot;blurrier&quot;) [hallucination, dizzy spells, headaches and tiredness.]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
