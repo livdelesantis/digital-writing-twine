@@ -184,6 +184,14 @@ $(&#39;map&#39;).imageMapResize();
  });
 &lt;/script&gt;
 
+&lt;script&gt;
+ $(&#39;area&#39;).on(&#39;click&#39;, function(e){
+   e.preventDefault();
+   Harlowe.goto(this.alt);
+ });
+$(&#39;map&#39;).imageMapResize();
+&lt;/script&gt;
+
 &lt;div style=&quot;display:none;&quot;
 [[Bones]]&gt;
 &lt;/div&gt;
