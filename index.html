@@ -76,7 +76,15 @@ tw-story[tags~="letter-to-wes"] {  /* the tag added in step 2 */
   background-image: url(./images/lettertowes.jpg);  /* the image added in step 1 */
   background-size: cover;  /* cover the whole element */
   background-repeat: no-repeat;  /* do not repeat the background image */
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">/*! Image Map Resizer (imageMapResizer.min.js ) - v1.0.10 - 2019-04-10
+}
+
+tw-story[tags~="BEV-PAPER"] {  /* the tag added in step 2 */
+  background-image: url(./images/BEVPAPER.jpg);  /* the image added in step 1 */
+  background-size: cover;  /* cover the whole element */
+  background-repeat: no-repeat;  /* do not repeat the background image */
+}
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">/*! Image Map Resizer (imageMapResizer.min.js ) - v1.0.10 - 2019-04-10
  *  Desc: Resize HTML imageMap to scaled image.
  *  Copyright: (c) 2019 David J. Bradshaw - dave@bradshaw.net
  *  License: MIT
@@ -472,10 +480,12 @@ Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;
 
 (click-append: &quot;the truth&quot;) [(go-to: &quot;Carmen End&quot;)]
 </tw-passagedata><tw-passagedata pid="92" name="less" tags="Evidence" position="200,2600" size="100,100">&lt;span style=&quot;font-family: &#39;Pinyon Script&#39;, monospace;&quot;&gt;[when will you listen to me????????????????????????]&lt;/span&gt; </tw-passagedata><tw-passagedata pid="93" name="buried" tags="Evidence" position="100,2800" size="100,100"></tw-passagedata><tw-passagedata pid="94" name="lark" tags="Evidence" position="100,2700" size="100,100">&lt;span style=&quot;font-family: &#39;Pinyon Script&#39;, monospace;&quot;&gt;[~~Will they kill him too?~~]&lt;/span&gt; 
-</tw-passagedata><tw-passagedata pid="95" name="dirtiest" tags="Evidence" position="0,2800" size="100,100"></tw-passagedata><tw-passagedata pid="96" name="HE DID IT" tags="Evidence" position="200,2700" size="100,100">&lt;span style=&quot;font-family: &#39;Pinyon Script&#39;, monospace;&quot;&gt;[i know what it feels like]&lt;/span&gt; </tw-passagedata><tw-passagedata pid="97" name="Carmen End" tags="Plot-Progression" position="100,3000" size="100,100">Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;Cedarville Cursive&#39;, monospace;&quot;&gt;The Autopsy&lt;/span&gt;|The Autopsy]]  
+</tw-passagedata><tw-passagedata pid="95" name="dirtiest" tags="Evidence" position="0,2800" size="100,100"></tw-passagedata><tw-passagedata pid="96" name="HE DID IT" tags="Evidence" position="200,2700" size="100,100">&lt;span style=&quot;font-family: &#39;Pinyon Script&#39;, monospace;&quot;&gt;[i know what it feels like]&lt;/span&gt; </tw-passagedata><tw-passagedata pid="97" name="Carmen End" tags="Plot-Progression Carmen-End" position="100,3000" size="100,100">Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;Cedarville Cursive&#39;, monospace;&quot;&gt;The Autopsy&lt;/span&gt;|The Autopsy]]  
 Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;Zeyada&#39;, monospace;&quot;&gt;Priscilla&lt;/span&gt;|Priscilla]] 
 Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;Beverly&lt;/span&gt;|Beverly]] 
-Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;Meddon&#39;, monospace;&quot;&gt;Vivian&lt;/span&gt;|Vivian]] </tw-passagedata><tw-passagedata pid="98" name="Priscilla&#39;s Statement" tags="Characters" position="1150,1125" size="100,100">//Transcript of interview with Priscilla Anne Devine, November 15th, 1964. Recorded at Sentry Creek Police Station. Detective Inspector Robert Deacon, Ms Priscilla Anne Devine and Father Tobias Devine - her father. Time at beginning of recording: [[7:28 pm.]]//</tw-passagedata><tw-passagedata pid="99" name="7:28 pm." tags="Characters" position="1000,1300" size="100,100">//Detective Inspector Deacon:// We&#39;ve asked you here, Miss Devine, because you mentioned that you might know something about what happened to your English teacher Miss Jones? 
+Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;Meddon&#39;, monospace;&quot;&gt;Vivian&lt;/span&gt;|Vivian]] 
+
+(set: $carmen to true) </tw-passagedata><tw-passagedata pid="98" name="Priscilla&#39;s Statement" tags="Characters" position="1150,1125" size="100,100">//Transcript of interview with Priscilla Anne Devine, November 15th, 1964. Recorded at Sentry Creek Police Station. Detective Inspector Robert Deacon, Ms Priscilla Anne Devine and Father Tobias Devine - her father. Time at beginning of recording: [[7:28 pm.]]//</tw-passagedata><tw-passagedata pid="99" name="7:28 pm." tags="Characters" position="1000,1300" size="100,100">//Detective Inspector Deacon:// We&#39;ve asked you here, Miss Devine, because you mentioned that you might know something about what happened to your English teacher Miss Jones? 
 
 (click-append: &quot;what happened to your English teacher Miss Jones?&quot;) [(go-to: &quot;The Disappearance of Miss Jones&quot;)]</tw-passagedata><tw-passagedata pid="100" name="The Disappearance of Miss Jones" tags="Characters" position="1100,1300" size="100,100">//Priscilla Devine:// Of course, Detective Inspector Deacon, sir. 
 
@@ -716,10 +726,12 @@ Tobias
 
 
 
-</tw-passagedata><tw-passagedata pid="149" name="Liquor" tags="Evidence" position="1000,3100" size="100,100">//In the middle of my drunken stupor, I can see her face grinning at me//</tw-passagedata><tw-passagedata pid="150" name="Decomposition" tags="Evidence" position="1100,3100" size="100,100">//I wonder how long it takes for a body to decompose beyond recognition?//</tw-passagedata><tw-passagedata pid="151" name="Desertion" tags="Evidence" position="1200,3100" size="100,100">//I think God deserted me in the summer of 1963//</tw-passagedata><tw-passagedata pid="152" name="Clarity" tags="Evidence" position="1000,3200" size="100,100">//Please decimate my clarity, sip by sip by sip by sip because I cannot bear it any longer//</tw-passagedata><tw-passagedata pid="153" name="Dead Silence" tags="Evidence" position="1100,3200" size="100,100">//We were all agreed upon it. The importance of silence.//</tw-passagedata><tw-passagedata pid="154" name="Priscilla End" tags="Plot-Progression" position="1050,3400" size="100,100">Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;Cedarville Cursive&#39;, monospace;&quot;&gt;The Autopsy&lt;/span&gt;|The Autopsy]] 
+</tw-passagedata><tw-passagedata pid="149" name="Liquor" tags="Evidence" position="1000,3100" size="100,100">//In the middle of my drunken stupor, I can see her face grinning at me//</tw-passagedata><tw-passagedata pid="150" name="Decomposition" tags="Evidence" position="1100,3100" size="100,100">//I wonder how long it takes for a body to decompose beyond recognition?//</tw-passagedata><tw-passagedata pid="151" name="Desertion" tags="Evidence" position="1200,3100" size="100,100">//I think God deserted me in the summer of 1963//</tw-passagedata><tw-passagedata pid="152" name="Clarity" tags="Evidence" position="1000,3200" size="100,100">//Please decimate my clarity, sip by sip by sip by sip because I cannot bear it any longer//</tw-passagedata><tw-passagedata pid="153" name="Dead Silence" tags="Evidence" position="1100,3200" size="100,100">//We were all agreed upon it. The importance of silence.//</tw-passagedata><tw-passagedata pid="154" name="Priscilla End" tags="Plot-Progression Priscilla-End" position="1050,3400" size="100,100">Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;Cedarville Cursive&#39;, monospace;&quot;&gt;The Autopsy&lt;/span&gt;|The Autopsy]] 
 Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;Pinyon Script&#39;, monospace;&quot;&gt;Carmen&lt;/span&gt;|Carmen]] 
 Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;Beverly&lt;/span&gt;|Beverly]] 
-Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;Meddon&#39;, monospace;&quot;&gt;Vivian&lt;/span&gt;|Vivian]] </tw-passagedata><tw-passagedata pid="155" name="Beverly&#39;s Statement" tags="Characters" position="1575,1150" size="100,100">//Transcript of interview with Beverly Yvonne MacNab, November 14th, 1964. Recorded at Sentry Creek Police Station. Detective Inspector Robert Deacon, Ms Beverly Yvonne MacNab and Ms Suzette MacNab - her mother. Time at beginning of recording: [[9:25 am.]]//</tw-passagedata><tw-passagedata pid="156" name="9:25 am." tags="Characters" position="1400,1300" size="100,100">//Detective Inspector Deacon:// So, ladies, I must say that I&#39;m surprised to see you both here. We have every reason to believe that Miss Jones&#39; disappearance is entirely innocent, and we have been informed that she was sighted recently near Apollo Bay. School holidays, it doesn&#39;t seem unreasonable to me that she might want a break from the small town life. Evidently, you don&#39;t agree with that, do you?
+Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;Meddon&#39;, monospace;&quot;&gt;Vivian&lt;/span&gt;|Vivian]] 
+
+(set: $priscilla to true) </tw-passagedata><tw-passagedata pid="155" name="Beverly&#39;s Statement" tags="Characters" position="1575,1150" size="100,100">//Transcript of interview with Beverly Yvonne MacNab, November 14th, 1964. Recorded at Sentry Creek Police Station. Detective Inspector Robert Deacon, Ms Beverly Yvonne MacNab and Ms Suzette MacNab - her mother. Time at beginning of recording: [[9:25 am.]]//</tw-passagedata><tw-passagedata pid="156" name="9:25 am." tags="Characters" position="1400,1300" size="100,100">//Detective Inspector Deacon:// So, ladies, I must say that I&#39;m surprised to see you both here. We have every reason to believe that Miss Jones&#39; disappearance is entirely innocent, and we have been informed that she was sighted recently near Apollo Bay. School holidays, it doesn&#39;t seem unreasonable to me that she might want a break from the small town life. Evidently, you don&#39;t agree with that, do you?
 
 (click-replace: &quot;Evidently, you don&#39;t agree with that, do you?&quot;) [(go-to: &quot;Together in Disagreement&quot;)]</tw-passagedata><tw-passagedata pid="157" name="Together in Disagreement" tags="Characters" position="1500,1300" size="100,100">//Beverly MacNab:// No, I can&#39;t believe that, and whoever saw that was mistaken. It would be remiss of me not to tell you what my mother and I know. 
 
@@ -788,21 +800,21 @@ Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;
 
 (click-replace: &quot;Chief Commissioner Gregory Salt&quot;) [(go-to: &quot;Comments From the Commissioner&quot;)]
 
-(click-replace: &quot;More to come.&quot;) </tw-passagedata><tw-passagedata pid="185" name="A Portrait of Miss Jones" tags="Evidence" position="1600,2300" size="100,100">//The following are interview notes between Miss Deborah Foresythe and Miss Beverly MacNab, conducted around the 5th of November, 1964. They were recovered from Miss MacNab&#39;s personal notebook.// 
+(click-replace: &quot;More to come.&quot;) [(go-to: &quot;Footy Shed Items&quot;)]</tw-passagedata><tw-passagedata pid="185" name="A Portrait of Miss Jones" tags="Evidence BEV-PAPER" position="1600,2300" size="100,100">(text-colour: black) [//The following are interview notes between Miss Deborah Foresythe and Miss Beverly MacNab, conducted around the 5th of November, 1964. They were recovered from Miss MacNab&#39;s personal notebook.//] 
 
 ---
 
-&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;Q: [Did you know Miss Jones well? Would you say that she was acting like her usual self in the lead-up to her death?]
+(text-colour: black) &lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;Q: [Did you know Miss Jones well? Would you say that she was acting like her usual self in the lead-up to her death?]
 
-&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;A: [Yes, I would say that I did. She was a lovely young lady with a good head on her shoulders. She was quite private about things. Kept a low-profile, you could say. She was perhaps a little bit stressed, but that&#39;s not unusual for a high school teacher at Sentry Creek Secondary.] 
+(text-colour: black) &lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;A: [Yes, I would say that I did. She was a lovely young lady with a good head on her shoulders. She was quite private about things. Kept a low-profile, you could say. She was perhaps a little bit stressed, but that&#39;s not unusual for a high school teacher at Sentry Creek Secondary.] 
 
-&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;Q: [A bit stressed? Do you think there could&#39;ve been anything in particular she would have been stressed about, besides her job?]
+(text-colour: black) &lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;Q: [A bit stressed? Do you think there could&#39;ve been anything in particular she would have been stressed about, besides her job?]
 
-&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;A: [I don&#39;t know exactly. There&#39;s been rumours flying around as always. Everyone had a different idea of why she came to live out here - I did ask her and she told me that she wanted to get away from the big city. She wanted a haven. But Sentry Creek isn&#39;t a haven, I think someone was after her.] 
+(text-colour: black) &lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;A: [I don&#39;t know exactly. There&#39;s been rumours flying around as always. Everyone had a different idea of why she came to live out here - I did ask her and she told me that she wanted to get away from the big city. She wanted a haven. But Sentry Creek isn&#39;t a haven, I think someone was after her.] 
 
-&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;Q: [Anyone in particular?]
+(text-colour: black) &lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;Q: [Anyone in particular?]
 
-&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;Q: [I knew she had dinner with Mayor Reid once. I saw his Rolls Royce parked outside the house. But she was no fool, Miss Daphne, she wouldn&#39;t have got involved with him if there weren&#39;t good reason.] 
+(text-colour: black) &lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;Q: [I knew she had dinner with Mayor Reid once. I saw his Rolls Royce parked outside the house. But she was no fool, Miss Daphne, she wouldn&#39;t have got involved with him if there weren&#39;t good reason.] 
 
 (click-replace: &quot;she wouldn&#39;t have got involved with him if there weren&#39;t good reason.&quot;) [(go-to: &quot;Fall From Grace&quot;)]</tw-passagedata><tw-passagedata pid="186" name="Certificate of Appreciation" tags="Evidence Dr-Hepworth" position="1400,2400" size="100,100">(text-color: black) [The following is a letter from Paula Hathaway, Editor-In-Chief at The Argus (1955-1967) and a friend of Daphne Jones, received by Beverly MacNab around the 10th of November.]
 
@@ -822,28 +834,105 @@ Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;
 (text-color: white) [P.S: your name sounds familiar, I could&#39;ve sworn Daphne mentioned you somewhere along the way...]
 
 (click-replace: &quot;Kind Wishes, Paula Hathaway.&quot;) [(go-to: &quot;Fall From Grace&quot;)]
-</tw-passagedata><tw-passagedata pid="187" name="Comments From the Commissioner" tags="Evidence" position="1500,2400" size="100,100">&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;//7th of November, 1964.// 
+</tw-passagedata><tw-passagedata pid="187" name="Comments From the Commissioner" tags="Evidence BEV-PAPER" position="1500,2400" size="100,100">(text-colour: black) &lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;[//7th of November, 1964.//]
 
 ---
 
-&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;Contacted Chief Commissioner Salt; refused to comment. Contacted DI Deacon for reaction, said &quot;Careful what you say, or the same thing that happened to Daphne could happen to you.&quot; 
+(text-colour: black) &lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;[Contacted Chief Commissioner Salt; refused to comment. Contacted DI Deacon for reaction, said &quot;Careful what you say, or the same thing that happened to Daphne could happen to you.&quot;]
 
-(click-replace: &quot;Careful what you say, or the same thing that happened to Daphne could happen to you.&quot;)  [(go-to: &quot;Fall From Grace&quot;)]</tw-passagedata><tw-passagedata pid="188" name="Footy Shed Items" tags="Evidence" position="1600,2400" size="100,100">&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt; //10th of November. The police are not taking action, so I will. Mr Deacon may mock me, but now he is the one without a job and I am the one wielding the truth. No one thinks anything bad has happened to Daphne, but I may have found something that could prove it. I ran into the Council Sports Pavillion while mother was finishing work, and I copied down all the details I could before anybody found me. I have detailed every item whose absence has not been substantiated with a signature.//
+(click-replace: &quot;Careful what you say, or the same thing that happened to Daphne could happen to you.&quot;)  [(go-to: &quot;Fall From Grace&quot;)]</tw-passagedata><tw-passagedata pid="188" name="Footy Shed Items" tags="Evidence BEV-PAPER" position="1600,2400" size="100,100">(text-colour: black) &lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt; [//10th of November. The police are not taking action, so I will. Mr Deacon may mock me, but now he is the one without a job and I am the one wielding the truth. No one thinks anything bad has happened to Daphne, but I may have found something that could prove it. I ran into the Council Sports Pavillion while mother was finishing work, and I copied down all the details I could before anybody found me. I have detailed every item whose absence has not been substantiated with a signature.//]
 
 ---
 
-&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt; An Audit of the Loaning Ledger of the Council Sports Shed, in the days leading up to Miss Jones&#39; Disappearance.
+(text-colour: black) &lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt; [An Audit of the Loaning Ledger of the Council Sports Shed, in the days leading up to Miss Jones&#39; Disappearance.]
 
-(click-replace: &quot;in the days leading up to Miss Jones&#39; Disappearance.&quot;)  [(go-to: &quot;Missing Equipment&quot;)]</tw-passagedata><tw-passagedata pid="189" name="Missing Equipment" tags="Evidence" position="1400,2500" size="100,100">&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt; Rope
+(click-replace: &quot;in the days leading up to Miss Jones&#39; Disappearance.&quot;)  [(go-to: &quot;Missing Equipment&quot;)]</tw-passagedata><tw-passagedata pid="189" name="Missing Equipment" tags="Evidence BEV-PAPER" position="1400,2500" size="100,100">(text-colour: black) &lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt; [Rope]
 
-(click-append: &quot;Rope&quot;) [, One Cricket Bat]
+(text-colour: black) + (click-append: &quot;Rope&quot;) [, One Cricket Bat]
 
-(click-append: &quot;, One Cricket Bat&quot;) [, Athletic Tape]
+(text-colour: black) + (click-append: &quot;, One Cricket Bat&quot;) [, Athletic Tape]
 
-(click-append: &quot;, Athletic Tape&quot;) [, One Piece of Tarpaulin]
+(text-colour: black) + (click-append: &quot;, Athletic Tape&quot;) [, One Piece of Tarpaulin]
 
-(click-replace: &quot;One Piece of Tarpaulin&quot;) 
-</tw-passagedata><tw-passagedata pid="190" name="Untitled Passage" tags="" position="1500,2500" size="100,100"></tw-passagedata></tw-storydata>
+(text-colour: black) + (click-replace: &quot;One Piece of Tarpaulin&quot;)  [(go-to: &quot;Miss Jones Timeline&quot;)]
+
+</tw-passagedata><tw-passagedata pid="190" name="I KNOW WHAT YOU DID" tags="Evidence" position="1600,2700" size="100,100"></tw-passagedata><tw-passagedata pid="191" name="Miss Jones Timeline" tags="Evidence BEV-PAPER" position="1500,2500" size="100,100">(text-colour: black) &lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;[Timeline of events leading up to the disappearance of Daphne Marie Jones]
+
+(click-replace: &quot;leading up to the disappearance of Daphne Marie Jones&quot;)  [(go-to: &quot;An Obsession&quot;)]
+</tw-passagedata><tw-passagedata pid="192" name="An Obsession" tags="BEV-PAPER Evidence" position="1600,2500" size="100,100">&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt; (text-colour: black) [//3:30 pm, 31st of October.// We finish English with Miss Jones, she packs her bag hastily and tells us to make sure we complete our MacBeth essays over the school holidays.]  
+
+(click-replace: &quot;make sure we complete our MacBeth essays over the school holidays.&quot;) [(go-to: &quot;Walking Home&quot;)]
+
+(after: 5s) [Vivian tries to catch her] 
+
+(click-replace: &quot;Vivian tries to catch her&quot;)  [(go-to: &quot;Walking Home&quot;)]
+
+
+
+</tw-passagedata><tw-passagedata pid="193" name="startup" tags="startup" position="800,0" size="100,100">{
+(set: $priscilla to false)
+(set: $carmen to false) 
+(set: $vivian to false) 
+(set: $beverly to false) 
+}
+</tw-passagedata><tw-passagedata pid="194" name="Walking Home" tags="Evidence BEV-PAPER" position="1400,2600" size="100,100">&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt; (text-colour: black) [//4:30 pm, 31st of October.// Mrs Forsythe stops to talk with Daphne on her way home. She seems slightly stressed.]
+
+(click-replace: &quot;She seems slightly stressed.&quot;)  [(go-to: &quot;Guess Who&#39;s Coming To Dinner&quot;)]
+
+(after: 5s) [What does she know?] 
+
+(click-replace: &quot;What does she know?&quot;)  [(go-to: &quot;Guess Who&#39;s Coming To Dinner&quot;)]
+</tw-passagedata><tw-passagedata pid="195" name="Guess Who&#39;s Coming To Dinner" tags="Evidence BEV-PAPER" position="1500,2600" size="100,100">&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt; (text-colour: black) [//7:00 pm, 31st of October.// Detective Deacon stops by the servo. He buys a packet of cigarettes, a paper. I ask him what he&#39;s doing. It&#39;s his turn to patrol, he says.]
+
+(click-replace: &quot;It&#39;s his turn to patrol, he says&quot;)  [(go-to: &quot;Lunch Break&quot;)] 
+
+(after: 5s) [Has he noticed the smear of white paint on his right shoe? The paint near the Footy Pavillion gets awfully runny when it rains.] 
+
+(click-replace: &quot;Has he noticed the smear of white paint on his right shoe? The paint near the Footy Pavillion gets awfully runny when it rains.&quot;) [(go-to: &quot;Lunch Break&quot;)] </tw-passagedata><tw-passagedata pid="196" name="Lunch Break" tags="BEV-PAPER Evidence" position="1600,2600" size="100,100">&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt; (text-colour: black) [//7:30 pm. Dinner break.]
+
+(click-replace: &quot;Dinner break.&quot;) [(go-to: &quot;Home Again&quot;)]
+
+(after: 5s) [No matter how many times I wash my hands, I can still smell it.] 
+
+(click-replace: &quot;No matter how many times I wash my hands, I can still smell it.&quot;) [(go-to: &quot;Home Again&quot;)] </tw-passagedata><tw-passagedata pid="197" name="Home Again" tags="BEV-PAPER Evidence" position="1400,2700" size="100,100">&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt; (text-colour: black) [//10:30 pm. Home again. The guests are still milling around our table. There is a knock at the door. I look out from my bedroom balcony window and below is Mayor Reid. They let him in.]
+
+(click-replace: &quot;They let him in.&quot;) 
+
+
+(after: 5s) [Father takes him into the study. I creep out of my room and I press my eye to the keyhole. Their heads are bowed over something on the desk. My father picks up a wad of thick cash. He tells Mayor Reid everything will be fine.]
+
+(click-replace: &quot;He tells Mayor Reid everything will be fine.&quot;) [(go-to: &quot;A Poem by Beverly MacNab&quot;)] </tw-passagedata><tw-passagedata pid="198" name="A Poem By Beverly MacNab" tags="Evidence" position="1500,2700" size="100,100">//The following is a poem by Beverly MacNab, which was awarded the best entry in the local Sentry Creek Literary Competition, Judged by Daphne Marie Jones in October, 1964.//
+
+---
+
+&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt; Black Widow, by Beverly MacNab.
+
+&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;(text-color: white) [A tarantula has set up an apartment in my mouth.]
+
+(click-append: &quot;set up an apartment in my mouth&quot;) [, a nest for its thousand beady-eyed truths.]
+
+&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;(text-color: white) [I&#39;m falling again.]
+
+(click-append: &quot;I&#39;m falling again&quot;) [, tipping into the oblivion where you are still there.]
+
+&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;(text-color: white) [I am bound by my black widow&#39;s web.]
+
+(click-append: &quot;I&#39;m falling again&quot;) [, haunted by the silky ghost of your body, your smell, your cherubic trust.]
+
+&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;(text-color: white) [I would crystallise myself with you beyond the earthly veil, gouge the beating arteries from my ribcage.]
+
+(click-append: &quot;gouge the beating arteries from my ribcage.&quot;) [, submerge myself in the eternal soil and hoodwink the devilish temptress that forced you there.] 
+
+(click-replace: &quot;hoodwink the devilish temptress that forced you there.&quot;) [(go-to: &quot;I KNOW WHAT YOU DID&quot;)] 
+
+
+
+
+
+
+
+
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
