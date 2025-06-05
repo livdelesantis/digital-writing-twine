@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Who Killed Miss Jones?.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Who Killed Miss Jones?" startnode="19" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="3E629193-202B-403D-BD76-622DFFA99AB7" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Corinthia:wght@400;700&family=Meddon&family=Nothing+You+Could+Do&family=Pinyon+Script&family=Zeyada&display=swap');
+<tw-storydata name="Who Killed Miss Jones?" startnode="19" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="3E629193-202B-403D-BD76-622DFFA99AB7" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Corinthia:wght@400;700&family=Meddon&family=MonteCarlo&family=Nothing+You+Could+Do&family=Pinyon+Script&family=Zeyada&display=swap');
 
 tw-story[tags~="begin"] {
   font-family: 'Cedarville Cursive', cursive;
@@ -228,9 +228,9 @@ $(&#39;map&#39;).imageMapResize();
 </tw-passagedata><tw-passagedata pid="19" name="Warning and Disclaimer" tags="" position="600,100" size="100,100">=&gt;&lt;=
 &#39;&#39;WARNING: &#39;&#39;
 
-//Who Killed Miss Jones// is entirely a work of fiction. Portraits/photographs used to represent characters within this narrative do not reflect the actions, names, characteristics or opinions of the real people depicted in the original resources. Any similarities to any persons living or dead are entirely ficticious and unintended. All photographs have been sourced from royalty free heritage collections provided by //Museums Victoria.// 
+//Who Killed Miss Jones?// is entirely a work of fiction. Portraits/photographs used to represent characters within this narrative do not reflect the actions, names, characteristics, existence or opinions of the real people depicted in the original resources. Any similarities to any persons living or dead are entirely unintended. All photographs have been sourced from royalty free heritage collections provided by //Museums Victoria and Te Papa Museum.// 
 
-Please note, the following interactive fiction piece contains disturbing content and themes including: murder, discussions of suicide, violence and stalking. Read on at your own discretion. 
+Please note, the following interactive fiction piece contains disturbing content and themes including: murder, discussions of suicide, violence, domestic abuse, loss of pregnancy, grief, references to sexual assault and stalking. Read on at your own discretion. 
 
 
 [[&lt;span style=&quot;font-family: &#39;Cedarville Cursive&#39;, monospace;&quot;&gt;Welcome to Who Killed Miss Jones&lt;/span&gt;|Welcome to Who Killed Miss Jones]]</tw-passagedata><tw-passagedata pid="20" name="3:17 pm." tags="Evidence" position="1225,825" size="100,100">//Inspector Gordon Shute: // Thank you for coming down, Terry. 
@@ -488,7 +488,7 @@ Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;
 Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;Meddon&#39;, monospace;&quot;&gt;Vivian&lt;/span&gt;|Vivian]] 
 
 (if: $carmen is true and $priscilla is true and $vivian is true and $beverly is true)[
-    [[Read Daphne]]
+    [[Read &lt;span style=&quot;font-family: &#39;MonteCarlo&#39;, monospace;&quot;&gt;Read Daphne&lt;/span&gt;|Read Daphne]]
 ]</tw-passagedata><tw-passagedata pid="98" name="Priscilla&#39;s Statement" tags="Characters" position="1150,1125" size="100,100">//Transcript of interview with Priscilla Anne Devine, November 15th, 1964. Recorded at Sentry Creek Police Station. Detective Inspector Robert Deacon, Ms Priscilla Anne Devine and Father Tobias Devine - her father. Time at beginning of recording: [[7:28 pm.]]//</tw-passagedata><tw-passagedata pid="99" name="7:28 pm." tags="Characters" position="1000,1300" size="100,100">//Detective Inspector Deacon:// We&#39;ve asked you here, Miss Devine, because you mentioned that you might know something about what happened to your English teacher Miss Jones? 
 
 (click-append: &quot;what happened to your English teacher Miss Jones?&quot;) [(go-to: &quot;The Disappearance of Miss Jones&quot;)]</tw-passagedata><tw-passagedata pid="100" name="The Disappearance of Miss Jones" tags="Characters" position="1100,1300" size="100,100">//Priscilla Devine:// Of course, Detective Inspector Deacon, sir. 
@@ -763,7 +763,7 @@ Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;
 
 
 (if: $carmen is true and $priscilla is true and $vivian is true and $beverly is true)[
-    [[Read Daphne]]
+    [[Read &lt;span style=&quot;font-family: &#39;MonteCarlo,&#39; monospace;&quot;&gt;Read Daphne&lt;/span&gt;|Read Daphne]]
 ]</tw-passagedata><tw-passagedata pid="155" name="Beverly&#39;s Statement" tags="Characters" position="1575,1150" size="100,100">//Transcript of interview with Beverly Yvonne MacNab, November 14th, 1964. Recorded at Sentry Creek Police Station. Detective Inspector Robert Deacon, Ms Beverly Yvonne MacNab and Ms Suzette MacNab - her mother. Time at beginning of recording: [[9:25 am.]]//</tw-passagedata><tw-passagedata pid="156" name="9:25 am." tags="Characters" position="1400,1300" size="100,100">//Detective Inspector Deacon:// So, ladies, I must say that I&#39;m surprised to see you both here. We have every reason to believe that Miss Jones&#39; disappearance is entirely innocent, and we have been informed that she was sighted recently near Apollo Bay. School holidays, it doesn&#39;t seem unreasonable to me that she might want a break from the small town life. Evidently, you don&#39;t agree with that, do you?
 
 (click-replace: &quot;Evidently, you don&#39;t agree with that, do you?&quot;) [(go-to: &quot;Together in Disagreement&quot;)]</tw-passagedata><tw-passagedata pid="157" name="Together in Disagreement" tags="Characters" position="1500,1300" size="100,100">//Beverly MacNab:// No, I can&#39;t believe that, and whoever saw that was mistaken. It would be remiss of me not to tell you what my mother and I know. 
@@ -1020,8 +1020,22 @@ Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;
 Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;Meddon&#39;, monospace;&quot;&gt;Vivian&lt;/span&gt;|Vivian]] 
 
 (if: $carmen is true and $priscilla is true and $vivian is true and $beverly is true)[
-    [[Read Daphne]]
-]</tw-passagedata><tw-passagedata pid="211" name="Read Daphne" tags="Characters" position="500,3400" size="100,100"></tw-passagedata><tw-passagedata pid="212" name="Vivian&#39;s Statement" tags="Characters" position="600,1125" size="100,100">[//Transcript of interview with Vivian Grieve, November 17th 1964. Recorded at Sentry Creek Police Station. Detective Inspector Robert Deacon, Ms Vivian Grieve and Margaret Frost, a social worker, present. Time at beginning of recording: [[2:17 pm.]]]</tw-passagedata><tw-passagedata pid="213" name="2:17 pm." tags="Characters" position="500,1300" size="100,100">//Detective Inspector Deacon:// Do you know why you&#39;re here today, Miss Grieve? 
+    [[Read &lt;span style=&quot;font-family: &#39;MonteCarlo&#39;, monospace;&quot;&gt;Read Daphne&lt;/span&gt;|Read Daphne]]
+]</tw-passagedata><tw-passagedata pid="211" name="Read Daphne" tags="Characters Dr-Hepworth" position="500,3400" size="100,100">(text-color: black) [//The following was found beneath a floorboard in Daphne&#39;s old home in Sentry Creek.//]
+
+---
+
+&lt;span style=&quot;font-family: &#39;MonteCarlo&#39;, monospace;&quot;&gt; (text-color: black) [Dearest Paula,]
+
+&lt;span style=&quot;font-family: &#39;MonteCarlo&#39;, monospace;&quot;&gt; (text-color: black) [If you are reading this, it&#39;s because things have gone terribly wrong. I need someone I can trust to keep this copy of events - as they truly happened - safe. There is something extremely wrong here, I&#39;ve felt it ever since I moved earlier in the year.]
+
+&lt;span style=&quot;font-family: &#39;MonteCarlo&#39;, monospace;&quot;&gt; (text-color: black) [Teaching at the school exposes you to whispers in the hallways between students, and rumours lurking in the staffroom. It became apparent, through piecing together different stories, that an orphaned girl had disappeared in Sentry Creek last summer - and no one had come looking for her because she had no family. Paula, you know that where a story of injustice beckons, I must follow.]
+
+&lt;span style=&quot;font-family: &#39;MonteCarlo&#39;, monospace;&quot;&gt; (text-color: black) [Her name was Lavinia. I asked who her friends were, thinking that they would be the most informed about her movements; whether someone might have been causing her trouble. They were, initially, hesitant to discuss her disappearance, but time passed and little comments and gestures snagged my attention. I came to realise there was a possibility that something far more sinister than grief was uniting the four of her friends. Namely, I was disturbed by the coercive, aggressive tendencies of their figurehead, Vivian. She is...vitriolic. She is unable to hide her hatred - for me, and seemingly for Lavinia, though she tries.]
+
+&lt;span style=&quot;font-family: &#39;MonteCarlo&#39;, monospace;&quot;&gt; (text-color: black) [P.T.O]
+
+(click-replace: &quot;P.T.O&quot;) [(go-to: &quot;Vivian&#39;s Wrath&quot;)]  </tw-passagedata><tw-passagedata pid="212" name="Vivian&#39;s Statement" tags="Characters" position="600,1125" size="100,100">[//Transcript of interview with Vivian Grieve, November 17th 1964. Recorded at Sentry Creek Police Station. Detective Inspector Robert Deacon, Ms Vivian Grieve and Margaret Frost, a social worker, present. Time at beginning of recording: [[2:17 pm.]]]</tw-passagedata><tw-passagedata pid="213" name="2:17 pm." tags="Characters" position="500,1300" size="100,100">//Detective Inspector Deacon:// Do you know why you&#39;re here today, Miss Grieve? 
 
 (click-replace: &quot;why you&#39;re here today, Miss Grieve?&quot;)  [(go-to: &quot;You Tell Me&quot;)]</tw-passagedata><tw-passagedata pid="214" name="You Tell Me" tags="Characters" position="600,1300" size="100,100">//Vivian Grieve:// You tell me, Detective. 
 
@@ -1177,7 +1191,7 @@ $(&#39;map&#39;).imageMapResize();
 
 (click-replace: &quot;I won&#39;t let you go.&quot;) [(go-to: &quot;If You&#39;re Reading This&quot;)] </tw-passagedata><tw-passagedata pid="257" name="If You&#39;re Reading This" tags="Evidence" position="500,2900" size="100,100">&lt;span style=&quot;font-family: &#39;Meddon&#39;, monospace;&quot;&gt; [Crow. Girl. Grave. [[Blow.]] [[Disease]]. Rope. Swallow. [[Repent.]] Fall. Abduction. Dominant. Night. Lecherous. [[Twin]]. Run. Compel. Distraught. Tarnish. Apparition. Dissect.] 
 
-</tw-passagedata><tw-passagedata pid="258" name="Twin" tags="Evidence" position="600,2900" size="100,100">&lt;span style=&quot;font-family: &#39;Meddon&#39;, monospace;&quot;&gt; When rot seeps into the bone of a limb, it must be amputated so as not to kill the beautiful equilibrium of the body. </tw-passagedata><tw-passagedata pid="259" name="Blow." tags="Evidence" position="700,2900" size="100,100">&lt;span style=&quot;font-family: &#39;Meddon&#39;, monospace;&quot;&gt; Do you know how many blows it would take to crush the human skull? It differs, from a man to a woman, that&#39;s what the Biology teacher, Mr Franc, says. Women are capable of less force. Does he know, I wonder, what kind of anger can sink its delicious claws into a woman and supersede her usual strength? No, he wouldn&#39;t. Because he doesn&#39;t know what I know. </tw-passagedata><tw-passagedata pid="260" name="Disease" tags="Evidence" position="500,3000" size="100,100">&lt;span style=&quot;font-family: &#39;Meddon&#39;, monospace;&quot;&gt; I know exactly who I am. I&#39;m not afraid. Maybe that&#39;s what scares them all so much; they might be sitting next to me and thinking they know exactly what it is that&#39;s running through my head. Girls thinking about boys, girls thinking about being beautiful. They don&#39;t even know the half of it...</tw-passagedata><tw-passagedata pid="261" name="Repent." tags="Evidence" position="600,3000" size="100,100">&lt;span style=&quot;font-family: &#39;Meddon&#39;, monospace;&quot;&gt; I need to make her eternally sorry. She&#39;ll apologise and say that it was a complete accident, but she won&#39;t mean it. Not in the way that she needs to in order to keep breathing a moment longer. Don&#39;t you get it? I will always win. 
+</tw-passagedata><tw-passagedata pid="258" name="Twin" tags="Evidence" position="600,2900" size="100,100">&lt;span style=&quot;font-family: &#39;Meddon&#39;, monospace;&quot;&gt; When rot seeps into the bone of a limb, it must be amputated so as not to kill the beautiful equilibrium of the body. </tw-passagedata><tw-passagedata pid="259" name="Blow." tags="Evidence" position="700,2900" size="100,100">&lt;span style=&quot;font-family: &#39;Meddon&#39;, monospace;&quot;&gt; Do you know how many blows it would take to crush the human skull? It differs, from a man to a woman, that&#39;s what the Biology teacher, Mr Franc, says. Women are capable of less force. Does he know, I wonder, what kind of anger can sink its delicious claws into a woman and supersede her usual strength? No, he wouldn&#39;t. Because he doesn&#39;t know what I know. </tw-passagedata><tw-passagedata pid="260" name="Disease" tags="Evidence" position="500,3000" size="100,100">&lt;span style=&quot;font-family: &#39;Meddon&#39;, monospace;&quot;&gt; I know exactly who I am. I&#39;m not afraid. Maybe that&#39;s what scares them all so much; they might be sitting next to me and thinking they know exactly what it is that&#39;s running through my head. Girls thinking about boys, girls thinking about being beautiful. They don&#39;t even know the half of it...</tw-passagedata><tw-passagedata pid="261" name="Repent." tags="Evidence" position="600,3000" size="100,100">&lt;span style=&quot;font-family: &#39;Meddon&#39;, monospace;&quot;&gt; [I need to make her eternally sorry. She&#39;ll apologise and say that it was a complete accident, but she won&#39;t mean it. Not in the way that she needs to in order to keep breathing a moment longer. Don&#39;t you get it? I will always win.]
 
 (click-replace: &quot;I will always win.&quot;) [(go-to: &quot;Vivian End&quot;)] </tw-passagedata><tw-passagedata pid="262" name="Vivian End" tags="FINALSOLUTION Plot-Progression" position="600,3200" size="100,100">(set: $vivian to true) 
 
@@ -1187,12 +1201,38 @@ Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;
 Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;Beverly&lt;/span&gt;|Beverly]] 
 
 (if: $carmen is true and $priscilla is true and $vivian is true and $beverly is true)[
-    [[Read Daphne]]
+    [[Read &lt;span style=&quot;font-family: &#39;MonteCarlo&#39;, monospace;&quot;&gt;Read Daphne&lt;/span&gt;|Read Daphne]]
 ]</tw-passagedata><tw-passagedata pid="263" name="startup" tags="" position="775,0" size="100,100">(set: $carmen to false)
 (set: $priscilla to false)
 (set: $vivian to false)
 (set: $beverly to false)
-</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="264" name="Vivian&#39;s Wrath" tags="Dr-Hepworth Characters" position="500,3500" size="100,100">&lt;span style=&quot;font-family: &#39;MonteCarlo&#39;, monospace;&quot;&gt; (text-color: black) [I think the other girls loved Lavinia, and are entrenched in thick guilt. I think Vivian did too, as more than a friend - and I think that she wanted to make sure Lavinia never left Sentry Creek. As you know, it&#39;s common for welfare children to be moved around, depending on finances and availabilities.] 
+
+&lt;span style=&quot;font-family: &#39;MonteCarlo&#39;, monospace;&quot;&gt; (text-color: black) [It&#39;s strange, Paula...I cannot be sure, but they seem so ensconced in their own world, a lawless world where their togetherness will prevail no matter what, that they have subconsciously erased it from their memories. All, except for Vivian, who I believe is fully cognisant of exactly what she has done and why.]  
+
+&lt;span style=&quot;font-family: &#39;MonteCarlo&#39;, monospace;&quot;&gt; (text-color: black) [Now comes the dubious bit, I expect you will be shaking your head at me whilst reading this at your desk at some ludicrously late hour: I did some digging. I went to the Sentry Creek Boarding House and I asked to speak to Mrs Frost, the Matron. She allowed me into Vivian&#39;s bedroom quarters, and I found something I believe will illustrate my story. I hope to have more conclusive proof soon.] 
+
+(click-replace: &quot;I hope to have more conclusive proof soon.&quot;) [(go-to: &quot;Conclusive Proof&quot;)]  </tw-passagedata><tw-passagedata pid="265" name="Conclusive Proof" tags="Characters" position="500,3600" size="100,100">[[&lt;img class=&quot;story-image&quot; src=&quot;./images/thegonegirls.jpg&quot; alt=&quot;The Girls&quot; /&gt;-&gt;The Girls]]</tw-passagedata><tw-passagedata pid="266" name="The Girls" tags="Characters" position="500,3700" size="100,100">//The back of the photograph is inscribed with the following:// &lt;span style=&quot;font-family: &#39;Meddon&#39;, monospace;&quot;&gt; [Lavinia, I&#39;m sorry, my love. We will be reunited one day, but you cannot leave me. Everyone else has abandoned me, not you, never you.]
+
+(click-replace: &quot;Everyone else has abandoned me, not you, never you.&quot;) [(go-to: &quot;All My Love, Daphne&quot;)]  </tw-passagedata><tw-passagedata pid="267" name="All My Love, Daphne" tags="Characters" position="500,3800" size="100,100">&lt;span style=&quot;font-family: &#39;MonteCarlo&#39;, monospace;&quot;&gt; (text-color: black) [Oh, must go! I think someone&#39;s at the door. I&#39;ve invited Vivian, Priscilla, Beverly and Carmen over for tea. I thought it might be best to try and help them see reason, without bringing down the confrontation of the police upon them. Besides, they&#39;re only teenagers, I&#39;m sure we will deal with this in a reasonable manner, terrible as it is.] 
+
+&lt;span style=&quot;font-family: &#39;MonteCarlo&#39;, monospace;&quot;&gt; (text-color: black) [All my love, Daphne x]
+
+(after: 2s) [&lt;audio src=&quot;./audio/creakingdoor.mp3&quot; autoplay&gt;&lt;/audio&gt;]
+
+(click-append: &quot;All my love, Daphne x&quot;) [(go-to: &quot;Goodnight &amp; Goodbye!&quot;)]  </tw-passagedata><tw-passagedata pid="268" name="Goodnight &amp; Goodbye!" tags="Plot-Progression" position="500,4000" size="100,100">=&gt;&lt;=
+
+&lt;span style=&quot;font-family: &#39;Meddon&#39;, monospace;&quot;&gt; [[The End...]]
+
+</tw-passagedata><tw-passagedata pid="269" name="The End..." tags="Plot-Progression" position="500,4200" size="100,100">&lt;span style=&quot;font-family: &#39;Default&#39;, monospace;&quot;&gt; Thank you for playing &#39;Who Killed Miss Jones?&#39; - hopefully you had a lot of fun exploring Sentry Creek + its intriguing inhabitants - and got a little spooked, too! Do go back and play again to discover more clues that you might&#39;ve missed (there are a few hidden ones!). 
+
+&lt;span style=&quot;font-family: &#39;Default&#39;, monospace;&quot;&gt; I would like to thank the following creators for their incredible royalty-free content that has been utilised to make this project come to life. In no particular order, they are: //Museums Victoria, Te Papa Museum of New Zealand, Heather Green, Geoffrey Burch, freesoundcommunity, subhamita, ben299, Photoholgic, Kwinten De Pauw and Michael Lord. 
+
+&lt;span style=&quot;font-family: &#39;Default&#39;, monospace;&quot;&gt; Well, that&#39;s about it from me. If you enjoyed your playing experience, be sure to tell a friend and perhaps share it on your socials! You can find me (Liv) on various social channels under the handle @livandothermysteries, which is the same user for my Substack blog. 
+
+...And if you&#39;re just //dying// to do it all over again, click here. 
+
+(click-replace: &quot;click here.&quot;)  [(go-to: &quot;Welcome to Who Killed Miss Jones&quot;)]  </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
