@@ -747,7 +747,10 @@ Tobias
 
 
 
-</tw-passagedata><tw-passagedata pid="149" name="Liquor" tags="Evidence" position="1000,3100" size="100,100">//In the middle of my drunken stupor, I can see her face grinning at me//</tw-passagedata><tw-passagedata pid="150" name="Decomposition" tags="Evidence" position="1100,3100" size="100,100">//I wonder how long it takes for a body to decompose beyond recognition?//</tw-passagedata><tw-passagedata pid="151" name="Desertion" tags="Evidence" position="1200,3100" size="100,100">//I think God deserted me in the summer of 1963//</tw-passagedata><tw-passagedata pid="152" name="Clarity" tags="Evidence" position="1000,3200" size="100,100">//Please decimate my clarity, sip by sip by sip by sip because I cannot bear it any longer//</tw-passagedata><tw-passagedata pid="153" name="Dead Silence" tags="Evidence" position="1100,3200" size="100,100">//We were all agreed upon it. The importance of silence.//</tw-passagedata><tw-passagedata pid="154" name="Priscilla End" tags="Plot-Progression FINALSOLUTION" position="1050,3400" size="100,100">Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;Cedarville Cursive&#39;, monospace;&quot;&gt;The Autopsy&lt;/span&gt;|The Autopsy]] 
+</tw-passagedata><tw-passagedata pid="149" name="Liquor" tags="Evidence" position="1000,3100" size="100,100">//In the middle of my drunken stupor, I can see her face grinning at me//</tw-passagedata><tw-passagedata pid="150" name="Decomposition" tags="Evidence" position="1100,3100" size="100,100">//I wonder how long it takes for a body to decompose beyond recognition?//</tw-passagedata><tw-passagedata pid="151" name="Desertion" tags="Evidence" position="1200,3100" size="100,100">//I think God deserted me in the summer of 1963//</tw-passagedata><tw-passagedata pid="152" name="Clarity" tags="Evidence" position="1000,3200" size="100,100">//Please decimate my clarity, sip by sip by sip by sip because I cannot bear it any longer//</tw-passagedata><tw-passagedata pid="153" name="Dead Silence" tags="Evidence" position="1100,3200" size="100,100">//We were all agreed upon it. The importance of silence.//
+
+(click-replace: &quot;The importance of silence.&quot;) [(go-to: &quot;Priscilla End&quot;)]
+</tw-passagedata><tw-passagedata pid="154" name="Priscilla End" tags="Plot-Progression FINALSOLUTION" position="1050,3400" size="100,100">Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;Cedarville Cursive&#39;, monospace;&quot;&gt;The Autopsy&lt;/span&gt;|The Autopsy]] 
 Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;Pinyon Script&#39;, monospace;&quot;&gt;Carmen&lt;/span&gt;|Carmen]] 
 Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt;Beverly&lt;/span&gt;|Beverly]] 
 Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;Meddon&#39;, monospace;&quot;&gt;Vivian&lt;/span&gt;|Vivian]] 
@@ -815,7 +818,26 @@ Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;
 
 &lt;map name=&quot;image-map&quot;&gt;
     &lt;area target=&quot;&quot; alt=&quot;Fall From Grace&quot; title=&quot;Fall From Grace&quot; href=&quot;&quot; coords=&quot;80,514,1000,1019&quot; shape=&quot;rect&quot;&gt;
-&lt;/map&gt;</tw-passagedata><tw-passagedata pid="184" name="Fall From Grace" tags="Evidence" position="1500,2300" size="100,100">//Local police have today announced the official removal of Detective Inspector Robert Deacon from his role heading the ongoing investigation into the disappearance of high school English teacher and resident Daphne Marie Jones. Miss Jones was last seen on the 31st of October, at around 5:30, walking back from Sentry Creek Secondary School, towards her home on Silent Hill. Her neighbour, Mrs Deborah Forsythe, said the following of the brief exchange they shared in the street: &quot;She seemed completely normal. I didn&#39;t ask her what she was doing later...It didn&#39;t occur to me that I wouldn&#39;t see her ever again.&quot; The removal of Deacon arrives on the coattails of shocking allegations about police involvement in a financial corruption coup. Sentry Creek Mayor Paul Reid has been accused of sinking public funds into his own accounts; a revelation made at the hands of both his book-keeper James Hurst and his secretary Suzette MacNab. An investigation into the depth of corruption in local government - and conspiracy to cover it up by the police - has been promised by Chief Commissioner Gregory Salt. In a press conference on Monday, Salt said the following &quot;I am unable to comment on what is currently part of an ongoing investigation, but I will say that Metropolitan Melbourne Police have been asked to take charge of the investigation...We are not of the belief that Detective Inspector Deacon was involved in the disappearance of Miss Jones, but we are aware of certain factors tying him to the possibility of financial corruption in Sentry Creek.&quot; More to come.//
+&lt;/map&gt;
+
+&lt;script&gt;
+ $(&#39;area&#39;).on(&#39;click&#39;, function(e){
+   e.preventDefault();
+   Harlowe.goto(this.alt);
+ });
+&lt;/script&gt;
+
+&lt;script&gt;
+ $(&#39;area&#39;).on(&#39;click&#39;, function(e){
+   e.preventDefault();
+   Harlowe.goto(this.alt);
+ });
+$(&#39;map&#39;).imageMapResize();
+&lt;/script&gt;
+
+&lt;div style=&quot;display:none;&quot;
+[[Fall From Grace]]&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="184" name="Fall From Grace" tags="Evidence" position="1500,2300" size="100,100">//Local police have today announced the official removal of Detective Inspector Robert Deacon from his role heading the ongoing investigation into the disappearance of high school English teacher and resident Daphne Marie Jones. Miss Jones was last seen on the 31st of October, at around 5:30, walking back from Sentry Creek Secondary School, towards her home on Silent Hill. Her neighbour, Mrs Deborah Forsythe, said the following of the brief exchange they shared in the street: &quot;She seemed completely normal. I didn&#39;t ask her what she was doing later...It didn&#39;t occur to me that I wouldn&#39;t see her ever again.&quot; The removal of Deacon arrives on the coattails of shocking allegations about police involvement in a financial corruption coup. Sentry Creek Mayor Paul Reid has been accused of sinking public funds into his own accounts; a revelation made at the hands of both his book-keeper James Hurst and his secretary Suzette MacNab. An investigation into the depth of corruption in local government - and conspiracy to cover it up by the police - has been promised by Chief Commissioner Gregory Salt. In a press conference on Monday, Salt said the following &quot;I am unable to comment on what is currently part of an ongoing investigation, but I will say that Metropolitan Melbourne Police have been asked to take charge of the investigation...We are not of the belief that Detective Inspector Deacon was involved in the disappearance of Miss Jones, but we are aware of certain factors tying him to the possibility of financial corruption in Sentry Creek.&quot; More to come.//
 
 (click-replace: &quot;Her neighbour, Mrs Deborah Forsythe, said the following of the brief exchange they shared in the street&quot;) [(go-to: &quot;A Portrait of Miss Jones&quot;)]
 
