@@ -698,7 +698,28 @@ Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;
 
 &lt;map name=&quot;image-map&quot;&gt;
     &lt;area target=&quot;&quot; alt=&quot;Paid Off&quot; title=&quot;Paid Off&quot; href=&quot;&quot; coords=&quot;1537,430,1935,583&quot; shape=&quot;rect&quot;&gt;
-&lt;/map&gt;</tw-passagedata><tw-passagedata pid="147" name="Paid Off" tags="Evidence" position="1100,3000" size="100,100">//The following is an accompanying note which was found alongside this cheque.//
+&lt;/map&gt;
+
+
+&lt;script&gt;
+ $(&#39;area&#39;).on(&#39;click&#39;, function(e){
+   e.preventDefault();
+   Harlowe.goto(this.alt);
+ });
+&lt;/script&gt;
+
+&lt;script&gt;
+ $(&#39;area&#39;).on(&#39;click&#39;, function(e){
+   e.preventDefault();
+   Harlowe.goto(this.alt);
+ });
+$(&#39;map&#39;).imageMapResize();
+&lt;/script&gt;
+
+&lt;div style=&quot;display:none;&quot;
+[[Paid Off]]&gt;
+&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="147" name="Paid Off" tags="Evidence" position="1100,3000" size="100,100">//The following is an accompanying note which was found alongside this cheque.//
 
 ---
 
