@@ -913,7 +913,30 @@ $(&#39;map&#39;).imageMapResize();
     &lt;area target=&quot;&quot; alt=&quot;A IS FOR&quot; title=&quot;A IS FOR&quot; href=&quot;&quot; coords=&quot;103,991,288,1195&quot; shape=&quot;rect&quot;&gt;
 &lt;/map&gt;
 
-</tw-passagedata><tw-passagedata pid="191" name="Miss Jones Timeline" tags="Evidence BEV-PAPER" position="1500,2500" size="100,100"> &lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt; (text-colour: black)[Timeline of events leading up to the disappearance of Daphne Marie Jones]
+
+&lt;script&gt;
+ $(&#39;area&#39;).on(&#39;click&#39;, function(e){
+   e.preventDefault();
+   Harlowe.goto(this.alt);
+ });
+&lt;/script&gt;
+
+&lt;script&gt;
+ $(&#39;area&#39;).on(&#39;click&#39;, function(e){
+   e.preventDefault();
+   Harlowe.goto(this.alt);
+ });
+$(&#39;map&#39;).imageMapResize();
+&lt;/script&gt;
+
+&lt;div style=&quot;display:none;&quot;
+[[T IS FOR]]
+[[D IS FOR]]
+[[H IS FOR]]
+[[K IS FOR]]
+[[O IS FOR]]
+[[A IS FOR]]&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="191" name="Miss Jones Timeline" tags="Evidence BEV-PAPER" position="1500,2500" size="100,100"> &lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt; (text-colour: black)[Timeline of events leading up to the disappearance of Daphne Marie Jones]
 
 (click-replace: &quot;leading up to the disappearance of Daphne Marie Jones&quot;)  [(go-to: &quot;An Obsession&quot;)]
 </tw-passagedata><tw-passagedata pid="192" name="An Obsession" tags="BEV-PAPER Evidence" position="1600,2500" size="100,100">&lt;span style=&quot;font-family: &#39;Nothing You Could Do&#39;, monospace;&quot;&gt; (text-colour: black) [//3:30 pm, 31st of October.// We finish English with Miss Jones, she packs her bag hastily and tells us to make sure we complete our MacBeth essays over the school holidays.]  
@@ -1048,7 +1071,7 @@ Read (t8n-depart: &quot;flicker&quot;) [[&lt;span style=&quot;font-family: &#39;
 
 (click-replace: &quot;Vivian bursts out laughing, clapping her hands together.&quot;) [(go-to: &quot;Overactive Imagination&quot;)]</tw-passagedata><tw-passagedata pid="238" name="Overactive Imagination" tags="Characters" position="600,2100" size="100,100">//Margaret Frost:// VIVIAN! I should box you around the ears. I can&#39;t apologise enough, Detective Deacon, Vivian has a very hyperactive imagination that we&#39;ve been trying to stamp out of her, haven&#39;t we, Vivian? Not even the belt is good enough incentive for this one.
 
-(click-replace: &quot;Not even the belt is good enough incentive for this one.&quot;)  [(go-to: &quot;Little Old Me&quot;)]</tw-passagedata><tw-passagedata pid="239" name="Little Old Me?" tags="Characters" position="700,2100" size="100,100">//Vivian Grieve:// What, Detective, if I didn&#39;t know better, I&#39;d say you look scared of a teenage girl.
+(click-replace: &quot;Not even the belt is good enough incentive for this one.&quot;)  [(go-to: &quot;Little Old Me?&quot;)]</tw-passagedata><tw-passagedata pid="239" name="Little Old Me?" tags="Characters" position="700,2100" size="100,100">//Vivian Grieve:// What, Detective, if I didn&#39;t know better, I&#39;d say you look scared of a teenage girl.
 
 (click-replace: &quot;I&#39;d say you look scared of a teenage girl.&quot;) [(go-to: &quot;Seriously Now&quot;)]</tw-passagedata><tw-passagedata pid="240" name="Seriously Now" tags="Characters" position="500,2200" size="100,100">//Detective Inspector Deacon:// I&#39;ve had just about enough of you, Vivian. Do you know how easy it is for you kids to get forgotten about? To become nothing but a scribble in a ledger on a dusty bookshelf. You had best start telling the truth, the serious hard truth, or I can make you disappear to somewhere a whole lot nastier than Sentry Creek. Without your friends, without nice Mrs Frost here, looking out for you. 
 
