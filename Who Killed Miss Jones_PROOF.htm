@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<!-- saved from url=(0099)file:///Users/livdelesantis/Documents/Twine/Scratch/proof-8ebc4d2b-fe63-4f88-b39f-59c337dd72f9.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Who Killed Miss Jones?
+</title>
+
+<style>
+body
+{
+	font: 10pt Cousine, monospace;
+	margin: 2em;
+}
+
+h1
+{
+	font-size: 14pt;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+tw-storydata
+{
+	display: block !important;
+}
+
+tw-passagedata
+{
+	display: block !important;
+	line-height: 200%;
+	margin-bottom: 2em;
+	white-space: pre-wrap;
+}
+
+tw-passagedata + tw-passagedata
+{
+	border-top: 1pt dashed black;
+	padding-top: 2em;
+}
+
+tw-passagedata:before
+{
+	content: attr(name);
+	display: block;
+	font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Who Killed Miss Jones?
+</h1>
+<tw-storydata name="Who Killed Miss Jones?" startnode="19" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="3E629193-202B-403D-BD76-622DFFA99AB7" options="" tags="" zoom="0.6" hidden=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Corinthia:wght@400;700&family=Meddon&family=MonteCarlo&family=Nothing+You+Could+Do&family=Pinyon+Script&family=Zeyada&display=swap');
+
+tw-story[tags~="begin"] {
+  font-family: 'Cedarville Cursive', cursive;
+  color: #FFFFFF;
+  background-color: #000;
+}
+
+tw-story[tags~="miss-jones-background"] {  /* the tag added in step 2 */
+  background-image: url(images/missjones.jpg);  /* the image added in step 1 */
+  background-size: cover;  /* cover the whole element */
+  background-repeat: no-repeat;  /* do not repeat the background image */
+}
+
+tw-story[tags~="Carmen's-Journal"] {  /* the tag added in step 2 */
+  background-image: url(./images/papertexture.jpg);  /* the image added in step 1 */
+  background-size: cover;  /* cover the whole element */
+  background-repeat: no-repeat;  /* do not repeat the background image */
+}
+
+tw-story[tags~="Dr-Hepworth"] {  /* the tag added in step 2 */
+  background-image: url(./images/drhepworth.jpg);  /* the image added in step 1 */
+  background-size: cover;  /* cover the whole element */
+  background-repeat: no-repeat;  /* do not repeat the background image */
+}
+
+tw-story {
+    justify-content: center;
+}
+
+
+tw-link, .enchantment-link {
+	color: #FFFFFF;
+}
+
+  tw-passage[tags~="imagemap"] {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  tw-passage[tags~="imagemap"] img {
+    max-width: 100% !important;
+    max-height: calc(90vh - 2cm) !important; /* You can also change this figure to just 90vh */
+    object-fit: contain !important;
+    margin: 0 auto 0 auto !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+
+tw-story[tags~="music-sheet"] {  /* the tag added in step 2 */
+  background-image: url(./images/musicpaper.jpg);  /* the image added in step 1 */
+  background-size: cover;  /* cover the whole element */
+  background-repeat: no-repeat;  /* do not repeat the background image */
+}
+
+
+
+tw-story[tags~="Priscilla-Bible"] {  /* the tag added in step 2 */
+  background-image: url(./images/priscillajournal.jpg);  /* the image added in step 1 */
+  background-size: cover;  /* cover the whole element */
+  background-repeat: no-repeat;  /* do not repeat the background image */
+}
+
+
+tw-story[tags~="letter-to-wes"] {  /* the tag added in step 2 */
+  background-image: url(./images/lettertowes.jpg);  /* the image added in step 1 */
+  background-size: cover;  /* cover the whole element */
+  background-repeat: no-repeat;  /* do not repeat the background image */
+}
+
+tw-story[tags~="BEV-PAPER"] {  /* the tag added in step 2 */
+  background-image: url(./images/BEVPAPER.jpg);  /* the image added in step 1 */
+  background-size: cover;  /* cover the whole element */
+  background-repeat: no-repeat;  /* do not repeat the background image */
+}
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">/*! Image Map Resizer (imageMapResizer.min.js ) - v1.0.10 - 2019-04-10
+ *  Desc: Resize HTML imageMap to scaled image.
+ *  Copyright: (c) 2019 David J. Bradshaw - dave@bradshaw.net
+ *  License: MIT
+ */
+
+!function(){"use strict";function r(){function e(){var r={width:u.width/u.naturalWidth,height:u.height/u.naturalHeight},a={width:parseInt(window.getComputedStyle(u,null).getPropertyValue("padding-left"),10),height:parseInt(window.getComputedStyle(u,null).getPropertyValue("padding-top"),10)};i.forEach(function(e,t){var n=0;o[t].coords=e.split(",").map(function(e){var t=1==(n=1-n)?"width":"height";return a[t]+Math.floor(Number(e)*r[t])}).join(",")})}function t(e){return e.coords.replace(/ *, */g,",").replace(/ +/g,",")}function n(){clearTimeout(d),d=setTimeout(e,250)}function r(e){return document.querySelector('img[usemap="'+e+'"]')}var a=this,o=null,i=null,u=null,d=null;"function"!=typeof a._resize?(o=a.getElementsByTagName("area"),i=Array.prototype.map.call(o,t),u=r("#"+a.name)||r(a.name),a._resize=e,u.addEventListener("load",e,!1),window.addEventListener("focus",e,!1),window.addEventListener("resize",n,!1),window.addEventListener("readystatechange",e,!1),document.addEventListener("fullscreenchange",e,!1),u.width===u.naturalWidth&&u.height===u.naturalHeight||e()):a._resize()}function e(){function t(e){e&&(!function(e){if(!e.tagName)throw new TypeError("Object is not a valid DOM element");if("MAP"!==e.tagName.toUpperCase())throw new TypeError("Expected <MAP> tag, found <"+e.tagName+">.")}(e),r.call(e),n.push(e))}var n;return function(e){switch(n=[],typeof e){case"undefined":case"string":Array.prototype.forEach.call(document.querySelectorAll(e||"map"),t);break;case"object":t(e);break;default:throw new TypeError("Unexpected data type ("+typeof e+").")}return n}}"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&"object"==typeof module.exports?module.exports=e():window.imageMapResize=e(),"jQuery"in window&&(window.jQuery.fn.imageMapResize=function(){return this.filter("map").each(r).end()})}();
+//# sourceMappingURL=imageMapResizer.map
+
+// Harlowe Macro Framework, by Chapel; version 1.0.2
+;!function(){"use strict";var r={major:1,minor:0,patch:2},e=[r.major,r.minor,r.patch].join(".");r.semantic=e,r=Object.freeze(r);var t=$("tw-storydata"),a=Object.freeze({name:t.attr("name"),ifid:t.attr("ifid")}),n=t.attr("format-version"),o=n.split("."),i=Object.freeze({major:o[0],minor:o[1],patch:o[2],semantic:n});window.Harlowe=window.Harlowe||{},window.Harlowe=Object.assign(window.Harlowe,{framework:r,API_ACCESS:Object.freeze({MACROS:require("macros"),STATE:require("state"),CHANGER:require("datatypes/changercommand"),ENGINE:require("engine")}),engine:i,story:a})}(),function(){"use strict";function e(r){return"number"==typeof r||"boolean"==typeof r||"string"==typeof r||null===r||Array.isArray(r)&&r.every(e)||r instanceof Set&&Array.from(r).every(e)||r instanceof Map&&Array.from(r.values()).every(e)||_changer.isPrototypeOf(r)}window.Harlowe=Object.assign(window.Harlowe,{helpers:{isSerialisable:e,isSerializable:e,arrayify:function(r,e){if(r){var t=[].slice.call(r);return void 0!==e&&(t=t.slice(e)),t}},getPassageData:function(r){var e=$('tw-passagedata[name="'+r+'"]');if(e[0])return e}}})}(),function(){"use strict";var n=window.localStorage||!1,o=Harlowe.story.ifid+"-tw-storage";function r(){try{if(!n)throw new Error("storage is inaccessible");n.setItem(o,JSON.stringify({ifid:Harlowe.story.ifid}))}catch(r){console.warn(r)}}function i(r){try{var e;if(n)return e=JSON.parse(n.getItem(o)),r&&r&&"string"==typeof r?e[r]:e;throw new Error("storage is inaccessible")}catch(r){console.warn(r)}}null==i()&&r(),Harlowe.storage={clear:r,save:function(r,e){try{if(!r||"string"!=typeof r)throw new TypeError("cannot store values without a valid storage key");if(void 0===e)throw new TypeError("cannot store undefined values");var t={};if(t[r]=e,!n)throw new Error("storage is inaccessible");var a=i();Object.assign(a,t),n.setItem(o,JSON.stringify(a))}catch(r){console.warn(r)}},load:i,remove:function(r){try{if(!r||"string"!=typeof r)throw new TypeError("cannot store values without a valid storage key");if(!n)throw new Error("storage is inaccessible");var e=i();e.hasOwnProperty(r)&&(delete e[r],n.setItem(o,JSON.stringify(e)))}catch(r){console.warn(r)}}}}(),function(){"use strict";function a(r,e,t){if(!(this instanceof a))return new a(r,e,t);this.name=r||"unknown",this.args=e||[],this.data=t||{},this.type=t&&t.type||"basic",this.fn=t&&t.fn||"handler","changer"===this.type&&("handler"===this.fn?this.instance=t&&t.instance||null:this.descriptor=t&&t.descriptor||null)}a.create=function(r,e,t){if(!r||"string"!=typeof r||!r.trim())throw new TypeError("Invalid macro name.");return e&&e instanceof Array||(e=[]),t&&"object"==typeof t||(t={type:"basic",fn:"handler"}),new a(r,e,t)},Object.assign(a.prototype,{clone:function(){return a.create(this.name,this.args,this.data)},syntax:function(){return"("+this.name+":)"},error:function(r,e){var t="Error in the "+this.syntax()+" macro: "+r;return e&&alert(t),console.warn("HARLOWE CUSTOM MACRO ERROR -> ",t),new Error(r)},typeCheck:function(r){r&&r instanceof Array||(r=Harlowe.helpers.arrayify(arguments));var n=this,o=[];if(r.forEach(function(r,e){var t=e+1,a=[];"string"==typeof r&&("any"===(a=r.includes("|")?r.split("|").map(function(r){return r.trim().toLowerCase()}):[r.trim().toLowerCase()])[0]||a.some(function(r){return typeof n.args[e]===r})||o.push("argument "+t+" should be a(n) "+a.join(" or ")))}),o.length)return n.error(o.join("; "))}}),window.Harlowe=Object.assign(window.Harlowe,{MacroContext:a})}(),function(){"use strict";var c=Harlowe.API_ACCESS.MACROS,l=Harlowe.API_ACCESS.CHANGER;window.Harlowe=Object.assign(window.Harlowe||{},{macro:function(r,e,t){if(!r||"string"!=typeof r||!r.trim())throw new TypeError("Invalid macro name.");if(!e||"function"!=typeof e)throw new TypeError("Invalid macro handler.");var a,n,o,i,s;t&&"function"==typeof t?(o=r,i=e,s=t,c.addChanger(o,function(){var r=Harlowe.helpers.arrayify(arguments,1),e=l.create(o,r),t=Harlowe.MacroContext.create(o,r,{type:"changer",fn:"handler",instance:e});return i.apply(t,r),e},function(){var r=Harlowe.helpers.arrayify(arguments),e=r.shift(),t=Harlowe.MacroContext.create(o,r,{type:"changer",fn:"changer",descriptor:e});s.apply(t,r)},c.TypeSignature.zeroOrMore(c.TypeSignature.Any))):(a=r,n=e,c.add(a,function(){var r=Harlowe.helpers.arrayify(arguments,1),e=Harlowe.MacroContext.create(a,r,{type:"basic",fn:"handler"}),t=n.apply(e,r);return null==t?"":t},c.TypeSignature.zeroOrMore(c.TypeSignature.Any)))}})}(),function(){"use strict";var t=Harlowe.API_ACCESS.STATE,e=Harlowe.API_ACCESS.ENGINE;function a(){return t.passage}window.Harlowe=Object.assign(window.Harlowe||{},{passage:a,tags:function(r){r=r||a();try{var e=Harlowe.helpers.getPassageData(r).attr("tags");return e?e.split(" "):[]}catch(r){return console.warn(r.message),[]}},goto:function(r){return e.goToPassage(r)},variable:function(r,e){if("$"!==r[0])throw new Error('cannot access variable "'+r+'"');if(r=r.substr(1),void 0!==e){if(!Harlowe.helpers.isSerialisable(e))throw new Error('The value passed to variable "'+r+'" cannot be serialized.');t.variables[r]=e}return t.variables[r]},visited:function(r){return t.passageNameVisited(r||a())},hasVisited:function(r){return 0<t.passageNameVisited(r||a())},turns:function(){return t.pastLength}})}();
+// end Harlowe Macro Framework
+
+// Harlowe Macro Framework, by Chapel; version 1.0.2
+;!function(){"use strict";var r={major:1,minor:0,patch:2},e=[r.major,r.minor,r.patch].join(".");r.semantic=e,r=Object.freeze(r);var t=$("tw-storydata"),a=Object.freeze({name:t.attr("name"),ifid:t.attr("ifid")}),n=t.attr("format-version"),o=n.split("."),i=Object.freeze({major:o[0],minor:o[1],patch:o[2],semantic:n});window.Harlowe=window.Harlowe||{},window.Harlowe=Object.assign(window.Harlowe,{framework:r,API_ACCESS:Object.freeze({MACROS:require("macros"),STATE:require("state"),CHANGER:require("datatypes/changercommand"),ENGINE:require("engine")}),engine:i,story:a})}(),function(){"use strict";function e(r){return"number"==typeof r||"boolean"==typeof r||"string"==typeof r||null===r||Array.isArray(r)&&r.every(e)||r instanceof Set&&Array.from(r).every(e)||r instanceof Map&&Array.from(r.values()).every(e)||_changer.isPrototypeOf(r)}window.Harlowe=Object.assign(window.Harlowe,{helpers:{isSerialisable:e,isSerializable:e,arrayify:function(r,e){if(r){var t=[].slice.call(r);return void 0!==e&&(t=t.slice(e)),t}},getPassageData:function(r){var e=$('tw-passagedata[name="'+r+'"]');if(e[0])return e}}})}(),function(){"use strict";var n=window.localStorage||!1,o=Harlowe.story.ifid+"-tw-storage";function r(){try{if(!n)throw new Error("storage is inaccessible");n.setItem(o,JSON.stringify({ifid:Harlowe.story.ifid}))}catch(r){console.warn(r)}}function i(r){try{var e;if(n)return e=JSON.parse(n.getItem(o)),r&&r&&"string"==typeof r?e[r]:e;throw new Error("storage is inaccessible")}catch(r){console.warn(r)}}null==i()&&r(),Harlowe.storage={clear:r,save:function(r,e){try{if(!r||"string"!=typeof r)throw new TypeError("cannot store values without a valid storage key");if(void 0===e)throw new TypeError("cannot store undefined values");var t={};if(t[r]=e,!n)throw new Error("storage is inaccessible");var a=i();Object.assign(a,t),n.setItem(o,JSON.stringify(a))}catch(r){console.warn(r)}},load:i,remove:function(r){try{if(!r||"string"!=typeof r)throw new TypeError("cannot store values without a valid storage key");if(!n)throw new Error("storage is inaccessible");var e=i();e.hasOwnProperty(r)&&(delete e[r],n.setItem(o,JSON.stringify(e)))}catch(r){console.warn(r)}}}}(),function(){"use strict";function a(r,e,t){if(!(this instanceof a))return new a(r,e,t);this.name=r||"unknown",this.args=e||[],this.data=t||{},this.type=t&&t.type||"basic",this.fn=t&&t.fn||"handler","changer"===this.type&&("handler"===this.fn?this.instance=t&&t.instance||null:this.descriptor=t&&t.descriptor||null)}a.create=function(r,e,t){if(!r||"string"!=typeof r||!r.trim())throw new TypeError("Invalid macro name.");return e&&e instanceof Array||(e=[]),t&&"object"==typeof t||(t={type:"basic",fn:"handler"}),new a(r,e,t)},Object.assign(a.prototype,{clone:function(){return a.create(this.name,this.args,this.data)},syntax:function(){return"("+this.name+":)"},error:function(r,e){var t="Error in the "+this.syntax()+" macro: "+r;return e&&alert(t),console.warn("HARLOWE CUSTOM MACRO ERROR -> ",t),new Error(r)},typeCheck:function(r){r&&r instanceof Array||(r=Harlowe.helpers.arrayify(arguments));var n=this,o=[];if(r.forEach(function(r,e){var t=e+1,a=[];"string"==typeof r&&("any"===(a=r.includes("|")?r.split("|").map(function(r){return r.trim().toLowerCase()}):[r.trim().toLowerCase()])[0]||a.some(function(r){return typeof n.args[e]===r})||o.push("argument "+t+" should be a(n) "+a.join(" or ")))}),o.length)return n.error(o.join("; "))}}),window.Harlowe=Object.assign(window.Harlowe,{MacroContext:a})}(),function(){"use strict";var c=Harlowe.API_ACCESS.MACROS,l=Harlowe.API_ACCESS.CHANGER;window.Harlowe=Object.assign(window.Harlowe||{},{macro:function(r,e,t){if(!r||"string"!=typeof r||!r.trim())throw new TypeError("Invalid macro name.");if(!e||"function"!=typeof e)throw new TypeError("Invalid macro handler.");var a,n,o,i,s;t&&"function"==typeof t?(o=r,i=e,s=t,c.addChanger(o,function(){var r=Harlowe.helpers.arrayify(arguments,1),e=l.create(o,r),t=Harlowe.MacroContext.create(o,r,{type:"changer",fn:"handler",instance:e});return i.apply(t,r),e},function(){var r=Harlowe.helpers.arrayify(arguments),e=r.shift(),t=Harlowe.MacroContext.create(o,r,{type:"changer",fn:"changer",descriptor:e});s.apply(t,r)},c.TypeSignature.zeroOrMore(c.TypeSignature.Any))):(a=r,n=e,c.add(a,function(){var r=Harlowe.helpers.arrayify(arguments,1),e=Harlowe.MacroContext.create(a,r,{type:"basic",fn:"handler"}),t=n.apply(e,r);return null==t?"":t},c.TypeSignature.zeroOrMore(c.TypeSignature.Any)))}})}(),function(){"use strict";var t=Harlowe.API_ACCESS.STATE,e=Harlowe.API_ACCESS.ENGINE;function a(){return t.passage}window.Harlowe=Object.assign(window.Harlowe||{},{passage:a,tags:function(r){r=r||a();try{var e=Harlowe.helpers.getPassageData(r).attr("tags");return e?e.split(" "):[]}catch(r){return console.warn(r.message),[]}},goto:function(r){return e.goToPassage(r)},variable:function(r,e){if("$"!==r[0])throw new Error('cannot access variable "'+r+'"');if(r=r.substr(1),void 0!==e){if(!Harlowe.helpers.isSerialisable(e))throw new Error('The value passed to variable "'+r+'" cannot be serialized.');t.variables[r]=e}return t.variables[r]},visited:function(r){return t.passageNameVisited(r||a())},hasVisited:function(r){return 0<t.passageNameVisited(r||a())},turns:function(){return t.pastLength}})}();
+// end Harlowe Macro Framework</script><tw-tag name="begin" color="blue"></tw-tag><tw-tag name="Inspector-Shute" color="purple"></tw-tag><tw-tag name="Setting" color="green"></tw-tag><tw-tag name="Evidence" color="red"></tw-tag><tw-tag name="Plot-Progression" color="orange"></tw-tag><tw-tag name="Characters" color="purple"></tw-tag><tw-passagedata pid="1" name="Welcome to Who Killed Miss Jones" tags="align-centre miss-jones-background begin" position="600,250" size="100,100">=&gt;&lt;=
+(transition-depart: "flicker") [[begin]]
+
+&lt;audio src="./audio/musicbox.mp3" autoplay loop&gt;&lt;/audio&gt;
+</tw-passagedata><tw-passagedata pid="2" name="begin" tags="Characters" position="600,375" size="100,100">(set: $typewriterText to "2025")
+(display: "Typewriter")
+
+(click-replace: "2025") [//Detective Inspector Shute:// Thank you for getting here so promptly.]
+
+(click-append: "promptly.") [ We have compiled all the evidence we've gathered over the past forty years into these boxes.]
+
+(click-append: "these boxes.") [ It'll be nice to get a fresh set of eyes on it all. Whole place is buzzing since Terry dug up those bones.]
+
+(click-append: "those bones.") [ Anyway, sorry about the mess in here. Can't really spare too many bodies for cold case investigations in this town. Speaking of, did you find us alright?] 
+
+(click-append: "did you find us alright?") [(go-to: "did you find us alright?")]
+
+
+
+
+
+</tw-passagedata><tw-passagedata pid="3" name="Typewriter" tags="" position="800,200" size="100,100">{
+    &lt;!-- Create a variable to track the position within the $typewriterText string --&gt;
+    (set: $typewriterPos to 1)
+
+    &lt;!-- Create a hook to hold the typed text --&gt;
+    |typewriterOutput&gt;[]
+
+    &lt;!-- Set a delay of 20ms seconds per loop --&gt;
+    (live: 20ms)[
+
+        &lt;!-- Add the next character to the hook --&gt;
+        (append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
+
+        &lt;!-- Update the position --&gt;
+        (set: $typewriterPos to it + 1)
+
+        &lt;!-- If it's gone past the end, stop --&gt;
+        (if: $typewriterPos is $typewriterText's length + 1)[
+            (stop:)
+        ]
+    ]
+}</tw-passagedata><tw-passagedata pid="4" name="No" tags="Setting" position="850,500" size="100,100">Detective Inspector Shute: Well, you wouldn't be the first. Some would say that's why nobody's found Miss Jones for almost fifty years. Nature hides the dirtiest of deeds in [[Sentry Creek.-&gt;Sentry Creek.]]</tw-passagedata><tw-passagedata pid="5" name="Yes" tags="Setting" position="325,500" size="100,100">//Detective Inspector Shute:// The last bunch of city coppers we had here hadn't even heard of [[Sentry Creek.-&gt;Sentry Creek.]]</tw-passagedata><tw-passagedata pid="6" name="Sentry Creek." tags="Characters" position="550,500" size="100,100">''Detective Shute:'' Well, I'll leave you to it. There's Jarrah in the metal tin in the kitchen, but you'll need to bring your own mug. Pub's open all day, closes at nine-thirty. If you need anything, [[I'll be in my office.]]
+
+(after: 3s) [&lt;audio src="./audio/doorclose.mp3" autoplay&gt;&lt;/audio&gt;]
+
+
+
+
+
+
+
+
+
+</tw-passagedata><tw-passagedata pid="7" name="did you find us alright?" tags="Plot-Progression" position="675,600" size="100,100">[ [[Yes]] or [[No]]]</tw-passagedata><tw-passagedata pid="8" name="I&#39;ll be in my office." tags="Setting" position="300,625" size="100,100">You're alone in the tiny alcove now. It's a cramped brown-brick nook in the wall, complete with a droning, wobbly fan, a coffee-stained mug enscribed with //World's Greatest Detective// that is holding a few biros. A large huntsman in the top left corner of the ceiling watches you with its eight glossy black eyes. On the weathered desk in front of you are two bursting cardboard boxes.
+
+(after: 2s) [&lt;audio src="./audio/fan.mp3" autoplay&gt;&lt;/audio&gt;]
+
+(click-append: "two bursting cardboard boxes") [(go-to: "cardboard boxes")]</tw-passagedata><tw-passagedata pid="9" name="cardboard boxes" tags="Evidence" position="500,650" size="100,100">There are manila folders stacked ontop of one another. The crinkled corners of sepia-toned photographs peer out from beneath newspaper clippings, held together with paperclips. You dig out [[the first five folders]].
+
+(after: 3s) [&lt;audio src="./audio/paper.mp3" autoplay&gt;&lt;/audio&gt;]
+
+</tw-passagedata><tw-passagedata pid="10" name="Key to Story Map Colour Coding" tags="" position="400,200" size="100,100">(text-colour:purple)[Purple: Characters]
+(text-colour:orange)[Orange: Plot Progression ]
+(text-colour:green)[Green: Settings and World Building ]
+(text-colour:red)[Red: Evidence ]
+</tw-passagedata><tw-passagedata pid="11" name="the first five folders" tags="Evidence the-first-five-folders Plot-Progression" position="500,800" size="100,100">Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Cedarville Cursive', monospace;"&gt;The Autopsy&lt;/span&gt;|The Autopsy]] 
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Pinyon Script', monospace;"&gt;Carmen&lt;/span&gt;|Carmen]] 
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Zeyada', monospace;"&gt;Priscilla&lt;/span&gt;|Priscilla]] 
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt;Beverly&lt;/span&gt;|Beverly]] 
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Meddon', monospace;"&gt;Vivian&lt;/span&gt;|Vivian]] 
+
+</tw-passagedata><tw-passagedata pid="12" name="The Autopsy" tags="Evidence imagemap" position="900,700" size="100,100">
+&lt;!-- Image Map Generated by http://www.image-map.net/ --&gt;
+&lt;img src="./images/autopsy1.jpg" usemap="#image-map"&gt;
+
+&lt;map name="image-map"&gt;
+    &lt;area target="" alt="Terry's House" title="Terry's House" href="" coords="740,1048,1210,1598" shape="rect"&gt;
+&lt;/map&gt;
+
+&lt;script&gt;
+ $('area').on('click', function(e){
+   e.preventDefault();
+   Harlowe.goto(this.alt);
+ });
+&lt;/script&gt;
+
+&lt;script&gt;
+ $('area').on('click', function(e){
+   e.preventDefault();
+   Harlowe.goto(this.alt);
+ });
+$('map').imageMapResize();
+&lt;/script&gt; 
+
+&lt;div style="display:none;"
+[[Terry's House]]&gt;
+&lt;/div&gt;
+
+[Page two appears to be missing. You need to keep digging through the evidence box...] </tw-passagedata><tw-passagedata pid="13" name="Carmen" tags="Characters imagemap" position="100,800" size="100,100">[[&lt;img class="story-image" src="./images/CARMEN.jpg" alt="CARMEN" /&gt;-&gt;Carmen's Statement]]
+</tw-passagedata><tw-passagedata pid="14" name="Priscilla" tags="Characters imagemap" position="1150,1000" size="100,100">[[&lt;img class="story-image" src="./images/PRISCILLA.jpg" alt="PRISCILLA" /&gt;-&gt;Priscilla's Statement]]</tw-passagedata><tw-passagedata pid="15" name="Vivian" tags="Characters imagemap" position="600,1000" size="100,100">[[&lt;img class="story-image" src="./images/VIVIAN.jpg" alt="PRISCILLA" /&gt;-&gt;Vivian's Statement]]</tw-passagedata><tw-passagedata pid="16" name="Beverly" tags="Characters imagemap" position="1575,1000" size="100,100">[[&lt;img class="story-image" src="./images/BEVERLY.jpg" alt="BEVERLY" /&gt;-&gt;Beverly's Statement]]</tw-passagedata><tw-passagedata pid="17" name="Terry&#39;s House" tags="Evidence Characters" position="1100,825" size="100,100">//Transcript of Interview with Terry Eade, April 25th, 2025. Recorded at Sentry Creek Police Station. Detective Inspector Gordon Shute and Mr Terry Eade present. Time at beginning of recording:// [[3:17 pm.]]</tw-passagedata><tw-passagedata pid="18" name="Cause of Death" tags="Evidence imagemap" position="1100,600" size="100,100">&lt;!-- Image Map Generated by http://www.image-map.net/ --&gt;
+&lt;img src="./images/autopsy2.jpg" usemap="#image-map"&gt;
+
+&lt;map name="image-map"&gt;
+    &lt;area target="" alt="Bones" title="Bones" href="" coords="393,556,1007,1222" shape="rect"&gt;
+&lt;/map&gt;
+
+&lt;script&gt;
+ $('area').on('click', function(e){
+   e.preventDefault();
+   Harlowe.goto(this.alt);
+ });
+&lt;/script&gt;
+
+&lt;script&gt;
+ $('area').on('click', function(e){
+   e.preventDefault();
+   Harlowe.goto(this.alt);
+ });
+$('map').imageMapResize();
+&lt;/script&gt;
+
+&lt;div style="display:none;"
+[[Bones]]&gt;
+&lt;/div&gt;
+
+</tw-passagedata><tw-passagedata pid="19" name="Warning and Disclaimer" tags="" position="600,100" size="100,100">=&gt;&lt;=
+''WARNING: ''
+
+//Who Killed Miss Jones?// is entirely a work of fiction. Portraits/photographs used to represent characters within this narrative do not reflect the actions, names, characteristics, existence or opinions of the real people depicted in the original resources. Any similarities to any persons living or dead are entirely unintended. All photographs have been sourced from royalty free heritage collections provided by //Museums Victoria and Te Papa Museum.// 
+
+Please note, the following interactive fiction piece contains disturbing content and themes including: murder, discussions of suicide, violence, domestic abuse, loss of pregnancy, grief, references to sexual assault and stalking. Read on at your own discretion. 
+
+
+[[&lt;span style="font-family: 'Cedarville Cursive', monospace;"&gt;Welcome to Who Killed Miss Jones&lt;/span&gt;|Welcome to Who Killed Miss Jones]]</tw-passagedata><tw-passagedata pid="20" name="3:17 pm." tags="Evidence" position="1225,825" size="100,100">//Inspector Gordon Shute: // Thank you for coming down, Terry. 
+
+(click-append: "Terry.") [ It's important that you know that this is an informal chat today about the discovery of human remains on your property on Monday. You do not have to answer any of the questions I ask you, but anything you do mention will be recorded.]
+
+(click-append: "anything you do mention will be recorded") [(go-to: "Human Remains")]
+
+</tw-passagedata><tw-passagedata pid="21" name="Human Remains" tags="Evidence" position="1325,825" size="100,100">//Terry Eade: // No worries, mate. Anything I can do to help. You know, it's a small town here, I don't like the idea that people are feeling unsafe. 
+
+(click-append: "are feeling unsafe.") [(go-to: "What Did You Find?")]
+
+</tw-passagedata><tw-passagedata pid="22" name="What Did You Find?" tags="Evidence" position="1425,825" size="100,100">//Detective Inspector Shute:// Terry, can you tell me what happened when you found the remains?  
+
+(click-append: "when you found the remains?") [(go-to: "Terry's Discovery")]</tw-passagedata><tw-passagedata pid="23" name="Terry&#39;s Discovery" tags="Evidence" position="1525,825" size="100,100">//Terry Eade:// Sure. I was getting ready to landscape my backyard. The missus has been nagging me to get on to it for months. I took the Bobcat down there and started digging up the old earth. Used to be an abandoned apple orchard before we bought the place. I dug about three feet into the soil and there she was: curled up in the dirt. So I 'come up to the house and called you mob. I thought it was her straight away. Her arms were crossed over her chest, like someone had put 'em like that. Dodgy business.
+
+(click-append: "Dodgy business.")  [(go-to: "Dodgy Business?")]</tw-passagedata><tw-passagedata pid="24" name="Dodgy Business?" tags="Evidence" position="1625,825" size="100,100">//Detective Inspector Shute:// Can you clarify why you immediately thought you had found the remains of Daphne Marie Jones? 
+
+(click-append: "the remains of Daphne Marie Jones?")  [(go-to: "Why Did You Assume?")]</tw-passagedata><tw-passagedata pid="25" name="Why Did You Assume?" tags="Evidence" position="1725,825" size="100,100">//Terry Eade:// You know it better than anyone - nothing criminal happens out here, Gordon. 'Cept bloody gutless, cheating bookies gouging prices, that's about it. I've lived here all me life. We all remember the day she turned up, pearls in her ears, high heels, smelt like bloody daisies. Never seen anything like it. Everyone wanted to know what she was about. 
+
+(click-append: "Everyone wanted to know what she was about.") [(go-to: "What Did You Think of Her?")]</tw-passagedata><tw-passagedata pid="26" name="What Did You Think of Her?" tags="Evidence" position="1825,825" size="100,100">//Detective Inspector Shute:// You worked as a local tradie at the time that Miss Jones was living in Sentry Creek. As you said, it's a small town - you must've run into one another. What was your opinion of her? Did you speak to her on any ocassions?
+
+(click-append: "Did you speak to her on any ocassions?") [(go-to: "She Was a Pretty Girl")]</tw-passagedata><tw-passagedata pid="27" name="She Was a Pretty Girl" tags="Evidence" position="1925,825" size="100,100">''//Terry laughs, there is a crackle in the tape. //''
+
+//Terry Eade:// What did I think of her? I thought the same thing as every bloke mooping 'round town. She was beautiful, foreign, like. Not how other girls carried themselves around here. I went round her place a couple times to sort out her electricity, one or two blown fuses. She was real private about stuff. Didn't want people knowing much about her. I wanted her, we all did, but you get an answer pretty loud and clear from girls like her before you can even ask.
+
+(click-append: "girls like her before you can even ask.") [(go-to: "Not Like Other Girls?")]</tw-passagedata><tw-passagedata pid="28" name="Not Like Other Girls?" tags="Evidence" position="2025,825" size="100,100">//Detective Inspector Shute:// So you did make an advance on Miss Jones during the six months she was living here? 
+
+(click-append: "during the six months she was living here?") [(go-to: "Advances?")]</tw-passagedata><tw-passagedata pid="29" name="Advances?" tags="Evidence" position="2125,825" size="100,100">//Terry Eade:// What exactly are you getting at, mate? If you're trying to imply that I had anything to do with that young lady's death...I can't bloody believe you, Gordon. If you ask me, some fancy bloke that she was seeing is the one who done her in. Got jealous. 
+
+(click-append: "is the one who done her in.") [(go-to: "Got Jealous")]</tw-passagedata><tw-passagedata pid="30" name="Got Jealous" tags="Evidence" position="2225,825" size="100,100">//Detective Inspector Shute:// No, no. I'm not implying anything at all, Terry. As I said, this is an informal chat. But Daphne's remains were found on your property, and that obliges me to ask you these questions. You say she was seeing someone, was that a local or someone outta town? 
+
+(click-append: "someone outta town?") [(go-to: "Someone Outta Town")]</tw-passagedata><tw-passagedata pid="31" name="Someone Outta Town" tags="Evidence" position="2325,825" size="100,100">//Terry Eade://  Listen, I get it, mate. Yeah, nah, it was some outsider. No one round here, we would've known. Drove a real posh car, some kinda metallic blue Pontiac. Always parked out front with the top down.
+
+(click-append: "parked out front with the top down.") [(go-to: "Metallic Blue Pontiac")]</tw-passagedata><tw-passagedata pid="32" name="Metallic Blue Pontiac" tags="Evidence" position="2425,825" size="100,100">(set: $MBP to true)//Detective Inspector Gordon Shute:// Alright well, thanks, Terry. We'll be in touch soon. Forensics should be done with the property in the next few hours. Interview terminated at 3:31 pm.
+
+(click-append: "Interview terminated at 3:31 pm.") [(go-to: "Reflection on Terry")]
+</tw-passagedata><tw-passagedata pid="33" name="Reflection on Terry" tags="Evidence" position="2525,825" size="100,100">Weird. That guy seems a little off-kilter, but then again, so is everything else in this town. Very suspicious that Daphne's remains were found on his property. You've handled plenty of cases where killers have done that - visit their victims like some sort of sick shrine. You reach down into the box and find another page entitled [[Cause of Death]].</tw-passagedata><tw-passagedata pid="34" name="Bones" tags="Evidence" position="1300,500" size="100,100">//There is an additional note written beside the two red crosses on hip region of the diagram.//
+
+From the journal of: &lt;span style="font-family: 'Cedarville Cursive', monospace;"&gt;Robyn St James, Senior Forensic Pathologist.&lt;/span&gt;
+
+Note that pubic symphysis appears to be present according to the structure of the illium. I.e: the hip bones have expanded to accommodate for growth in the womb. This would suggest that it is a high likelihood that the deceased was pregnant at the time of her death; I would predict around six months pregnant. 
+
+(click-append: "around six months pregnant") [(go-to: "Darcy")]
+
+</tw-passagedata><tw-passagedata pid="35" name="Darcy" tags="Characters Evidence" position="1425,500" size="100,100">//Transcript of Interview with Mr Darcy Curran, November 1st, 1964, Sentry Creek Police Station. Detective Inspector Robert Deacon and Mr Darcy Curran present. Time at beginning of recording: [[11:27 pm.]] //
+
+</tw-passagedata><tw-passagedata pid="36" name="11:27 pm." tags="Evidence" position="1550,500" size="100,100">//Detective Inspector Deacon: // Can I get you anything? A beer or something, mate? 
+
+(click-append: "A beer or something, mate?") [(go-to: "A Beer?")]</tw-passagedata><tw-passagedata pid="37" name="A Beer?" tags="Evidence" position="1675,500" size="100,100">//Darcy Curran:// Yeah, that'd be great, thanks. Bit shaken up to be honest with you, mate. That's why I came down here. 
+
+(click-append: "That's why I came down here.") [(go-to: "Missing?")]</tw-passagedata><tw-passagedata pid="38" name="Missing?" tags="Evidence" position="1800,500" size="100,100">//Detective Inspector Deacon:// Tell me what's happening, son. You said your missus has disappeared, is that right? Now, I've been in this gaff almost forty years, and I can tell you right now, they're never gone for long. Women are always running off, can't handle the heat. 
+
+(click-append: "can't handle the heat.") [(go-to: "Can't Handle The Heat")]</tw-passagedata><tw-passagedata pid="39" name="Can&#39;t Handle The Heat" tags="Evidence" position="1925,500" size="100,100">//Darcy Curran:// I know, mate. She said she was feeling extremely stressed, aggravated about something. I tried to ask her what, and she said she couldn't tell me, I wouldn't understand. Thought it might be something related to her hormones, you know how women are. It's been two weeks since I last saw her. I only started to suspect something might be wrong because she promised to come to a function my company was hosting, and she never showed. 
+
+(click-append: "she never showed.") [(go-to: "She Never Showed")]</tw-passagedata><tw-passagedata pid="40" name="She Never Showed" tags="Evidence" position="2050,500" size="100,100">//Detective Inspector Robert Deacon:// What do you do for work again, son? Some kind'a lawyer, aren't you? We like to know what we're dealing with in this town. 
+
+(click-append: "We like to know what we're dealing with in this town.")  [(go-to: "What We're Dealing With")]
+
+</tw-passagedata><tw-passagedata pid="41" name="What We&#39;re Dealing With" tags="Evidence" position="2175,500" size="100,100">//Darcy Curran:// Yes, I work at my father's firm in Collins Street. We're celebrating our 50th anniversary. Anyway, I was going to drive here, pick her up from her house and then take her to stay in the city for the weekend. Her house was empty, her car was still there. No note, no nothing. 
+
+//Curran laughs.// To be honest with you, I was a little annoyed. She had-sorry, //has// - gotten into the habit of running off at the smallest of inconveniences. 
+
+(click-append: "the smallest of inconveniences.") [(go-to: "The Smallest of Inconveniences")]</tw-passagedata><tw-passagedata pid="42" name="The Smallest of Inconveniences" tags="Evidence" position="2300,500" size="100,100">//Detective Inspector Deacon:// Yeah, well, women are prone to do that. Look, tell you what, she won't have gone far. I'll get some of my boys out there tonight, asking around, having a look. One thing is scratching at my old noggin...force of habit. Tell me, son, what's a real fancy girl like her doing out bush over here? How did you get all mixed up in this, good city boy like yourself, ey? 
+
+(click-append: "good city boy like yourself, ey?") [(go-to: "A Good City Boy")]</tw-passagedata><tw-passagedata pid="43" name="A Good City Boy" tags="Evidence" position="2425,500" size="100,100">//Darcy Curran:// //Curran laughs.// You're a man of the world, I'm sure, Mr Deacon. You know that sometimes a man's wife isn't capable of providing him with the kind of pleasures that are required to satisfy. Especially once she's had children. So sometimes...you have to look elsewhere. 
+
+(click-append: "you have to look elsewhere.") [(go-to: "Elsewhere")]</tw-passagedata><tw-passagedata pid="44" name="Elsewhere" tags="Evidence" position="2550,500" size="100,100">//Detective Inspector Deacon:// //laughs.//You city blokes certainly have a different lifestyle than we do around these parts. Well, I'll be in contact, son. Like I said, anything turns up, you'll be the first to know. Interview terminated at 11:40 pm. 
+
+(click-append: "Interview terminated at 11:40 pm.") [(go-to: "the next four folders")]</tw-passagedata><tw-passagedata pid="45" name="the next four folders" tags="Plot-Progression" position="700,725" size="100,100">Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Pinyon Script', monospace;"&gt;Carmen&lt;/span&gt;|Carmen]] 
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Zeyada', monospace;"&gt;Priscilla&lt;/span&gt;|Priscilla]] 
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt;Beverly&lt;/span&gt;|Beverly]] 
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Meddon', monospace;"&gt;Vivian&lt;/span&gt;|Vivian]] 
+</tw-passagedata><tw-passagedata pid="46" name="Carmen&#39;s Statement" tags="Characters" position="100,925" size="100,100">//Transcript of interview with Carmen Elliott, November 16th, 1964. Recorded at Sentry Creek Police Station. Detective Inspector Robert Deacon, Ms Carmen Elliott and Mrs Elliott - her mother, present. Time at beginning of recording: [[4:32 pm.]]// 
+
+</tw-passagedata><tw-passagedata pid="47" name="4:32 pm." tags="Characters" position="0,1100" size="100,100">//Detective Inspector Deacon:// Now, Mrs Elliott, it's important that you know that Carmen isn't in any trouble. We just need her to tell us anything that she can think of that might be important in relation to Daphne and where she might be. We all want the same thing here, and that's Daphne safe and sound at home. Do you understand that, Carmen?
+
+(click-append: "Do you understand that, Carmen?")  [(go-to: "Safe")]
+</tw-passagedata><tw-passagedata pid="48" name="What Carmen Saw" tags="Characters" position="100,1200" size="100,100">//Detective Inspector Deacon:// Now, your mother said that you had raised some concerns over the last few weeks about your neighbour Miss Jones, is that correct? 
+
+(click-append: "is that correct?") [(go-to: "My Girl Carmen")]</tw-passagedata><tw-passagedata pid="49" name="My Girl Carmen" tags="Characters" position="200,1200" size="100,100">//Mrs Elliott:// Mr Deacon, Carmen is prone to telling stories. I tell all my children it's a sin to tell fibs, but Carmen doesn't always understand...the difference between true and false. It's not her fault, you understand, she was born a bit soft in the head. 
+
+(click-append: "she was born a bit soft in the head.") [(go-to: "Soft In the Head?")]</tw-passagedata><tw-passagedata pid="50" name="Soft In the Head?" tags="Characters" position="0,1300" size="100,100">//Detective Inspector Deacon:// If I could ask that Carmen answers the questions for herself, please, Mrs Elliott. Carmen, if you could tell me //exactly// what you saw on the evening of Halloween?
+
+(click-append: "Halloween?") [(go-to: "Halloween?")]</tw-passagedata><tw-passagedata pid="51" name="Halloween?" tags="Characters" position="100,1300" size="100,100">//Carmen Elliott:// I don't know. I can't really remember what happened that night, Mr Deacon. I don't sleep very well at night, so my memory can get a little bit blurred.
+
+(click-append: "memory can get a little bit blurred.") [(go-to: "This is a Murder Enquiry, Carmen")]
+</tw-passagedata><tw-passagedata pid="52" name="Safe" tags="Characters" position="100,1100" size="100,100">//Carmen Elliott:// Yes, I understand. 
+
+(click-append: "Yes, I understand.") [(go-to: "Carmen's Vitals")]</tw-passagedata><tw-passagedata pid="53" name="This is a Murder Enquiry, Carmen" tags="Characters" position="200,1300" size="100,100">//Detective Inspector Deacon:// Experience tells me that this is all a big misunderstanding, Miss Elliott, but I need to know what you //can// remember so that we can find Daphne, okay?  
+
+(click-append: "so that we can find Daphne, okay?") [(go-to: "Something Bad Happened")]
+</tw-passagedata><tw-passagedata pid="54" name="Something Bad Happened" tags="Characters" position="0,1400" size="100,100">//There is a long pause//
+
+//Carmen Elliott//: Something bad happened to her, Mr Deacon, I know it. I know no one will believe me, because no one tends to believe teenage girls, do they? Do you believe in the foretelling of dreams, sir? 
+
+(click-append: "the foretelling of dreams, sir?") [(go-to: "The Foretelling of Dreams")]
+</tw-passagedata><tw-passagedata pid="55" name="Carmen&#39;s Vitals" tags="Characters" position="200,1100" size="100,100">//Detective Inspector Deacon:// For the record, can you confirm your name, age and address? 
+
+(click-append: "name, age and address?") [(go-to: "Carmen's Name, Age and Address")]</tw-passagedata><tw-passagedata pid="56" name="Carmen&#39;s Name, Age and Address" tags="Characters" position="0,1200" size="100,100">//Carmen Elliott:// Carmen Elliott, 15 years old, I live at number 13 Silent Hill. 
+
+(click-append: "13 Silent Hill.") [(go-to: "What Carmen Saw")]</tw-passagedata><tw-passagedata pid="57" name="The Foretelling of Dreams" tags="Characters" position="100,1400" size="100,100">//Detective Inspector Deacon:// No, Miss Elliott, I can't say that I do. My profession deals in facts. So if we could please steer clear of any...//intuition//, that would be greatly appreciated.
+
+(click-append: "that would be greatly appreciated.") [(go-to: "Stick to Facts")]</tw-passagedata><tw-passagedata pid="58" name="Stick to Facts" tags="Characters" position="200,1400" size="100,100">//Mrs Elliott:// See what I'm telling you, Mr Deacon? Deserves a right boxing 'round the ears. She's been spouting this rubbish ever since that woman went missing, and I told her I wouldn't stand for it. Now look. It's exactly like the summer that her friend went and moved away to the city, we didn't hear the end of it, did we, Carmen? 
+
+(click-append: "we didn't hear the end of it, did we, Carmen?")  [(go-to: "She Moved Away")]</tw-passagedata><tw-passagedata pid="59" name="She Moved Away" tags="Characters" position="0,1500" size="100,100">//Carmen Elliott//: Don't say that. She didn't move away 'cos she chose to, her parents made her. 
+
+(click-append: "her parents made her.") [(go-to: "On Subject, Please")]</tw-passagedata><tw-passagedata pid="60" name="On Subject, Please" tags="Characters" position="100,1500" size="100,100">//Detective Inspector Deacon:// Right-o, ladies, if we could stick to the subject at hand, please. I need you to think carefully, Miss Elliott, what did you see that night?
+
+(click-append: "what did you see that night?") [(go-to: "That Terrible Night")]</tw-passagedata><tw-passagedata pid="61" name="That Terrible Night" tags="Characters" position="200,1500" size="100,100">//Another long pause//
+
+//Carmen Elliott:// I was sitting in my windowsill reading a music book. I like to do that when I can't sleep, it calms my mind. That's when I saw that big shiny blue car pull up to her house. I've seen that car parked outside her house in the middle of the night a lot the last month. I thought it must be her beau, you know her boyfriend, but you don't ask that kind of thing. It's their business. 
+
+(click-append: "It's their business.") [(go-to: "It's Their Business")]</tw-passagedata><tw-passagedata pid="62" name="It&#39;s Their Business" tags="Characters" position="0,1600" size="100,100">//Detective Inspector Deacon:// So you saw her fella out there that night? What did he look like? 
+
+(click-append: "What did he look like?") [(go-to: "City Fella")]</tw-passagedata><tw-passagedata pid="63" name="City Fella" tags="Characters" position="100,1600" size="100,100">//Carmen Elliott//: I don't know words. I don't know - smart, fancy-looking? Brownish hair, tall. Pretty. 
+
+(click-append: "Brownish hair, tall. Pretty.")  [(go-to: "A Photo of a Man")]</tw-passagedata><tw-passagedata pid="64" name="A Photo of a Man" tags="Characters" position="200,1600" size="100,100">//Detective Inspector Deacon//: For the record, I am showing Carmen Elliott and Mrs Elliott a photograph of Darcy Curran. Carmen, do you think this is the man you saw? The owner of the car? 
+
+(click-append: "The owner of the car?") [(go-to: "Throwing Stones")]</tw-passagedata><tw-passagedata pid="65" name="Throwing Stones" tags="Characters" position="0,1700" size="100,100">//Carmen Elliott//: Yes, that's him, I think. Yes. It was dark, but he kept looking over his shoulder and he left his car running, so the headlights were bright on his face. I used to hear him shouting at her in the middle of the night to let him in. I was sure he used to booze a lot. Get himself into a temper. That night he was throwing rocks. He broke one of the windows.
+
+(click-append: "He broke one of the windows.") [(go-to: "Broken Glass")]</tw-passagedata><tw-passagedata pid="66" name="Broken Glass" tags="Characters" position="100,1700" size="100,100">//Mrs Elliott:// If there's one thing I know, Mr Deacon, is that them foreign girls are always letting men into their houses that they shouldn't, believe me you. 
+
+(click-append: "believe me you.")  [(go-to: "Outside in the Dark")]</tw-passagedata><tw-passagedata pid="67" name="Outside in the Dark" tags="Characters" position="200,1700" size="100,100">//Detective Inspector Deacon//: Did he enter her house, Carmen? Or was he just standing outside? Do you know what time this was? 
+
+(click-append: "Do you know what time this was?")  [(go-to: "A Lonesome Man")]</tw-passagedata><tw-passagedata pid="68" name="A Lonesome Man" tags="Characters" position="0,1800" size="100,100">//Carmen Elliott//: He broke the door open and he went inside, for maybe around twenty minutes and then he came out by himself. I don't know exactly what time, but it was late. Like I said, I'm not always good at remembering things.
+
+(click-append: "I'm not always good at remembering things.")  [(go-to: "A Lover's Tiff")]</tw-passagedata><tw-passagedata pid="69" name="A Lover&#39;s Tiff" tags="Characters" position="100,1800" size="100,100">//Detective Inspector Deacon:// Darcy Curran says that he was with his wife for the rest of the night. That he came here much earlier in the evening before his legal function, around 7:00 pm and I'm inclined to believe him. People who are in relationships argue, storm off and come back once they've cooled down - you might not understand that now, but you will one day. You aren't telling me fibs, are you Carmen? 
+
+(click-append: "You aren't telling me fibs, are you Carmen?") [(go-to: "Dreams of Daphne")]
+
+</tw-passagedata><tw-passagedata pid="70" name="Dreams of Daphne" tags="Characters" position="200,1800" size="100,100">//Carmen Elliott:// I said before, Mr Deacon, how I have visions. When I can't sleep, I have dreams but I'm awake. I see things. I saw him hurting her. I felt it. I saw him sneak up behind her and hit her on the head again and again until she was all blood. I saw him standing over her body and huffing, swearing. Trying to work out where to dump her. I know it. 
+
+(click-append: "I know it.")  [(go-to: "Knowing vs Feeling")]
+
+
+
+</tw-passagedata><tw-passagedata pid="71" name="Knowing vs Feeling" tags="Characters" position="0,1900" size="100,100">//Detective Inspector Deacon:// But you don't //know//, do you? You're just telling me you see things in your dreams, Carmen. That isn't a fact. You are lying to me, aren't you? You didn't see any of this. 
+
+(click-append: "You didn't see any of this.") [(go-to: "I Told You So")]
+</tw-passagedata><tw-passagedata pid="72" name="I Told You So" tags="Characters" position="100,1900" size="100,100">//A pause stretches// 
+
+//Carmen Elliott//: I have the gift, Mr Deacon, like my father's mother before me. I've warned you that something might be wrong. Maybe one day you will wish that you had listened to me. 
+
+(click-append: "you will wish that you had listened to me.") [(go-to: "Carmen Interview End")]</tw-passagedata><tw-passagedata pid="73" name="Carmen Interview End" tags="Characters" position="200,1900" size="100,100">//Detective Inspector Deacon:// Well if that is the case, Miss Elliott, you'll be first to know. Thank you for coming down here, ladies, and if we need anything further from you I'll be in contact. We're treating this as an ongoing missing persons investigation. Interview terminated at [[4:50 pm.]]</tw-passagedata><tw-passagedata pid="74" name="4:50 pm." tags="Evidence" position="0,2100" size="100,100">You finish reading the transcript and select the next document in Carmen's file.
+
+(click-append: "the next document in Carmen's file.") [(go-to: "Carmen's Insomnia Diary")]</tw-passagedata><tw-passagedata pid="75" name="Carmen&#39;s Insomnia Diary" tags="Evidence Carmen&#39;s-Journal" position="100,2100" size="100,100">(text-color: "black") [//The following are excerpts obtained from a small journal retrieved from Carmen Elliott's bedroom around the time of October 1964.//]
+
+---
+
+(text-color: "black") [//1st of October, 1964.//]
+
+(text-color: "black") [ Dr Hepworth has advised me to write to tire myself out and to take my mind off things. I suppose I don't really know what to say. Well, Dr Hepworth said to write about what I do when I can't sleep in the hopes it'll bore me into tiredness, so I suppose I'll do that. When I can't sleep, I stare out my window into the bluish dark. If I really squint, I can see into Miss Jones' house. Into the bedroom. I know I really shouldn't look, but I can't help it.] (click-replace: "I can't help it.") [someone's moving behind the sheer curtains.]
+
+(text-color: "black") [I think it's her sitting in the bedroom. It's been a more and more frequent occurence over the last few weeks.] (click-replace: "her") [the rich man] 
+
+(text-color: "black") [She looks like a doll, with that chic bob.] (click-replace: "with that chic bob") [trapped in a big empty house, ready to be plucked up in a clumsy human hand and played with]
+
+(text-color: "black") [We're similar in that way, me and Miss Jones. Two little dolls.] (click-append: "Two little dolls.") [ hiding from the world in our ~~cages~~ sanctuaries.] 
+
+(text-color: "black") [That's why I'm watching. To make sure if anything happens to her, I'll have a record of it.] (click-replace: "have a record of it") [be the first to know, and then maybe someone will finally understand that I'm an [[observant, smart girl]]] 
+
+</tw-passagedata><tw-passagedata pid="76" name="observant, smart girl" tags="Evidence Carmen&#39;s-Journal" position="200,2100" size="100,100">(text-color: "black") [//8th of October, 1964.//  I'm sorry I haven't written in a long time, dearest diary. I've been very busy with schoolwork and mother has been increasing my chores around the household as is my woman's duty, she says.] (click-replace: "my chores around the household as is my woman's duty, she says.") [my dosage of these funny little pills.]
+
+(text-color: "black") [Tonight, Miss Jones is making dinner. Downstairs in our living room, I can see her across the street hovering over a boiling pot. She is flitting, bustling from corner to corner of the kitchen in a huff. Trying to make everything perfect.] (click-append: "Trying to make everything perfect") [ because when he enters the kitchen, she flinches] 
+
+(text-color: "black") [She has set the table in beautiful shades of pale pink. I can see the candles flickering, illuminating the dewey youth in her face. She turns her back, dipping the wooden spoon into the pot and stirring fervidly. He appears behind her, kissing her neck. I wonder what it would feel like, to have a man's lips on your neck like that. Maybe it would feel good.] (click-replace: "Maybe it would feel good") [His hand disappears from view and then the wooden spoon smacks across her face and he is laughing] 
+
+(text-color: "black") [I am wondering if this is what love is.] (click-append: "is what love is") [. She is crying, waving her hand that it is okay, I think. That it's all her fault] 
+
+(text-color: "black") [And then she is smiling in an instant, wiping sauce from her hands and [[kissing him on the cheek.]]] 
+
+
+</tw-passagedata><tw-passagedata pid="77" name="kissing him on the cheek." tags="Evidence Carmen&#39;s-Journal" position="0,2200" size="100,100">(text-color: "black") [//16th of October, 1964.// Dearest diary, me again. I am beginning to think everything is okay, because I haven't seen the rich man in a week. And usually he is always here.] (click-replace: "everything is okay") [something is terribly wrong] 
+
+(text-color: "black") [Miss Jones has been outside during the day, tending the garden. The house is furnished with spring blooms again, dancing eerily in the shadowy dark. She has been cleaning the house from top to bottom, scrubbing the windows and hanging the carpets out to dry in the sunlight. A perfect picture of domesticity.] (click-replace: "A perfect picture of domesticity") [Maybe the perfect crime] 
+
+(text-color: "black") [It is 2:30 am. The house is dark. She is beginning to pack the car, for a weekend away, perhaps, down the coast somewhere. Throwing clothes into the suitcase in great handfuls.] (click-replace: "for a weekend away") [to run away]
+
+(text-color: "black") [I am beginning to wonder whether she has escaped him once and for all.] (click-replace: "she has escaped him once and for all") [the rich man is lurking somewhere in the dark in his silent car, waiting and watching, [[just like me]]]
+
+
+
+ </tw-passagedata><tw-passagedata pid="78" name="just like me" tags="Evidence Carmen&#39;s-Journal" position="100,2200" size="100,100">(text-color: "black") [//31st of October, 1964.// Dearest diary, there has been a turn of events. The rich man is back in Sentry Creek. His big blue car pulled into the dark driveway of Miss Jones's house this evening. He got out and he was looking around, confused and angry.] (click-replace: "confused and angry") [then he chose a large stone from the front garden and pelted it through the window]
+
+(text-color: "black") [The house is empty. He broke his way in through the front door.] (click-replace: "The house is empty") [But the house isn't empty. Her shadow is there, the silhouette nearing the window. Closer and closer. I can see her trapped behind the glass]
+
+(text-color: "black") [He is coming up the stairs now. One-two, buckle my shoe, three- four, knock at the door. The door bursts open and there's nothing but an empty room filled with pale moonlight.] (click-replace: "there's nothing but an empty room filled with pale moonlight") [Miss Jones is thudding at the glass, screaming at me. Her breath is fogging the glass and I can hear myself screaming back. My palms are redenned from beating the window to reach her] 
+
+(text-color: "black") [Footsteps are thudding up the stairs in my own house and I am being restrained, hands hooked under my armpits, dragging me back to my own bed.]
+(click-append: "dragging me back to my own bed") [ and my mother is shouting into my ear with her sour breath that I am having [[another nightmare]]]</tw-passagedata><tw-passagedata pid="79" name="another nightmare" tags="Evidence Dr-Hepworth" position="200,2200" size="100,100">(text-color: "black") [//From the office of Dr Christoph Hepworth, received on the 5th of October, 1964//]
+
+(text-color: "black") [Dear Mr Elliott,] 
+
+--- 
+
+(text-color: "black") [I am writing to inform you of the latest developments in your daughter's psychiatric counselling. I have prescribed a stronger dose of Phenobarbital in the hopes that it will lessen these instances of insomnia and sleep-walking you have dictated to me. It is important to note that side effects may include:] (text-style: "blurrier") [hallucination, dizzy spells, headaches and tiredness.] (click-replace: "hallucination, dizzy spells, headaches and tiredness.") [hallucination, dizzy spells, headaches and tiredness.]
+
+(text-color: "black") [Your daughter is exhibiting behaviours that coincide with usual stressors experienced by teenage girls going through puberty. She mentions that she is experiencing feelings of withdrawal and depression regarding] (text-style: "blurrier") [someone named Lavinia.](click-replace: "someone named Lavinia.") [someone named Lavinia.]
+
+(text-color: "black") [This is not uncommon; girls are often plagued by such feelings at this age. She has been speaking of dreams that entail] (text-style: "blurrier") [graphic violent acts being enacted on those close to her.] (click-replace: "graphic violent acts being enacted on those close to her.") [graphic violent acts being enacted on those close to her.]
+
+(text-color: "black") [It is apparent to me that your daughter holds a deep-seated level of guilt and lack of self-confidence that has left her mind weak and susceptible to such fantasies. She expresses a deep fear] (text-style: "blurrier") [that someone is going to kill her neighbour, "like they did before."] (click-replace: "that someone is going to kill her neighbour") [that someone is going to kill her neighbour]
+
+(text-color: "black") [My advice to you and your wife is to ensure that Carmen is kept busy. She should turn her focus toward her schoolwork and helping her mother run the household. She must also rest and limit the time spent gallivanting with her friends. I would be interested if you could find any further items in her possession relating to] (text-style: "blurrier") [Lavinia.] (click-replace: "Lavinia.") [Lavinia.]
+
+(text-color: "black") [If you could pass on any information to me, I may be able to determine why this is such an area of] (text-style: "blurrier") [profound obsession for Carmen.] (click-replace: "profound obsession for Carmen.") [(go-to: "profound obsession for Carmen.")]
+</tw-passagedata><tw-passagedata pid="80" name="profound obsession for Carmen." tags="Evidence Carmen&#39;s-Journal" position="0,2300" size="100,100">(text-color: "black") [//The following is a letter that was found in an alcove beside Carmen Elliott's bed. It is undated.//]
+
+---
+
+(text-color: "black") [&lt;span style="font-family: 'Pinyon Script', monospace;"&gt;Dearest C, how have you been, my sweet friend? I'm so sorry that I haven't written in a while, mother and father have forced me into a rotten new school where they call me once a week - locked me away somewhere respectable they can pay someone to keep an eye on me. It's a bit stodgy, and none of the girls really talk to me, but at least I can go out on the weekends. C...I have a secret to tell you, it's practically eating me up inside. Promise you won't tell anyone - especially not Vivian? I know you're the best at keeping a secret. Anyway, there's a boy. His name's Frances and we works at the petrol station down the road from our school. He's a year older than me, 17!  We spend a lot of time talking about books - Shakespeare, Truman Capote, Daphne Du Maurier - can you believe it?! I've kissed him twice - no - three times, now, and I let him kiss my neck once, too. It left a big purplish cloud - I wish you could've seen it! Frances and I are planning to go out sometime on the weekend, maybe to the pictures - we might be able to sneak in to see //[[Dead Ringer]]//! I have to sign off now, dearest C, the bell's tolling for dinner. Please write me back, I'll try to come see you over the term hols. Lots of love, your friend, Lavinia. P.s: [[enjoy my room with a view!]] &lt;/span&gt;]
+
+ </tw-passagedata><tw-passagedata pid="81" name="enjoy my room with a view!" tags="Evidence Carmen&#39;s-Journal imagemap" position="0,2400" size="100,100">[[&lt;img class="story-image" src="./images/lavinialetter.jpg" alt="Lavinia's Letter" /&gt;-&gt;Lavinia's Letter]]</tw-passagedata><tw-passagedata pid="82" name="Lavinia&#39;s Letter" tags="Evidence" position="100,2400" size="100,100">//The blank reverse side of the photograph is dated October, 1964. It appears to be a postcard. The following inscription is written on the bottom right hand corner: // &lt;span style="font-family: 'Pinyon Script', monospace;"&gt; Thank you for visiting Sentry Creek! &lt;/span&gt;
+
+(click-replace: "Thank you for visiting Sentry Creek!") [(go-to: "A Song For Darcy")]</tw-passagedata><tw-passagedata pid="83" name="Dead Ringer" tags="Evidence imagemap" position="100,2300" size="100,100">[[&lt;img class="story-image" src="./images/laviniaticket.jpg" alt="Lavinia's Ticket" /&gt;-&gt;Carmen's Reply]]</tw-passagedata><tw-passagedata pid="84" name="Carmen&#39;s Reply" tags="Evidence Carmen&#39;s-Journal" position="200,2300" size="100,100">(text-color: "black") [//The following was retrieved as a relief-print from Carmen's letter-writing stationary, around the spring of October 1964//]
+---
+
+(text-color: "black")[&lt;span style="font-family: 'Pinyon Script', monospace;"&gt;[~~Dear Vinny, I'm so glad to hear that you are happy. Us girls miss you terribly and we can't help but feel sorry that you're out there all alone. I know you're thinking that Vivian will never forgive you, but that simply isn't true. Although she can be harsh, Viv always does what is right, and you have to believe that. She'll come around one day. Of course I would never tell her about Frances, that's between you and me. How I wish I could be there so we could go for milkshakes and listen to records just like old times. Things are much the same around here, nothing to do, nothing to see. Except we've a new English teacher, Miss Jones. She's very stylish, like Mrs Jackie O'Nassis! Right here in little old Sentry Creek, would you believe? And get this; she put Vivian right in her place the other day, caught her threatening to push Mary down the stairs if she told Julia she saw Vivian kissing Thomas Philpott! We could hardly believe it ourselves. Have to go, have been told by mother that I must get ready to see Dr Hepworth again. What a bore! All he wants me to do is tell him more about you, but I told him I don't remember. Because, I would never let you down, you know that, don't you? Love always, your best friend, C~~] &lt;/span&gt;]
+
+(click-replace: "Love always, your best friend, C") [(go-to: "A Song For Darcy")]</tw-passagedata><tw-passagedata pid="85" name="A Song For Darcy" tags="Evidence Carmen&#39;s-Journal music-sheet" position="200,2400" size="100,100">// The following was obtained from Carmen Elliott's music book, around October 1964. The police dismissed its relevancy in the case of Miss Daphne Marie Jones' disappearance due to the impenetrable alibis of key known people.//
+
+---
+
+
+&lt;span style="font-family: 'Pinyon Script', monospace;"&gt;Untitled, written and composed by Carmen J. Elliott.&lt;/span&gt;
+
+(click-replace: "Carmen J. Elliott.") [(go-to: "Stalker")]</tw-passagedata><tw-passagedata pid="86" name="Stalker" tags="music-sheet Evidence" position="0,2500" size="100,100">&lt;audio src="./audio/carmensong.mp3" autoplay loop&gt;&lt;/audio&gt;
+
+
+//Watcher, watcher, [[watcher]]//
+
+//I saw you there, a beady [[huntsman]] crawling in the dark//
+
+//When she was [[buried]], I heard the croaking of a [[lark]]//
+
+//Contorted in your car, they would never [[guess]], they would never guess//
+
+//The dark [[desires]] festering in your handsome eyes, but I'd say men kill for [[less]]//
+
+//With your [[respectable]] smile and your designer clothes, you were a perfect home// 
+
+//But don't you know, don't you know, you can't escape your [[dirtiest]] deeds, even when you roam// 
+
+
+</tw-passagedata><tw-passagedata pid="87" name="watcher" tags="Evidence" position="100,2500" size="100,100">&lt;span style="font-family: 'Pinyon Script', monospace;"&gt;[TRY again...................................]&lt;/span&gt; </tw-passagedata><tw-passagedata pid="88" name="huntsman" tags="Evidence" position="200,2500" size="100,100">&lt;span style="font-family: 'Pinyon Script', monospace;"&gt;[~~I didn't mean for it to go this far~~]&lt;/span&gt; </tw-passagedata><tw-passagedata pid="89" name="guess" tags="Evidence" position="0,2600" size="100,100">[HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT [[HE DID IT]] HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT HE DID IT] </tw-passagedata><tw-passagedata pid="90" name="respectable" tags="Evidence" position="100,2600" size="100,100">&lt;span style="font-family: 'Pinyon Script', monospace;"&gt;[Nothing Nothing Nothing Again Again Again Until There is Nothing Left At All But This Silly Little Mess]&lt;/span&gt; </tw-passagedata><tw-passagedata pid="91" name="desires" tags="Evidence" position="0,2700" size="100,100">&lt;span style="font-family: 'Pinyon Script', monospace;"&gt;[I just want to tell you the truth]&lt;/span&gt; 
+
+(click-append: "the truth") [(go-to: "Carmen End")]
+</tw-passagedata><tw-passagedata pid="92" name="less" tags="Evidence" position="200,2600" size="100,100">&lt;span style="font-family: 'Pinyon Script', monospace;"&gt;[when will you listen to me????????????????????????]&lt;/span&gt; </tw-passagedata><tw-passagedata pid="93" name="buried" tags="Evidence" position="100,2800" size="100,100"></tw-passagedata><tw-passagedata pid="94" name="lark" tags="Evidence" position="100,2700" size="100,100">&lt;span style="font-family: 'Pinyon Script', monospace;"&gt;[~~Will they kill him too?~~]&lt;/span&gt; 
+</tw-passagedata><tw-passagedata pid="95" name="dirtiest" tags="Evidence" position="0,2800" size="100,100"></tw-passagedata><tw-passagedata pid="96" name="HE DID IT" tags="Evidence" position="200,2700" size="100,100">&lt;span style="font-family: 'Pinyon Script', monospace;"&gt;[i know what it feels like]&lt;/span&gt; </tw-passagedata><tw-passagedata pid="97" name="Carmen End" tags="Plot-Progression FINALSOLUTION" position="100,3000" size="100,100">(set: $carmen to true)
+
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Cedarville Cursive', monospace;"&gt;The Autopsy&lt;/span&gt;|The Autopsy]]  
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Zeyada', monospace;"&gt;Priscilla&lt;/span&gt;|Priscilla]] 
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt;Beverly&lt;/span&gt;|Beverly]] 
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Meddon', monospace;"&gt;Vivian&lt;/span&gt;|Vivian]] 
+
+(if: $carmen is true and $priscilla is true and $vivian is true and $beverly is true)[
+    [[Read &lt;span style="font-family: 'MonteCarlo', monospace;"&gt;Read Daphne&lt;/span&gt;|Read Daphne]]
+]</tw-passagedata><tw-passagedata pid="98" name="Priscilla&#39;s Statement" tags="Characters" position="1150,1125" size="100,100">//Transcript of interview with Priscilla Anne Devine, November 15th, 1964. Recorded at Sentry Creek Police Station. Detective Inspector Robert Deacon, Ms Priscilla Anne Devine and Father Tobias Devine - her father. Time at beginning of recording: [[7:28 pm.]]//</tw-passagedata><tw-passagedata pid="99" name="7:28 pm." tags="Characters" position="1000,1300" size="100,100">//Detective Inspector Deacon:// We've asked you here, Miss Devine, because you mentioned that you might know something about what happened to your English teacher Miss Jones? 
+
+(click-append: "what happened to your English teacher Miss Jones?") [(go-to: "The Disappearance of Miss Jones")]</tw-passagedata><tw-passagedata pid="100" name="The Disappearance of Miss Jones" tags="Characters" position="1100,1300" size="100,100">//Priscilla Devine:// Of course, Detective Inspector Deacon, sir. 
+
+(click-append: "Detective Inspector Deacon, sir.") [(go-to: "Priscilla's Vitals")]</tw-passagedata><tw-passagedata pid="101" name="Priscilla&#39;s Vitals" tags="Characters" position="1200,1300" size="100,100">//Detective Inspector Deacon:// For the record, can you confirm your name, age and address?
+
+(click-append: "name, age and address?") [(go-to: "Priscilla's Name, Age and Address")]
+</tw-passagedata><tw-passagedata pid="102" name="Priscilla&#39;s Name, Age and Address" tags="Characters" position="1000,1400" size="100,100">//Priscilla Devine:// My full name is Priscilla Anne Devine. I am 16 years old and I live at the rectory at Holy Sacrament Church of Sentry Creek. 
+
+(click-append: "Holy Sacrament Church of Sentry Creek") [(go-to: "What Priscilla Saw")]</tw-passagedata><tw-passagedata pid="103" name="What Priscilla Saw" tags="Characters" position="1100,1400" size="100,100">//Detective Inspector Deacon:// Now, it hasn't been so long since you've been in the station, is it, Miss Devine? I trust you've been behaving yourself? 
+
+(click-replace: "I trust you've been behaving yourself?") [(go-to: "Good Behaviour Priscilla")]</tw-passagedata><tw-passagedata pid="104" name="Good Behaviour Priscilla" tags="Characters" position="1200,1400" size="100,100">//Father Devine:// This matter has been ironed out, Mr Deacon. I have made sure Priscilla is serving her repentence appropriately. I do not suffer misbehaviour in my household. 
+
+(click-append: "I do not suffer misbehaviour in my household.") [(go-to: "Misbehaviour")]</tw-passagedata><tw-passagedata pid="105" name="Misbehaviour" tags="Characters" position="1000,1500" size="100,100">//Priscilla Devine:// Oh, yes, Daddy isn't one to suffer fools, Mr Deacon, sir. I should be the first to tell you that. 
+
+(click-append: "I should be the first to tell you that.") [(go-to: "Shut Up Girlie")]</tw-passagedata><tw-passagedata pid="106" name="Shut Up Girlie" tags="Characters" position="1100,1500" size="100,100">//Father Devine:// You //will// guard your tongue, child. You seem to have forgotten what we discussed last night. 
+
+(click-append: "You seem to have forgotten what we discussed last night.") [(go-to: "Priscilla's Recollections")]</tw-passagedata><tw-passagedata pid="107" name="Priscilla&#39;s Recollections" tags="Characters" position="1200,1500" size="100,100">//Priscilla Devine:// Wouldn't that be nice. 
+
+(click-append: "that be nice.") [(go-to: "God's Punishment")]</tw-passagedata><tw-passagedata pid="108" name="God&#39;s Punishment" tags="Characters" position="1000,1600" size="100,100">//The tape glitches and snaps back into place as a thunderous thud bangs through the speaker.//
+
+//Father Devine:// You will NOT embarass me in this room with your loose tongue, child. You have already brought shame and denigration enough down upon this family and //still// you will not submit to decorum. You will apologise sincerely to me, and to Detective Inspector Deacon.
+
+(click-append: "You will apologise sincerely to me, and to Detective Inspector Deacon.") [(go-to: "A Protestation from Detective Deacon")]</tw-passagedata><tw-passagedata pid="109" name="A Protestation from Detective Deacon" tags="Characters" position="1100,1600" size="100,100">//Detective Inspector Deacon:// I'm really not sure that that's necessary-
+
+(click-append: "not sure that that's necessary-") [(go-to: "In My Backyard")]</tw-passagedata><tw-passagedata pid="110" name="In My Backyard" tags="Characters" position="1200,1600" size="100,100">//Father Devine:// I'd ask you to refrain from instructing me how I should reprimand my own child, Robert. 
+
+(click-append: "how I should reprimand my own child, Robert.") [(go-to: "Sorry, Says Priscilla")]</tw-passagedata><tw-passagedata pid="111" name="Sorry, Says Priscilla" tags="Characters" position="1000,1700" size="100,100">//Priscilla Devine:// I am sincerely sorry, sir. I will ensure to reflect on my behaviour and pray that God will forgive me for my reprehensible actions. 
+
+(click-append: "pray that God will forgive me for my reprehensible actions.") [(go-to: "Can We Refrain?")]</tw-passagedata><tw-passagedata pid="112" name="Can We Refrain?" tags="Characters" position="1100,1700" size="100,100">//Detective Inspector Deacon:// Well, that's quite enough of that, I think, don't you? Now, I would like to turn our attention to the matter at hand, please. You made a very heavy statement against someone local to this town, didn't you, Priscilla? It's important that you understand the weight of what you're saying, Ms Devine, if this eventuates to be true. If you are - at any stage - lying, there could be drastic consequences for the reputation of those involved.
+
+(click-append: "drastic consequences for the reputation of those involved.") [(go-to: "Mr Eade's Secrets")]</tw-passagedata><tw-passagedata pid="113" name="Mr Eade&#39;s Secrets" tags="Characters" position="1200,1700" size="100,100">//Priscilla Devine:// I would never lie to you, sir. What would I gain by telling you a lie?
+
+(click-append: "What would I gain by telling you a lie?") [(go-to: "Proceed Priscilla")]</tw-passagedata><tw-passagedata pid="114" name="Proceed Priscilla" tags="Characters" position="1000,1800" size="100,100">//Detective Inspector Deacon:// I'm listening, Priscilla. Tell me what you believe happened, what you told our field officer when you rang the police on Halloween evening. 
+
+(click-append: "when you rang the police on Halloween evening.") [(go-to: "An Affair of Interest")]</tw-passagedata><tw-passagedata pid="115" name="An Affair of Interest" tags="Characters" position="1100,1800" size="100,100">//Priscilla Devine:// I was out that night after studying at my friend Vivian's house. I wanted to go for a swim because the nights have just started to get warm again. So, I drove out near the dam at the old homestead, and that's when I saw Miss Jones' car parked up in a clearing near the old apple orchard. 
+
+(click-append: "I saw Miss Jones' car parked up in a clearing near the old apple orchard.") [(go-to: "The Old Apple Orchard")]</tw-passagedata><tw-passagedata pid="116" name="The Old Apple Orchard" tags="Characters" position="1200,1800" size="100,100">//Detective Inspector Deacon:// Can anyone verify that you were out there? Or were you by yourself? 
+
+(click-append: "Or were you by yourself?") [(go-to: "Wesley and I")]</tw-passagedata><tw-passagedata pid="117" name="Wesley and I" tags="Characters" position="1000,1900" size="100,100">//There is a long pause.//
+
+//Priscilla Devine:// I wasn't alone. I was with Wesley. 
+
+(click-append: "I was with Wesley.")  [(go-to: "Damn Stupid Boys")]</tw-passagedata><tw-passagedata pid="118" name="Damn Stupid Boys" tags="Characters" position="1100,1900" size="100,100">//Father Devine:// I have forbidden you from involving yourself with that vagabond. I will need to deal with you afterwards. Detective Inspector, I want to know why your department has still done nothing about the sheer multitude of arson cases that we all know that unwashed miscreant is responsible for. 
+
+(click-append: "we all know that unwashed miscreant is responsible for.") [(go-to: "Scoundrels and Miscreants")]</tw-passagedata><tw-passagedata pid="119" name="Scoundrels and Miscreants" tags="Characters" position="1200,1900" size="100,100">//Priscilla Devine:// I thought the bible says all sinners deserve redemption if they place themselves before God and ask for mercy, Daddy? Wesley is no miscreant, Mr Deacon, he just comes from a rough family. 
+
+(click-append: "Wesley is no miscreant, Mr Deacon, he just comes from a rough family.") [(go-to: "Redemptive Sinners")]</tw-passagedata><tw-passagedata pid="120" name="Redemptive Sinners" tags="Characters" position="1000,2000" size="100,100">//Father Devine:// Some sinners are beyond redemption because they will never seek to submit themselves to God's work, child. That blasphemous boy is one of them.
+
+(click-append: "That blasphemous boy is one of them.")  [(go-to: "Wesley + Priscilla")]</tw-passagedata><tw-passagedata pid="121" name="Wesley + Priscilla" tags="Characters" position="1100,2000" size="100,100">//Detective Inspector Deacon:// Unfortunately we aren't here to discuss Wesley Gould. If we could return to the point, Miss Devine, that you were swimming in the damn at the old homestead on the evening of the 31st of October. What time would that have been? 
+
+(click-append: "What time would that have been?") [(go-to: "Swimming in Suspicion")]</tw-passagedata><tw-passagedata pid="122" name="Swimming in Suspicion" tags="Characters" position="1200,2000" size="100,100">//Priscilla Devine:// It was around 8:00 pm, I think. Anyway, we were...busy swimming, and then I saw the car parked under the shade of the trees and I could see two figures in the car, embracing. You know, kissing, and I saw it was Mr Terry Eade, the handyman, and Miss Jones. And so I told Wesley to hide, because I didn't want them to see us. But we could see that they were being...intimate. And then when they were finished, she got out of the car and she looked upset. She was crying. 
+
+(click-append: "She was crying.") [(go-to: "Daphne was Crying")]</tw-passagedata><tw-passagedata pid="123" name="Daphne was Crying" tags="Characters" position="1000,2100" size="100,100">//Detective Inspector Deacon:// You are convinced that it was Mr Eade in that car? And Miss Jones? Why do you believe she was crying? 
+
+(click-append: "Why do you believe she was crying?") [(go-to: "Something She Didn't Want to Do")]</tw-passagedata><tw-passagedata pid="124" name="Something She Didn&#39;t Want to Do" tags="Characters" position="1100,2100" size="100,100">//Priscilla Devine:// Oh, yes, I knew it was them. I saw them come out of the dark, over to where the old streetlights are. I could see Mr Eade's big van. It scares me that awful thing, like a big black cloud. If you ask me, she was crying because he was making her do something she didn't want to do and he wouldn't stop. 
+
+(click-append: "he was making her do something she didn't want to do and he wouldn't stop.") [(go-to: "The Truth of Women")]</tw-passagedata><tw-passagedata pid="125" name="The Truth of Women" tags="Characters" position="1200,2100" size="100,100">//Father Devine:// One should hardly be surprised, Detective. This is a woman who is not of the Christian way, who has been discussing unnatural things with her students. I cannot say that I am surprised if something dangerous has befallen her. That is a natural eventuation when women leave themselves open to the advances of the male. 
+
+(click-append: "when women leave themselves open to the advances of the male.") [(go-to: "She Vanished Into the Night")] </tw-passagedata><tw-passagedata pid="126" name="She Vanished Into the Night" tags="Characters" position="1000,2200" size="100,100">//Detective Inspector Deacon:// Not something you'd have much experience with, Father. Miss Devine - what happened after you saw Miss Jones crying outside Mr Eade's car? 
+
+(click-replace: "what happened after you saw Miss Jones crying outside Mr Eade's car?") [(go-to: "Daphne Left Us")]</tw-passagedata><tw-passagedata pid="127" name="Daphne Left Us" tags="Characters" position="1100,2200" size="100,100">//Priscilla Devine:// She ran and he followed her into the bush. I couldn't hear properly, because they were talking quietly. And then Wesley and I finished up our swim, and we went home, maybe around 9:30. I saw Mr Eade come back out of the bush alone just as we were towelling off. He was probably twenty metres away. 
+
+(click-append: "He was probably twenty metres away.") [(go-to: "Terry Alone")]</tw-passagedata><tw-passagedata pid="128" name="Terry Alone" tags="Characters" position="1200,2200" size="100,100">//Detective Inspector Deacon:// He was alone? You are sure? He wasn't holding anything, he didn't look any different to you?
+
+(click-append: "he didn't look any different to you?")  [(go-to: "Shirt Removed")]</tw-passagedata><tw-passagedata pid="129" name="Shirt Removed" tags="Characters" position="1000,2300" size="100,100">//Priscilla Devine:// Yes. He was alone, you can ask Wesley. We took my car up there, but he didn't want to drive home with me, so he walked back to his house. I got to the Rectory around 10:30, and I went straight to bed, you can ask Daddy.
+
+(click-replace: "you can ask Daddy.") [(go-to: "Priscilla On Lockdown")]</tw-passagedata><tw-passagedata pid="130" name="Priscilla On Lockdown" tags="Characters" position="1100,2300" size="100,100">//Father Devine:// To my great shame, she was. My wife and I agreed Priscilla would be forbidden from leaving the house for the rest of the month and we sent her straight to bed.
+
+(click-append: "we sent her straight to bed.")  [(go-to: "Were You Drinking?")]</tw-passagedata><tw-passagedata pid="131" name="Were You Drinking?" tags="Characters" position="1200,2300" size="100,100">//Detective Inspector Deacon:// Now, I have to ask you, Miss Devine, as a matter of principle, were you taking any drugs or drinking any alcohol the evening of Halloween, October 31st?
+
+(click-append: "taking any drugs or drinking any alcohol the evening of Halloween, October 31st?")  [(go-to: "I Was Not, Sir!")]</tw-passagedata><tw-passagedata pid="132" name="I Was Not, Sir!" tags="Characters" position="1000,2400" size="100,100">//A long pause.//
+
+//Priscilla Devine:// I certainly was not, sir. I don't touch alcohol or drugs. 
+
+(click-replace: "I don't touch alcohol or drugs.") [(go-to: "A Matter of Principle")]</tw-passagedata><tw-passagedata pid="133" name="A Matter of Principle" tags="Characters" position="1100,2400" size="100,100">//Detective Inspector Deacon:// You're sure? For the benefit of the tape, Miss Devine is nodding. Well, that about concludes the formality of this interview here. I will need you to fill out some paperwork, thank you. Interview terminated at [[7:56 pm.]]
+
+</tw-passagedata><tw-passagedata pid="134" name="7:56 pm." tags="Evidence" position="1000,2600" size="100,100">You finish reading the transcript and select the document in Priscilla's file. It looks like a palm-sized, leatherbound journal.
+
+(click-append: "leatherbound journal.") [(go-to: "Priscilla's Bible")]</tw-passagedata><tw-passagedata pid="135" name="Priscilla&#39;s Bible" tags="Evidence Priscilla-Bible" position="1100,2600" size="100,100">(text-color: black) [//The following are excerpts taken from a small hymn book found amongst Priscilla Devine's possessions around October 1964.//]
+
+---
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: red) + (text-style: "mirror") [//Matthew 5:21-26// - Ye have heard that it was said by them of old time, Thou shalt not kill; and whosoever shall kill shall be in danger of the judgment]&lt;/span&gt;
+
+(click-replace: "Matthew 5:21-26 - Ye have heard that it was said by them of old time, Thou shalt not kill; and whosoever shall kill shall be in danger of the judgment") [(go-to: "Father, Oh Father")]
+
+---
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [24th of October, 1964. Forgive me Father, for I have sinned. This is the private confessional notebook of Priscilla Anne Devine. Although Daddy makes me attend the booth, I can hardly tell him the things that I truly need to seek guidance about. After all, I'm a teenage girl and he is...well, he's just a man. And he doesn't understand me at all.] (text-color: #efb9ce) [Sometimes I'm boiling with such deep rage that it scares me beyond belief.]
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [God, I am beginning to think that there is something wrong with me. I'm confused. Everything I've read, everything I've been told tells me this is wrong and that I will be punished. I keep looking up at the sky waiting for you to smite me.] (text-color: #efb9ce) [But I've seen other people in love and I'm convinced there can be no harm in it. Only the other day I saw Miss Jones and Mr Eade walking home together. She had on a beautiful fur coat and he was kissing her hand.] 
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [We've had our suspicions. She keeps wandering around the border of the school during yard-duty, looking out into the bush. Waiting. Near the weeping willow, where Wes and I sometimes meet and giggle while other couples fumble their first kisses.] (text-color: #efb9ce) [I must say, she suits Terry, with his mane of golden hair and his slightly crooked nose. As Miss Jones would say, it's a wonderful use of juxtapositioning. He's a lovely man, too, always quick to help you out if he can.]
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [I must tell you a funny little occurence. When Daddy asked me about Wes, I told him we were just friends - which was a delicious lie. Wes is so much more than that, though he is a friend, too.] (text-color: #efb9ce) [Don't tell Vivian that; I won't hear the end of it, you know how she is.] 
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [Wes makes me feel alive. From the very first, when he sauntered into home economics with a cigarette dangling from his mouth and showed me how to thread the sewing machine while all the boys started laughing at him and he winked one of his golden eyes, I knew.] (text-color: #efb9ce) [When I kiss him and I look beyond his eyes and deep into his soul, I can't help but think that no matter what I did, he would always love me.]
+
+(click-replace: "no matter what I did, he would always love me.") [(go-to: "But Daddy He Loves Me")]</tw-passagedata><tw-passagedata pid="136" name="Father, Oh Father" tags="Priscilla-Bible Evidence" position="1200,2600" size="100,100">&lt;span style="font-family: 'Zeyada', monospace;"&gt; (color: black) [//Matthew 5:21-26// - Ye have heard that it was said by them of old time, Thou shalt not kill; and whosoever shall kill shall be in danger of the judgment]&lt;/span&gt;
+
+--- 
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [//November 15th, 1964// ]
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [Forgive me Father, for I have sinned. If anyone reads this journal, know that I am forever sorry. I know that I have done wrong, and I'll continue to ask for forgiveness, though what I have done I'm worried is beyond forgiving. //Telling lies is a sin//, Father has made me write it enough times on the church blackboard that it is seared onto my eyelids. But does he know that the lies I told were all for him? Would he be so quick to cast his hand across my face and make my lip bleed then? All it would take is a telephone call. One sentence and I could have him shackled in irons, sitting desolately in a silent, cold cell where he belongs.]
+
+(click-replace: "a silent, cold cell where he belongs.") [(go-to: "But Daddy He Loves Me")]</tw-passagedata><tw-passagedata pid="137" name="But Daddy He Loves Me" tags="Priscilla-Bible Evidence" position="1000,2700" size="100,100">&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: red) + (text-style: "mirror") [//Matthew 26:52-54// - Then said Jesus unto him, Put up again thy sword into his place: for all they that take the sword shall perish with the sword.]&lt;/span&gt;
+
+(click-replace: "Matthew 26:52-54 - Then said Jesus unto him, Put up again thy sword into his place: for all they that take the sword shall perish with the sword.") [(go-to: "He Who Liveth By The Sword")]
+
+---
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [25th of October, 1964. Forgive me Father, for I have sinned. Today I spoke to Ms Jones at school about Wes and I. I told her I've been thinking about running away - maybe going to Melbourne with him over the school holidays and never coming back.] (text-color: #efb9ce) [I told Vivian, which was a mistake, because - as always - she told me that she would never forgive me if I deserted her.] 
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [Miss J said that I'm a dreamer, just like her. She seemed sad when she said it. I wanted to ask her why she was upset, but it just didn't seem right.] (text-color: #efb9ce)[I'm wondering whether something happened with Terry. It's no secret to anyone in town that they're madly in love with each other, even though he has already been divorced. Somebody said they saw his ex-wife in town at the footy oval the other day, swanning around the sausage sizzle.] (text-color: black) [Then she smiled again and told me that if Wes is the right person for me, he would wait to run away with me after we'd gotten our high school certificates and an education that no one could take away from us.]
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [I don't think mother would miss me if I left. She barely even looks at me these days, it's like she's regarding a hologram. She is always stooped over the rectory stove, balancing multiple trays of leavened holy bread over her swollen pregnant belly and when I do try and talk to her, she tells me to get out from under her feet and fulfill my duties of prayer, schoolwork and reflection.] (text-color: #efb9ce) [She barely even reacts when Daddy has one of his outbursts at me anymore. She just stares at the cracks in the floorboards and holds her breath until he's finished screaming and throwing things.]  
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black)[So, you see, this is why we love Miss J so much at school. Because we can tell her anything and she won't tell a soul, because she is a modern woman, like we want to be. Women who take control of our own destiny.] (text-color: #efb9ce) [Sometimes I want to scream at mother and shake her violently until she will snap out of her trance so that she will fight for us all, but I'm worried that will make me just as terrible as Daddy.]
+
+(click-replace: "I'm worried that will make me just as terrible as Daddy.") [(go-to: "Dieth By the Sword")]</tw-passagedata><tw-passagedata pid="138" name="He Who Liveth By The Sword" tags="Priscilla-Bible Evidence" position="1100,2700" size="100,100">&lt;span style="font-family: 'Zeyada', monospace;"&gt; (color: black) [Matthew 26:52-54 - Then said Jesus unto him, Put up again thy sword into his place: for all they that take the sword shall perish with the sword.]
+
+---
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (colour: black) [//November 16th, 1964//] 
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (colour: black) [Forgive me Father, for I have sinned. I should have known, I should have told someone. I'm a bad, bad girl, just as Daddy had told me I am. I listen at doors, I look through keyholes, I make up stories and I lie, I lie, I lie. I cannot help it, in my house, you must lie to live. I can spin lies in my mouth like they're the finest of spidersilk. But how can I be the one who is a sinner? Who is this man? I do not recognise him, and yet I have known him all my life. How can I be the villain when he has been taking and taking and taking and professing his great purity? I could ruin it all and take pleasure in the deep dark destruction, press the blister and watch it burst.]
+
+(click-replace: "press the blister and watch it burst.") [(go-to: "But Daddy He Loves Me")]</tw-passagedata><tw-passagedata pid="139" name="Dieth By the Sword" tags="Priscilla-Bible Evidence" position="1200,2700" size="100,100">&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: red) + (text-style: "mirror") [//Revelation 21:8// - But the fearful, and unbelieving, and the abominable, and murderers, and whoremongers, and sorcerers, and idolaters, and all liars, shall have their part in the lake which burneth with fire and brimstone: which is the second death.]&lt;/span&gt; 
+
+(click-replace: "//Revelation 21:8// - But the fearful, and unbelieving, and the abominable, and murderers, and whoremongers, and sorcerers, and idolaters, and all liars, shall have their part in the lake which burneth with fire and brimstone: which is the second death.") [(go-to: "Does Your Mother Know?")]
+
+---
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [27th of October, 1964. Forgive me Father, for I have sinned. I am experiencing the most queer sense of déjà vu. When I talk to Miss J, I am reminded of speaking to an old friend. She seems to understand me like nobody else does or, at least, like nobody I can remember. She even looks familiar, even though she is so wholly different to everyone here.] (text-color: #efb9ce) [She told me how to get the contraceptive pill. I've had to ask her because contraception is forbidden in my family, let alone breaking the vow of chastity until marriage. Miss J says every woman should have the right to choose. My goodness if my father heard that!] 
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [Mr Eade, or Terry, as we all know him, came over for dinner the other night at the rectory. He isn't a religious man.] (text-color: #efb9ce) [But people in this town like to pretend they are because they know my father can ruin their reputations with a click of his fingers.]
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black)[If you ask me, he was here testing the waters. Complimenting my mother's cooking, discussing the VFL with Daddy.] (text-color: #efb9ce) [I think he's going to ask Miss J to marry him! So he'll need my father's approval to be the celebrant, and he's already fighting an uphill battle because Daddy didn't want him to get divorced in the first place. His ex wife was the niece of a Bishop!]
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [While they were downstairs wading through the preliminaries, I was upstairs with Wes. I let him in through my bedroom window. Being the eldest, I get my own room, but there's no lock on the door. Luckily no one came bursting in because at that moment I was preoccupied with trying to read Macbeth in the iambic pentameter while Wes had his hands up my skirt. I am beginning to understand that porter.] (text-color: #efb9ce) [Afterwards, I asked Wes whether he would ever leave me because I've done bad things in my life. He asked me what and I said I could never possibly explain. And he said no, nothing could ever keep him away from me because we're both two perfect sinners. I truly believe he would die for me.]
+
+(click-replace: "I truly believe he would die for me.") [(go-to: "Does Your Mother Know?")]</tw-passagedata><tw-passagedata pid="140" name="Does Your Mother Know?" tags="Evidence Priscilla-Bible" position="1000,2800" size="100,100">&lt;span style="font-family: 'Zeyada', monospace;"&gt; (color: black) [//Revelation 21:8// - But the fearful, and unbelieving, and the abominable, and murderers, and whoremongers, and sorcerers, and idolaters, and all liars, shall have their part in the lake which burneth with fire and brimstone: which is the second death.]
+
+---
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [//November 17th, 1964// ]
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (colour: black) [Forgive me father, for I have sinned. I have been consumed with the sloshing hot nausea of guilt. Does my mother know? I cannot see how she can't. It has been happening under her own roof. Murder is one of the most abhorrent violations of the 10 commandments; so is coveting another man's wife. I wonder whether You, in your almighty power, will sneak up on Daddy in his sleep and snuff out his rickety breath. Does that make you just as bad as the rest of us? Or is it a just cause? I wonder whether Mr Eade saw it in Daddy's eyes at the dinner table the other night while he was spooning up great mouthfuls of my mother's lovingly prepared potatoes. But then, I have learnt how to lie from the best, so perhaps not.]
+
+(click-append: "But then, I have learnt how to lie from the best, so perhaps not.") [(go-to: "Sweet Relief")]</tw-passagedata><tw-passagedata pid="141" name="Sweet Relief" tags="Priscilla-Bible Evidence" position="1100,2800" size="100,100">&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: red) + (text-style: "mirror") [//Romans 12:19// - Dearly beloved, avenge not yourselves, but rather give place unto wrath: for it is written, Vengeance is mine; I will repay, saith the Lord.]&lt;/span&gt;
+
+(click-replace: "//Romans 12:19// - Dearly beloved, avenge not yourselves, but rather give place unto wrath: for it is written, Vengeance is mine; I will repay, saith the Lord.]") [(go-to: "Sweet Revenge?")]
+
+---
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [29th of October, 1964. Forgive me Father, for I have sinned. I wish people would stop spreading rumours!!! I am disgusted at Carmen. She has been spewing all kinds of nonsense about a man from the city stalking Miss J. I've tried to convince her of the impending marriage of Miss J to Mr Eade, but she won't believe me. Vivian says she's a harlot, of course.] (text-color: #efb9ce) [The only thing people in this town care about is who Miss J is seeing. No one can appreciate how nice she is, they just want to gossip and backstab. And poor thing, she doesn't even know it.] 
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [One day, this town will get what's coming to it. I just know it. Someone's going to snap, and I think it might be Mr Eade. He knows what everyone's saying. I won't be surprised at all if they both vanish away from here and don't tell anyone.] (text-color: #efb9ce) [Daddy discovered my medication. He's thrown it in the bin and tried to go to the coppers about Wes. So I told him I would tell his dirty little secret and that shut him up pretty fast. You should've seen his face - swollen purple like a ginormous angry beet. Thank God I got my mother's looks.] 
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [I've started it again. I don't really remember when I stopped, if I'm honest with you. So sue me, I'm a lot less scared of you, I confess. Maybe You see what I'm doing, in my head, and you know I'm doing it for the right reasons. You can hear this insufferable whining siren in my head. Maybe you'll grant me the sweet relief.] (text-color: #efb9ce) [Maybe you put it there. Not to test me. No, I'm beginning to believe you won't save me in the end. I'll have to save myself, like I always do.] 
+
+(click-replace: "I'll have to save myself, like I always do.") [(go-to: "Sweet Revenge?")]
+</tw-passagedata><tw-passagedata pid="142" name="Sweet Revenge?" tags="Priscilla-Bible Evidence" position="1200,2800" size="100,100">&lt;span style="font-family: 'Zeyada', monospace;"&gt; (color: black) [//Romans 12:19// - Dearly beloved, avenge not yourselves, but rather give place unto wrath: for it is written, Vengeance is mine; I will repay, saith the Lord.]
+
+---
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [//November 18th, 1964// ]
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (colour: black) [It happened like this. Sometimes I use the chapel as a place to draw, where the light refracts in a mystic waterfall of colour through the stained glass and onto my charcoal sketches. I was there, that Halloween night, watching the light and idly flittering my stub of lead across the page for hours. I watched the sunset. And then I heard footsteps. Miss J, approaching the Confessional. I tucked myself beneath a pew. And I knew in my heart that I shouldn't, but I did. I listened. I listened to my own Father lecturing her on the unborn baby in her womb and what would happen if this got out. Saying it was all her fault. They never should have done what they did. And I heard her begin to cry and scream. I ran. I fell, gashing my leg on the dusty earth and I didn't stop until I reached the dam and I dove into the murky tortoiseshell water and let it swallow me whole. I pictured my mother's labouring pains, the cold burn of his signet ring against my chin. Laugh at little old me if you want, call me crazy and uncouth, but don't you dare accuse me of being powerless.]
+
+(click-replace: "don't you dare accuse me of being powerless.")  [(go-to: "A Lie for A Lie")]
+
+</tw-passagedata><tw-passagedata pid="143" name="A Lie for A Lie" tags="Evidence Priscilla-Bible" position="1000,2900" size="100,100">&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: red) + (text-style: "mirror") [//1 John 3:15// - Whosoever hateth his brother is a murderer: and ye know that no murderer hath eternal life abiding in him.]&lt;/span&gt;
+
+(click-replace: "//1 John 3:15// - Whosoever hateth his brother is a murderer: and ye know that no murderer hath eternal life abiding in him.") [(go-to: "The Power Is Mine")]
+
+---
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [1st of November, 1964. It is amazing what love and loyalty will do to you. I cannot help but think that no matter what happens from here, I have my friends and I have Wes. It is a pity some of the obstacles you have to overcome, but these can only serve to make us more appreciative of the good things in life.] (text-color: #efb9ce) [Things will always be taken care of. That's how it will be, as it always has been.] 
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [The] (text-color: #efb9ce) [~~five~~] (text-color: black) [four of us are stronger together. I told the girls that we can drive out with my car somewhere nice, down the beach, this summer together. There's plenty of room in my boot for all our luggage, so we can stay for weeks on end.] (text-color: #efb9ce)[I don't think Daddy will be a problem by then, somehow.] 
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [Ah! The joy of summer holidays is almost upon us. I cannot wait. I know that you are probably watching me and shaking your head, but you must understand that I am trying my hardest to make do with what I have.] (text-color: #efb9ce) [I deserve it and more. Of course I am sorry that I lied, but there are good lies and bad lies, and this is a good lie.] 
+
+(click-replace: "this is a good lie.")  [(go-to: "The Power Is Mine")]
+
+
+</tw-passagedata><tw-passagedata pid="144" name="The Power Is Mine" tags="Priscilla-Bible Evidence" position="1100,2900" size="100,100">&lt;span style="font-family: 'Zeyada', monospace;"&gt; (color: black) [//1 John 3:15// - Whosoever hateth his brother is a murderer: and ye know that no murderer hath eternal life abiding in him.]
+
+---
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [//November 19th, 1964// ]
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (colour: black) [I suppose you are wondering why I lied to them about Mr Eade, when really it was the fat rat in the collar all along. You are thinking, "why didn't you just tell the truth? They could've arrested him and thrown away the key, that's what I would've done!". But you didn't have to look into my mother's pleading, red-rimmed eyes while she clutched onto my legs and sobbed. You didn't have a future with the one person who truly understands you beckoning - only for someone to pin you down under lock and key. You should come to realise the power of a lie for a lie, as Daddy is so fond of saying. For once, I get to play God.]
+
+(click-replace: "For once, I get to play God.") [(go-to: "Drinking and Driving")]</tw-passagedata><tw-passagedata pid="145" name="Drinking and Driving" tags="Dr-Hepworth Evidence" position="1200,2900" size="100,100">(text-color: black) [//The following is a police report from the 10th of October, 1964, completed at 12:57 am by Constable Stanley Waites of the Sentry Creek Police Department.//]
+
+---
+
+(text-color: black) [Received dispatch requesting police presence at a road traffic accident at 11:15 pm on Clyde Road. Telephone call was placed by local resident Helen Murphy at 11:14 pm citing loud noises and screaming near her property, believeing someone's house had been broken into.] 
+
+(text-color: black) [Arrived on the scene at 11:20 pm. A white Ford Sedan with the number plate DRE829 had entered into a front-on collision with a gum tree. Upon review, the car is registered to Fr. Tobias Devine, but was being driven by his eldest daughter, Priscilla Anne Devine (16 years old at the time of the incident). Priscilla's three friends - Carmen Elliott, Vivian Grieve and Beverley McNab were passengers - none of them were seriously injured; refer to addresses on previous page for further interviewing requirements. Priscilla had a head wound and was taken to the Sentry Creek General Hospital for assessment.]
+
+(text-color: black) [It became quickly apparent to attending doctors that Priscilla was highly inebreiated. Her blood alchol levels were over 0.5. Sentry Creek Detectives have ordered that Priscilla Anne Devine's driving license be suspended effective immediately, and that a fine of $500 be payable within the next fortnight.]
+
+(click-replace: " a fine of $500 be payable within the next fortnight.") [(go-to: "Reputation Intact")]
+</tw-passagedata><tw-passagedata pid="146" name="Reputation Intact" tags="imagemap Evidence" position="1000,3000" size="100,100">&lt;!-- Image Map Generated by http://www.image-map.net/ --&gt;
+&lt;img src="./images/FatherDevineCheque.jpg" usemap="#image-map"&gt;
+
+&lt;map name="image-map"&gt;
+    &lt;area target="" alt="Paid Off" title="Paid Off" href="" coords="1537,430,1935,583" shape="rect"&gt;
+&lt;/map&gt;
+
+
+&lt;script&gt;
+ $('area').on('click', function(e){
+   e.preventDefault();
+   Harlowe.goto(this.alt);
+ });
+&lt;/script&gt;
+
+&lt;script&gt;
+ $('area').on('click', function(e){
+   e.preventDefault();
+   Harlowe.goto(this.alt);
+ });
+$('map').imageMapResize();
+&lt;/script&gt;
+
+&lt;div style="display:none;"
+[[Paid Off]]&gt;
+&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="147" name="Paid Off" tags="Evidence" position="1100,3000" size="100,100">//The following is an accompanying note which was found alongside this cheque.//
+
+---
+
+Robert.
+
+It shames me greatly coming to you like this, but I have been left with no choice. You are a family man yourself, you know the importance of doing anything you can to protect those who depend on you. 
+
+Priscilla is a smart girl, despite what her reputation and actions would suggest. She may yet have a future. Please, I beg of you, spare our family the sullying of our name. My wife is already battling a fever in her pregnancy, it breaks my soul to imagine what may happen if she is made aware of Priscilla's indescretion. I do not want her isolated from the other women in this community, she needs them. What would you do in my situation? You would not want to ruin your daughter's livelihood, you would do anything you can to save her from alienation. 
+
+Please, take what little I have and promise me that this will //never// see the light of day. I will be forever indebted to you. 
+
+Tobias
+
+(click-replace: "I will be forever indebted to you.") [(go-to: "A Drunken Recall")]
+</tw-passagedata><tw-passagedata pid="148" name="A Drunken Recall" tags="Evidence letter-to-wes" position="1200,3000" size="100,100">(text-color: black) [//The following is a letter that was found, unsealed and unsent, amongst Priscilla Devine's belongings around the time of November 1st, 1964//]
+
+&lt;span style="font-family: 'Zeyada', monospace;"&gt; (text-color: black) [Dearest Wes Darling, sorry for running out on you yesterday evening. I began to feeL extremely ill - perhAps from the cold of swimming in the dam! I knew I shouldn't haVe had quite so much to drInk, but I Need it. Daddy has been threatenIng me agAin; I should quite like to stab him and let him bleed out on the kitchen floor, but I must remind myself that violence is never the answer. And besides, I'll have it all fixed soon, trust me. I have just the thing to stop him from bothering me - and us - ever again. I know you understand me like nobody else ever could, which is why you'll know that I Lied to protect us. Of course, I shall cArry the burden of haVing wrapped Terry up In this rotteN mess for the rest of my life, but with any luck, nobody will ever find poor Miss J. It makes me sIck to imagiNe what Daddy did to her. How could he possibly ever do it? How could one humAn wilfully take the life of such a vibrant, innocent young woman? I hope wherever she is that she will forgive me. If I could, I would tell her how sorry I am and that, for the both of us, I'll carry on being a dreamer. Once I'm back from my beach holiday with the girls, we must begin packing for Melbourne, darling. We can finally be free. Free from all the horror that has happened here. I feel as if you coming here woke me up from a trance I'd been living in since...well, since as long as I can remember. I cannot wait to see you, all my love, Cilla.] 
+
+(click-replace: "L")  [(go-to: "Liquor")]
+(click-replace: "A")  [(go-to: "Decomposition")]
+(click-replace: "V")  [(go-to: "Desertion")]
+(click-replace: "I")  [(go-to: "Clarity")]
+(click-replace: "N") [(go-to: "Dead Silence")]
+(click-replace: "all my love, Cilla.") [(go-to: "Priscilla End")]
+
+
+
+</tw-passagedata><tw-passagedata pid="149" name="Liquor" tags="Evidence" position="1000,3100" size="100,100">//In the middle of my drunken stupor, I can see her face grinning at me//</tw-passagedata><tw-passagedata pid="150" name="Decomposition" tags="Evidence" position="1100,3100" size="100,100">//I wonder how long it takes for a body to decompose beyond recognition?//</tw-passagedata><tw-passagedata pid="151" name="Desertion" tags="Evidence" position="1200,3100" size="100,100">//I think God deserted me in the summer of 1963//</tw-passagedata><tw-passagedata pid="152" name="Clarity" tags="Evidence" position="1000,3200" size="100,100">//Please decimate my clarity, sip by sip by sip by sip because I cannot bear it any longer//</tw-passagedata><tw-passagedata pid="153" name="Dead Silence" tags="Evidence" position="1100,3200" size="100,100">//We were all agreed upon it. The importance of silence.//
+
+
+</tw-passagedata><tw-passagedata pid="154" name="Priscilla End" tags="Plot-Progression FINALSOLUTION" position="1050,3400" size="100,100">(set: $priscilla to true) 
+
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Cedarville Cursive', monospace;"&gt;The Autopsy&lt;/span&gt;|The Autopsy]] 
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Pinyon Script', monospace;"&gt;Carmen&lt;/span&gt;|Carmen]] 
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt;Beverly&lt;/span&gt;|Beverly]] 
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Meddon', monospace;"&gt;Vivian&lt;/span&gt;|Vivian]] 
+
+
+(if: $carmen is true and $priscilla is true and $vivian is true and $beverly is true)[
+    [[Read &lt;span style="font-family: 'MonteCarlo,' monospace;"&gt;Read Daphne&lt;/span&gt;|Read Daphne]]
+]</tw-passagedata><tw-passagedata pid="155" name="Beverly&#39;s Statement" tags="Characters" position="1575,1150" size="100,100">//Transcript of interview with Beverly Yvonne MacNab, November 14th, 1964. Recorded at Sentry Creek Police Station. Detective Inspector Robert Deacon, Ms Beverly Yvonne MacNab and Ms Suzette MacNab - her mother. Time at beginning of recording: [[9:25 am.]]//</tw-passagedata><tw-passagedata pid="156" name="9:25 am." tags="Characters" position="1400,1300" size="100,100">//Detective Inspector Deacon:// So, ladies, I must say that I'm surprised to see you both here. We have every reason to believe that Miss Jones' disappearance is entirely innocent, and we have been informed that she was sighted recently near Apollo Bay. School holidays, it doesn't seem unreasonable to me that she might want a break from the small town life. Evidently, you don't agree with that, do you?
+
+(click-replace: "Evidently, you don't agree with that, do you?") [(go-to: "Together in Disagreement")]</tw-passagedata><tw-passagedata pid="157" name="Together in Disagreement" tags="Characters" position="1500,1300" size="100,100">//Beverly MacNab:// No, I can't believe that, and whoever saw that was mistaken. It would be remiss of me not to tell you what my mother and I know. 
+
+(click-replace: "not to tell you what my mother and I know.")  [(go-to: "Big Words for a Small Girl")]</tw-passagedata><tw-passagedata pid="158" name="Big Words for a Small Girl" tags="Characters" position="1600,1300" size="100,100">//Detective Inspector Deacon:// "Remiss"? Wow, big words for a girl of your age. Speaking of which, I'll need you to confirm your name, age and address for the benefit of the record. 
+
+(click-replace: "confirm your name, age and address for the benefit of the record.")  [(go-to: "Beverly's Vitals")]</tw-passagedata><tw-passagedata pid="159" name="Beverly&#39;s Vitals" tags="Characters" position="1400,1400" size="100,100">//Beverly MacNab:// Beverly Yvonne MacNab, 17 years old and I currently reside at 170 The Boulevard. 
+
+(click-replace: "I currently reside at 170 The Boulevard.") [(go-to: "An Onslaught of Accolades")]</tw-passagedata><tw-passagedata pid="160" name="An Onslaught of Accolades" tags="Characters" position="1500,1400" size="100,100">//Detective Inspector Deacon:// Now, let me see here. "Class Valedictorian, Year 11 Cricket Captain, House Captain, DUX of Legal Studies, English, Literature and Australian History, Head Editor of the local student-run Newspaper called Sentry Creek Chronicle"...that's quite a CV, Ms MacNab. Now, how does a girl with such a dedicated scholastic routine have any time to pay attention to what their English teacher is doing. Or perhaps that's exactly why you're here?
+
+(click-append: "Or perhaps that's exactly why you're here?") [(go-to: "Teacher's Pet")]</tw-passagedata><tw-passagedata pid="161" name="Teacher&#39;s Pet" tags="Characters" position="1600,1400" size="100,100">//Mrs MacNab:// I'm sorry, Robert, if you are saying what I think you are - you're making a serious error of judgement. My daughter is an extremely intelligent, conscientious young lady with not a singular immoral bone in her body. She is here of her own volition to help you all with an investigation you should be taking seriously. 
+
+(click-replace: "an investigation you should be taking seriously.")  [(go-to: "Somebody's Assuming")]</tw-passagedata><tw-passagedata pid="162" name="Somebody&#39;s Assuming" tags="Characters" position="1400,1500" size="100,100">//Detective Inspector Deacon:// Look, Sue, I'm sorry, but I've heard kids dreaming up all kinds of stories, so you have to understand my initial scrutiny. I don't see any reason for people to panic just yet - it's cheaper to take the bus up to Apollo Bay than to pay for petrol. None of her money has disappeared. These things often fizzle out into a whole lot of nothing. 
+
+(click-replace: "These things often fizzle out into a whole lot of nothing.")  [(go-to: "You're a Tough Guy")]</tw-passagedata><tw-passagedata pid="163" name="You&#39;re a Tough Guy" tags="Characters" position="1500,1500" size="100,100">//Beverly MacNab:// You're all very quick to dismiss foul play. But maybe if you were taking things a little more seriously, you'd have done your research. I mean, did you know, for example, that Miss Jones was an ex-reporter from the Argus. What if she was here working on a story? 
+
+(click-replace: "What if she was here working on a story?")  [(go-to: "Leave it to the Pros")]</tw-passagedata><tw-passagedata pid="164" name="Leave it to the Pros" tags="Characters" position="1600,1500" size="100,100">//Detective Inspector Deacon:// You and I both know, Miss MacNab, that Sentry Creek is the //last// place any big time story is going to turn up. There's a better chance of Miss Jones finding a news headline in bloody Yas. 
+
+(click-append: "There's a better chance of Miss Jones finding a news headline in bloody Yas.")  [(go-to: "Sentry Creek Gossip")]</tw-passagedata><tw-passagedata pid="165" name="Sentry Creek Gossip" tags="Characters" position="1400,1600" size="100,100">//Beverly MacNab:// What if the story was right under your very nose, Detective Deacon? I don't think that a case of police corruption would go down very well with the Comissioner. 
+
+(click-replace: "case of police corruption would go down very well with the Comissioner.")  [(go-to: "Police Corruption")]</tw-passagedata><tw-passagedata pid="166" name="Police Corruption" tags="Characters" position="1500,1600" size="100,100">//Detective Inspector Deacon:// Police corruption? How //dare// you, Ms MacNab. Even the mere suggestion is unfounded. This department has done nothing but protect the public of this town and I'm sorry if you have personal affection for your teacher, but I deal in //facts//. There is //nothing// to suggest that foul play has been committed against Daphne Marie Jones. Even more unbelieveable to me is that you can sit here and accuse our professional force of intentionally breaking the law. 
+
+(click-replace: "Even more unbelieveable to me is that you can sit here and accuse our professional force of intentionally breaking the law.") [(go-to: "Frequenting the Station")]</tw-passagedata><tw-passagedata pid="167" name="Frequenting the Station" tags="Characters" position="1600,1600" size="100,100">//Mrs MacNab:// It isn't just us that are talking, Detective Deacon. Everyone knows that if you want the real hard truth, you must ask the wives and the women. Word around my office, from people who shall remain nameless, is that Miss Jones had mentioned talking to some of //your// officers about what has been occurring with the local council. 
+
+(click-append: "what has been occurring with the local council.") [(go-to: "Government Details")]</tw-passagedata><tw-passagedata pid="168" name="Government Details" tags="Characters" position="1400,1700" size="100,100">//Detective Inspector Deacon:// That is entirely untrue. My men would never discuss details of governmental conversations with a civilian. 
+
+(click-replace: "My men would never discuss details of governmental conversations with a civilian.") [(go-to: "Would You, Detective?")]</tw-passagedata><tw-passagedata pid="169" name="Would You, Detective?" tags="Characters" position="1500,1700" size="100,100">//Beverly MacNab:// Would you, Detective? You're an honest man, aren't you, maybe you wanted to do the right thing. My Mother has found evidence suggesting that Mayor Reid has been taking funds from the council to put towards his own bank accounts. Did you know about this?
+
+(click-append: "Did you know about this?") [(go-to: "Embezzling Government Funds")]</tw-passagedata><tw-passagedata pid="170" name="Embezzling Government Funds" tags="Characters" position="1600,1700" size="100,100">//Mrs MacNab produces a thick manila folder and opens it, placing it open upon the table.//
+
+//Ms MacNab:// For the benefit of the tape - that's what you're supposed to say, isn't it? - I'm showing Detective Inspector Deacon a folder of documents that I've amassed over the last month displaying the council accounts. There are several payments of large sums of money that have been transferred to multiple unnamed bank accounts, including a hefty amount that I believe...ah, yes, appears to belong to Miss Daphne Marie Jones. Now, Robert, I am sorry, but why would Paul Reid pay $2000 dollars to Daphne if he wasn't buying her silence? It is heartbreaking to me that I am having to talk about this to you, but I see no other choice.
+
+(click-replace: "but I see no other choice.") [(go-to: "Buddies in Arms")]</tw-passagedata><tw-passagedata pid="171" name="Buddies in Arms" tags="Characters" position="1400,1800" size="100,100">//Beverly MacNab:// I did some reading up on you, Detective Deacon. See, my Father is a criminal barrister, as it happens. You might remember that he worked on the case against Mr Reid early on, when he was a young investor with some unsavoury financial habits. You were his best mate, weren't you? Played an awful lot of footy together for the Sentry Creek Swans back in the day. And you stayed friends, watched each other scale the ladder. I find it hard to imagine that you haven't discussed any of this //at all// throughout the last few years. 
+
+(click-replace: "I find it hard to imagine that you haven't discussed any of this at all throughout the last few years. ") [(go-to: "Nothing To Hide")]</tw-passagedata><tw-passagedata pid="172" name="Nothing To Hide" tags="Characters" position="1500,1800" size="100,100">//Detective Inspector Deacon:// (voice raised) Look, I have nothing to hide. If I get asked about this, I will tell my superiors everything they need to know and I will answer any question, but I am //not// going to sit here and be interrogated in my own police station by two bloody women who know bloody jackshit. I will NOT. And you, Sue, how could you? You've known me 20 years. How could you think I'm capable of something like this? Covering up something like this? 
+
+(click-replace: "Covering up something like this?") [(go-to: "Expect the Unexpected")]</tw-passagedata><tw-passagedata pid="173" name="Expect the Unexpected" tags="Characters" position="1600,1800" size="100,100">//Mrs MacNab:// I'm sorry, Robert. It seems to be with these things that it's always the people you know, the people you least expect. I believe in truth, in justice. We will be taking this to the Commissioner. I don't think you killed that girl, but I think someone did. Someone like Paul. Someone with a lot to lose. Don't make things worse for yourself by trying to extricate yourself all for the sake of a greedy man.
+
+(click-replace: "Don't make things worse for yourself by trying to extricate yourself all for the sake of a greedy man.")  [(go-to: "What About You, Miss MacNab?")]</tw-passagedata><tw-passagedata pid="174" name="What About You, Miss MacNab?" tags="Characters" position="1400,1900" size="100,100">//Detective Inspector Deacon:// And what if you're wrong, Sue? Huh? Then what? You think people will just let you go on as you were, in your eyesore of a house on the hill, swanning 'round like you own the joint 'cos your husband rakes in the cash? I wouldn't be half surprised if you're both here covering your own arses. What were you doing Halloween evening, the both of you?
+
+(click-replace: "What were you doing Halloween evening, the both of you?") [(go-to: "Family Business")]</tw-passagedata><tw-passagedata pid="175" name="Family Business" tags="Characters" position="1500,1900" size="100,100">//Beverly MacNab:// As it happens, I was working from 4-10 pm at the petrol station. I do hours there after school - after work, I came home and I studied for an hour or so before I went do bed. My entire family can substantiate that, my mother picked me up from work and drove me home - they had been entertaining my father's work colleagues for the evening. 
+
+(click-replace: "they had been entertaining my father's work colleagues for the evening.") [(go-to: "Something In Her Past")]</tw-passagedata><tw-passagedata pid="176" name="Something In Her Past" tags="Characters" position="1600,1900" size="100,100">//Detective Inspector Deacon:// We'll be sure to follow that up. You're an odd lot, aren't you? Tucked away in that house on the hill, always throwing buckets of cash at your problems. I'm betting you've got plenty of secrets of your own, things you wouldn't want getting out. 
+
+(click-replace: "I'm betting you've got plenty of secrets of your own, things you wouldn't want getting out.")  [(go-to: "Skeletons In Closets")]</tw-passagedata><tw-passagedata pid="177" name="Skeletons In Closets" tags="Characters" position="1400,2000" size="100,100">//Mrs MacNab:// This family has no skeletons in its closet, Robert. I invite you - search us. We'll hand over anything you require. 
+
+(click-replace: "We'll hand over anything you require.")  [(go-to: "Key Witness Affairs")]</tw-passagedata><tw-passagedata pid="178" name="Key Witness Affairs" tags="Characters" position="1500,2000" size="100,100">//Detective Inspector Deacon:// Oh, really? Nothing at all. Not even, the case that almost had your husband disbarred for allegations that he had an affair with a key witness? What about that? It seems to me that would be an excellent headline for one curious reporter, don't you think? 
+
+(click-replace: "It seems to me that would be an excellent headline for one curious reporter, don't you think?")  [(go-to: "Sully His Name")]</tw-passagedata><tw-passagedata pid="179" name="Sully His Name" tags="Characters" position="1600,2000" size="100,100">//Beverly MacNab:// That was a falsification made up by the prosecution to sully my father's good name. 
+
+(click-replace: "sully my father's good name.")  [(go-to: "What Will It Be?")]</tw-passagedata><tw-passagedata pid="180" name="What Will It Be?" tags="Characters" position="1400,2100" size="100,100">//Detective Inspector Deacon:// What will it be, Sue? We've all got something to lose, don't we? I'll have my men descended on that house, searching it with the click of my fingers, and we'll see who's so arrogant then. 
+
+(click-replace: "we'll see who's so arrogant then.")  [(go-to: "Enemies in High Places")]</tw-passagedata><tw-passagedata pid="181" name="Enemies in High Places" tags="Characters" position="1500,2100" size="100,100">//Mrs MacNab:// Do you //really// want to do this to yourself, Robert? Do you really want enemies in high places? It won't be pleasant for you, that I can promise. 
+
+(click-replace: "It won't be pleasant for you, that I can promise.")  [(go-to: "House Search")]</tw-passagedata><tw-passagedata pid="182" name="House Search" tags="Characters" position="1600,2100" size="100,100">//Detective Inspector Deacon:// I'll do whatever it takes to get the truth, Sue. I don't care. Tell your lies. At the end of the day, justice will be done, won't it. I'm filing an official request for a search warrant to search your property, and I can't help but wonder if - this time - you won't be able to pay off your problems. Interview terminated at [[9:57 pm.]]</tw-passagedata><tw-passagedata pid="183" name="9:57 pm." tags="Evidence" position="1400,2300" size="100,100">//You find a print-out of a newspaper clipping dated December 3rd, 1964.// 
+
+&lt;!-- Image Map Generated by http://www.image-map.net/ --&gt;
+&lt;img src="./images/FALLFROMGRACE.jpg" usemap="#image-map"&gt;
+
+&lt;map name="image-map"&gt;
+    &lt;area target="" alt="Fall From Grace" title="Fall From Grace" href="" coords="80,514,1000,1019" shape="rect"&gt;
+&lt;/map&gt;
+
+&lt;script&gt;
+ $('area').on('click', function(e){
+   e.preventDefault();
+   Harlowe.goto(this.alt);
+ });
+&lt;/script&gt;
+
+&lt;script&gt;
+ $('area').on('click', function(e){
+   e.preventDefault();
+   Harlowe.goto(this.alt);
+ });
+$('map').imageMapResize();
+&lt;/script&gt;
+
+&lt;div style="display:none;"
+[[Fall From Grace]]&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="184" name="Fall From Grace" tags="Evidence" position="1500,2300" size="100,100">//Local police have today announced the official removal of Detective Inspector Robert Deacon from his role heading the ongoing investigation into the disappearance of high school English teacher and resident Daphne Marie Jones. Miss Jones was last seen on the 31st of October, at around 5:30, walking back from Sentry Creek Secondary School, towards her home on Silent Hill. Her neighbour, Mrs Deborah Forsythe, said the following of the brief exchange they shared in the street: "She seemed completely normal. I didn't ask her what she was doing later...It didn't occur to me that I wouldn't see her ever again." The removal of Deacon arrives on the coattails of shocking allegations about police involvement in a financial corruption coup. Sentry Creek Mayor Paul Reid has been accused of sinking public funds into his own accounts; a revelation made at the hands of both his book-keeper James Hurst and his secretary Suzette MacNab. An investigation into the depth of corruption in local government - and conspiracy to cover it up by the police - has been promised by Chief Commissioner Gregory Salt. In a press conference on Monday, Salt said the following "I am unable to comment on what is currently part of an ongoing investigation, but I will say that Metropolitan Melbourne Police have been asked to take charge of the investigation...We are not of the belief that Detective Inspector Deacon was involved in the disappearance of Miss Jones, but we are aware of certain factors tying him to the possibility of financial corruption in Sentry Creek." More to come.//
+
+(click-replace: "Her neighbour, Mrs Deborah Forsythe, said the following of the brief exchange they shared in the street") [(go-to: "A Portrait of Miss Jones")]
+
+(click-replace: "on the coattails of shocking allegations about police involvement in a financial corruption coup") [(go-to: "Certificate of Appreciation")]
+
+(click-replace: "Chief Commissioner Gregory Salt") [(go-to: "Comments From the Commissioner")]
+
+(click-replace: "More to come.") [(go-to: "Footy Shed Items")]</tw-passagedata><tw-passagedata pid="185" name="A Portrait of Miss Jones" tags="Evidence BEV-PAPER" position="1600,2300" size="100,100">(text-colour: black) [//The following are interview notes between Miss Deborah Foresythe and Miss Beverly MacNab, conducted around the 5th of November, 1964. They were recovered from Miss MacNab's personal notebook.//] 
+
+---
+
+&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt;Q: (text-colour: black) [Did you know Miss Jones well? Would you say that she was acting like her usual self in the lead-up to her death?]
+
+ &lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt;A: (text-colour: black) [Yes, I would say that I did. She was a lovely young lady with a good head on her shoulders. She was quite private about things. Kept a low-profile, you could say. She was perhaps a little bit stressed, but that's not unusual for a high school teacher at Sentry Creek Secondary.] 
+
+&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt;Q: (text-colour: black) [A bit stressed? Do you think there could've been anything in particular she would have been stressed about, besides her job?]
+
+&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt;A: (text-colour: black) [I don't know exactly. There's been rumours flying around as always. Everyone had a different idea of why she came to live out here - I did ask her and she told me that she wanted to get away from the big city. She wanted a haven. But Sentry Creek isn't a haven, I think someone was after her.] 
+
+&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt;Q: (text-colour: black) [Anyone in particular?]
+
+ &lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt;Q: (text-colour: black) [I knew she had dinner with Mayor Reid once. I saw his Rolls Royce parked outside the house. But she was no fool, Miss Daphne, she wouldn't have got involved with him if there weren't good reason.] 
+
+(click-replace: "she wouldn't have got involved with him if there weren't good reason.") [(go-to: "Fall From Grace")]</tw-passagedata><tw-passagedata pid="186" name="Certificate of Appreciation" tags="Evidence Dr-Hepworth" position="1400,2400" size="100,100">(text-color: black) [The following is a letter from Paula Hathaway, Editor-In-Chief at The Argus (1955-1967) and a friend of Daphne Jones, received by Beverly MacNab around the 10th of November.]
+
+
+---
+
+(text-color: black) [//Dear Miss MacNab, thank you for contacting us. It is unusual to receive correspondence from such a young reader. In regards to your questions about Daphne Jones - I can provide you with some information, but there are things I have been forced to redact due to legal requirements. I hope that you will find some answers to what you're looking for in what I can give you. We are, at this moment, also fully cooperating with the Metropolitan Police, so please know that anything I have provided to you has also been provided to them.//]
+
+(text-color: black) [//Daphne began working at The Argus in 1957. She was a young graduate with a keen eye for detail. We wanted her to write domestic columns; covering housekeeping and such, but she was not interested in the slightest.//] (text-color: white) [//She wanted to cover crimes, and she travelled widely to get stories and earn her stripes.//] 
+
+(text-color: black) [//She informed me around the start of 1964 that she was ready for a change of routine. She'd been doing this gig for a while and I think she wanted a change of scenery. I heard from her intermittently after she moved up there. We used to go out for dinner when we worked together. She was a close friend, I would say]. (text-color: white) [I could tell that Daphne had stumbled on a story. She rung me once with a combination of fear and excitement in her voice.]
+
+(text-color: black) [//She said she had uncovered something big. She told me that she would post me a copy of all the files she had - I suspected that she knew something might happen to her.] (text-color: white) [I offered to go up there and visit, keep her company, help her sort out the story - but she wasn't having it, said it was dangerous.]
+
+(text-color: black) [//That's all I can tell you for now, Beverly, as the rest is confidential. I wish you luck with your story - Daphne would be impressed with your journalistic skills. Kind Wishes, Paula Hathaway.]
+
+(text-color: white) [P.S: your name sounds familiar, I could've sworn Daphne mentioned you somewhere along the way...]
+
+(click-replace: "Kind Wishes, Paula Hathaway.") [(go-to: "Fall From Grace")]
+</tw-passagedata><tw-passagedata pid="187" name="Comments From the Commissioner" tags="Evidence BEV-PAPER" position="1500,2400" size="100,100">&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt; (text-colour: black) [//7th of November, 1964.//]
+
+---
+
+&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt; (text-colour: black)[Contacted Chief Commissioner Salt; refused to comment. Contacted DI Deacon for reaction, said "Careful what you say, or the same thing that happened to Daphne could happen to you."]
+
+(click-replace: "Careful what you say, or the same thing that happened to Daphne could happen to you.")  [(go-to: "Fall From Grace")]</tw-passagedata><tw-passagedata pid="188" name="Footy Shed Items" tags="Evidence BEV-PAPER" position="1600,2400" size="100,100">&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt; (text-colour: black)  [//10th of November. The police are not taking action, so I will. Mr Deacon may mock me, but now he is the one without a job and I am the one wielding the truth. No one thinks anything bad has happened to Daphne, but I may have found something that could prove it. I ran into the Council Sports Pavillion while mother was finishing work, and I copied down all the details I could before anybody found me. I have detailed every item whose absence has not been substantiated with a signature.//]
+
+---
+
+&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt; (text-colour: black) [An Audit of the Loaning Ledger of the Council Sports Shed, in the days leading up to Miss Jones' Disappearance.]
+
+(click-replace: "in the days leading up to Miss Jones' Disappearance.")  [(go-to: "Missing Equipment")]</tw-passagedata><tw-passagedata pid="189" name="Missing Equipment" tags="Evidence BEV-PAPER" position="1400,2500" size="100,100"> &lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt; (text-colour: black)[Rope]
+
+(click-append: "Rope") + (text-colour: black) [, One Cricket Bat]
+
+(click-append: ", One Cricket Bat") + (text-colour: black) [, Athletic Tape]
+
+(click-append: ", Athletic Tape") + (text-colour: black) [, One Piece of Tarpaulin]
+
+(click-replace: "One Piece of Tarpaulin") + (text-colour: black)  [(go-to: "Miss Jones Timeline")]
+
+</tw-passagedata><tw-passagedata pid="190" name="I KNOW WHAT YOU DID" tags="Evidence imagemap" position="1600,2700" size="100,100">&lt;!-- Image Map Generated by http://www.image-map.net/ --&gt;
+&lt;img src="./images/RANSOMFALSE.jpg" usemap="#image-map"&gt;
+
+&lt;map name="image-map"&gt;
+    &lt;area target="" alt="T IS FOR" title="T IS FOR" href="" coords="750,410,869,631" shape="rect"&gt;
+    &lt;area target="" alt="D IS FOR" title="D IS FOR" href="" coords="313,958,503,1276" shape="rect"&gt;
+    &lt;area target="" alt="H IS FOR" title="H IS FOR" href="" coords="368,316,579,561" shape="rect"&gt;
+    &lt;area target="" alt="K IS FOR" title="K IS FOR" href="" coords="523,991,725,1241" shape="rect"&gt;
+    &lt;area target="" alt="O IS FOR" title="O IS FOR" href="" coords="422,675,622,894" shape="rect"&gt;
+    &lt;area target="" alt="A IS FOR" title="A IS FOR" href="" coords="103,991,288,1195" shape="rect"&gt;
+&lt;/map&gt;
+
+
+&lt;script&gt;
+ $('area').on('click', function(e){
+   e.preventDefault();
+   Harlowe.goto(this.alt);
+ });
+&lt;/script&gt;
+
+&lt;script&gt;
+ $('area').on('click', function(e){
+   e.preventDefault();
+   Harlowe.goto(this.alt);
+ });
+$('map').imageMapResize();
+&lt;/script&gt;
+
+&lt;div style="display:none;"
+[[T IS FOR]]
+[[D IS FOR]]
+[[H IS FOR]]
+[[K IS FOR]]
+[[O IS FOR]]
+[[A IS FOR]]&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="191" name="Miss Jones Timeline" tags="Evidence BEV-PAPER" position="1500,2500" size="100,100"> &lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt; (text-colour: black)[Timeline of events leading up to the disappearance of Daphne Marie Jones]
+
+(click-replace: "leading up to the disappearance of Daphne Marie Jones")  [(go-to: "An Obsession")]
+</tw-passagedata><tw-passagedata pid="192" name="An Obsession" tags="BEV-PAPER Evidence" position="1600,2500" size="100,100">&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt; (text-colour: black) [//3:30 pm, 31st of October.// We finish English with Miss Jones, she packs her bag hastily and tells us to make sure we complete our MacBeth essays over the school holidays.]  
+
+(click-replace: "make sure we complete our MacBeth essays over the school holidays.") [(go-to: "Walking Home")]
+
+(after: 5s) [Vivian tries to catch her] 
+
+(click-replace: "Vivian tries to catch her")  [(go-to: "Walking Home")]
+
+
+
+</tw-passagedata><tw-passagedata pid="193" name="Walking Home" tags="Evidence BEV-PAPER" position="1400,2600" size="100,100">&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt; (text-colour: black) [//4:30 pm, 31st of October.// Mrs Forsythe stops to talk with Daphne on her way home. She seems slightly stressed.]
+
+(click-replace: "She seems slightly stressed.")  [(go-to: "Guess Who's Coming To Dinner")]
+
+(after: 5s) [What does she know?] 
+
+(click-replace: "What does she know?")  [(go-to: "Guess Who's Coming To Dinner")]
+</tw-passagedata><tw-passagedata pid="194" name="Guess Who&#39;s Coming To Dinner" tags="Evidence BEV-PAPER" position="1500,2600" size="100,100">&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt; (text-colour: black) [//7:00 pm, 31st of October.// Detective Deacon stops by the servo. He buys a packet of cigarettes, a paper. I ask him what he's doing. It's his turn to patrol, he says.]
+
+(click-replace: "It's his turn to patrol, he says")  [(go-to: "Lunch Break")] 
+
+(after: 5s) [Has he noticed the smear of white paint on his right shoe? The paint near the Footy Pavillion gets awfully runny when it rains.] 
+
+(click-replace: "Has he noticed the smear of white paint on his right shoe? The paint near the Footy Pavillion gets awfully runny when it rains.") [(go-to: "Lunch Break")] </tw-passagedata><tw-passagedata pid="195" name="Lunch Break" tags="BEV-PAPER Evidence" position="1600,2600" size="100,100">&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt; (text-colour: black) [//7:30 pm. Dinner break.]
+
+(click-replace: "Dinner break.") [(go-to: "Home Again")]
+
+(after: 5s) [No matter how many times I wash my hands, I can still smell it.] 
+
+(click-replace: "No matter how many times I wash my hands, I can still smell it.") [(go-to: "Home Again")] </tw-passagedata><tw-passagedata pid="196" name="Home Again" tags="BEV-PAPER Evidence" position="1400,2700" size="100,100">&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt; (text-colour: black) [//10:30 pm.// Home again. The guests are still milling around our table. There is a knock at the door. I look out from my bedroom balcony window and below is Mayor Reid. They let him in.]
+
+(after: 5s) [Father takes him into the study. I creep out of my room and I press my eye to the keyhole. Their heads are bowed over something on the desk. My father picks up a wad of thick cash. He tells Mayor Reid everything will be fine.]
+
+(click-replace: "He tells Mayor Reid everything will be fine.") [(go-to: "A Poem by Beverly MacNab")] </tw-passagedata><tw-passagedata pid="197" name="A Poem by Beverly MacNab" tags="Evidence" position="1500,2700" size="100,100">//The following is a poem by Beverly MacNab, which was awarded the best entry in the local Sentry Creek Literary Competition, Judged by Daphne Marie Jones in October, 1964.//
+
+---
+
+&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt; Black Widow, by Beverly MacNab.
+
+&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt;(text-color: white) [A tarantula has set up an apartment in my mouth.]
+
+(click-append: "set up an apartment in my mouth") [, a nest for its thousand beady-eyed truths.]
+
+&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt;(text-color: white) [I'm falling again.]
+
+(click-append: "I'm falling again") [, tipping into the oblivion where you are still there.]
+
+&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt;(text-color: white) [I am bound by my black widow's web.]
+
+(click-append: "I'm falling again") [, haunted by the silky ghost of your body, your smell, your cherubic trust.]
+
+&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt;(text-color: white) [I would crystallise myself with you beyond the earthly veil, gouge the beating arteries from my ribcage.]
+
+(click-append: "gouge the beating arteries from my ribcage.") [, submerge myself in the eternal soil and hoodwink the devilish temptress that forced you there.] 
+
+(click-replace: "hoodwink the devilish temptress that forced you there.") [(go-to: "I KNOW WHAT YOU DID")] 
+
+
+
+
+
+
+
+
+</tw-passagedata><tw-passagedata pid="198" name="T IS FOR" tags="Evidence imagemap" position="1400,2800" size="100,100">[[&lt;img class="story-image" src="./images/TISFOR.jpg" alt="T IS FOR" /&gt;-&gt;T IS FOR TRAITOR]]</tw-passagedata><tw-passagedata pid="199" name="T IS FOR TRAITOR" tags="Evidence imagemap" position="1500,2800" size="100,100">//T IS FOR TRATIOR//</tw-passagedata><tw-passagedata pid="200" name="D IS FOR" tags="Evidence imagemap" position="1600,2800" size="100,100">[[&lt;img class="story-image" src="./images/DISFOR.jpg" alt="D IS FOR" /&gt;-&gt;D IS FOR DECEPTION]]</tw-passagedata><tw-passagedata pid="201" name="D IS FOR DECEPTION" tags="Evidence imagemap" position="1400,2900" size="100,100">//D IS FOR DECEPTION//</tw-passagedata><tw-passagedata pid="202" name="H IS FOR" tags="Evidence imagemap" position="1500,2900" size="100,100">[[&lt;img class="story-image" src="./images/HISFOR.jpg" alt="H IS FOR" /&gt;-&gt;H IS FOR HOMOCIDE]]</tw-passagedata><tw-passagedata pid="203" name="H IS FOR HOMOCIDE" tags="Evidence" position="1600,2900" size="100,100">//H IS FOR HOMOCIDE//</tw-passagedata><tw-passagedata pid="204" name="K IS FOR" tags="Evidence imagemap" position="1400,3000" size="100,100">[[&lt;img class="story-image" src="./images/KISFOR.jpg" alt="K IS FOR" /&gt;-&gt;K IS FOR KILLER]]</tw-passagedata><tw-passagedata pid="205" name="K IS FOR KILLER" tags="Evidence imagemap" position="1500,3000" size="100,100">//K IS FOR KILLER//</tw-passagedata><tw-passagedata pid="206" name="O IS FOR" tags="Evidence imagemap" position="1600,3000" size="100,100">[[&lt;img class="story-image" src="./images/OISFOR.jpg" alt="O IS FOR" /&gt;-&gt;O IS FOR OFFENCE]]</tw-passagedata><tw-passagedata pid="207" name="A IS FOR" tags="Evidence imagemap" position="1500,3100" size="100,100">[[&lt;img class="story-image" src="./images/RANSOM.jpg" alt="A IS FOR" /&gt;-&gt;A IS FOR ACTUS REUS]]</tw-passagedata><tw-passagedata pid="208" name="O IS FOR OFFENCE" tags="Evidence" position="1400,3100" size="100,100">//O IS FOR OFFENCE//</tw-passagedata><tw-passagedata pid="209" name="A IS FOR ACTUS REUS" tags="Evidence" position="1600,3100" size="100,100">//A IS FOR ACTUS REUS//
+
+(click-append: "A IS FOR ACTUS REUS") [(go-to: "Beverly End")]</tw-passagedata><tw-passagedata pid="210" name="Beverly End" tags="Plot-Progression FINALSOLUTION" position="1500,3300" size="100,100">(set: $beverly to true) 
+
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Cedarville Cursive', monospace;"&gt;The Autopsy&lt;/span&gt;|The Autopsy]] 
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Pinyon Script', monospace;"&gt;Carmen&lt;/span&gt;|Carmen]]  
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Zeyada', monospace;"&gt;Priscilla&lt;/span&gt;|Priscilla]] 
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Meddon', monospace;"&gt;Vivian&lt;/span&gt;|Vivian]] 
+
+(if: $carmen is true and $priscilla is true and $vivian is true and $beverly is true)[
+    [[Read &lt;span style="font-family: 'MonteCarlo', monospace;"&gt;Read Daphne&lt;/span&gt;|Read Daphne]]
+]</tw-passagedata><tw-passagedata pid="211" name="Read Daphne" tags="Characters Dr-Hepworth" position="500,3400" size="100,100">(text-color: black) [//The following was found beneath a floorboard in Daphne's old home in Sentry Creek.//]
+
+---
+
+&lt;span style="font-family: 'MonteCarlo', monospace;"&gt; (text-color: black) [Dearest Paula,]
+
+&lt;span style="font-family: 'MonteCarlo', monospace;"&gt; (text-color: black) [If you are reading this, it's because things have gone terribly wrong. I need someone I can trust to keep this copy of events - as they truly happened - safe. There is something extremely wrong here, I've felt it ever since I moved earlier in the year.]
+
+&lt;span style="font-family: 'MonteCarlo', monospace;"&gt; (text-color: black) [Teaching at the school exposes you to whispers in the hallways between students, and rumours lurking in the staffroom. It became apparent, through piecing together different stories, that an orphaned girl had disappeared in Sentry Creek last summer - and no one had come looking for her because she had no family. Paula, you know that where a story of injustice beckons, I must follow.]
+
+&lt;span style="font-family: 'MonteCarlo', monospace;"&gt; (text-color: black) [Her name was Lavinia. I asked who her friends were, thinking that they would be the most informed about her movements; whether someone might have been causing her trouble. They were, initially, hesitant to discuss her disappearance, but time passed and little comments and gestures snagged my attention. I came to realise there was a possibility that something far more sinister than grief was uniting the four of her friends. Namely, I was disturbed by the coercive, aggressive tendencies of their figurehead, Vivian. She is...vitriolic. She is unable to hide her hatred - for me, and seemingly for Lavinia, though she tries.]
+
+&lt;span style="font-family: 'MonteCarlo', monospace;"&gt; (text-color: black) [P.T.O]
+
+(click-replace: "P.T.O") [(go-to: "Vivian's Wrath")]  </tw-passagedata><tw-passagedata pid="212" name="Vivian&#39;s Statement" tags="Characters" position="600,1125" size="100,100">[//Transcript of interview with Vivian Grieve, November 17th 1964. Recorded at Sentry Creek Police Station. Detective Inspector Robert Deacon, Ms Vivian Grieve and Margaret Frost, a social worker, present. Time at beginning of recording: [[2:17 pm.]]]</tw-passagedata><tw-passagedata pid="213" name="2:17 pm." tags="Characters" position="500,1300" size="100,100">//Detective Inspector Deacon:// Do you know why you're here today, Miss Grieve? 
+
+(click-replace: "why you're here today, Miss Grieve?")  [(go-to: "You Tell Me")]</tw-passagedata><tw-passagedata pid="214" name="You Tell Me" tags="Characters" position="600,1300" size="100,100">//Vivian Grieve:// You tell me, Detective. 
+
+(click-replace: "Detective.")  [(go-to: "Nasty Things")]</tw-passagedata><tw-passagedata pid="215" name="Nasty Things" tags="Characters" position="700,1300" size="100,100">//Detective Inspector Deacon:// You're here because we've heard you've been saying some nasty things about your missing teacher. I need you to confirm your name, age and address for the record.
+
+(click-replace: "I need you to confirm your name, age and address for the record.")  [(go-to: "Vivian's Vitals")]</tw-passagedata><tw-passagedata pid="216" name="Vivian&#39;s Vitals" tags="Characters" position="500,1400" size="100,100">//There is a pause, Vivian laughs.//
+
+//Vivian Grieve:// "Nasty things?" People in this shithole are so easily offended. 
+
+(click-replace: "People in this shithole are so easily offended.")  [(go-to: "Answer the Damn Question")]</tw-passagedata><tw-passagedata pid="217" name="Answer the Damn Question" tags="Characters" position="600,1400" size="100,100">  //Detective Inspector Deacon:// This is not a joke, Vivian. This is a serious matter, answer the question, please. 
+
+(click-replace: "This is a serious matter, answer the question, please.") [(go-to: "Trouble Is Her Middle Name")]
+</tw-passagedata><tw-passagedata pid="218" name="Trouble Is Her Middle Name" tags="Characters" position="700,1400" size="100,100">//Vivian Grieve:// Oh, I //am// sorry, Mr Deacon. I didn't mean to insult you. Vivian Grieve, 17 years old, and I don't live anywhere. Not in this lifetime, anyway. 
+
+(click-replace: "Not in this lifetime, anyway.") [(go-to: "Sentry Creek Boarding Home")]</tw-passagedata><tw-passagedata pid="219" name="Sentry Creek Boarding Home" tags="Characters" position="500,1500" size="100,100">//Margaret Frost//: Enough of that, Vivian. What Vivian means to say is that she is a foster-child. She's living at Sentry Creek boarding home at the moment. 
+
+(click-replace: "She's living at Sentry Creek boarding home at the moment.") [(go-to: "Sorry For Your Loss")]</tw-passagedata><tw-passagedata pid="220" name="Sorry For Your Loss" tags="Characters" position="600,1500" size="100,100">//Detective Inspector Deacon:// Well, I am sorry to hear that. It can be lonely thing being a ward of the state. 
+
+(click-replace: "It can be lonely thing being a ward of the state.")  [(go-to: "Matricide")]</tw-passagedata><tw-passagedata pid="221" name="Matricide" tags="Characters" position="700,1500" size="100,100">//Vivian Grieve:// No one is more sorry than my mother, I should think. My birth killed her, she bled out on the dining room floor. What a queer thing, don't you think, Inspector, to have forced your way into this world at the expense of another?
+
+(click-replace: "to have forced your way into this world at the expense of another?")  [(go-to: "Margaret's Displeasure")]</tw-passagedata><tw-passagedata pid="222" name="Margaret&#39;s Displeasure" tags="Characters" position="500,1600" size="100,100">//Margaret Frost:// You must never speak of the dead in such a way child, child. Especially a woman who carried your body for nine months. You should be ashamed.
+
+(click-replace: "You should be ashamed.")  [(go-to: "Do You Believe in Ghosts?")]</tw-passagedata><tw-passagedata pid="223" name="Do You Believe in Ghosts?" tags="Characters" position="600,1600" size="100,100">//Vivian laughs.//
+
+//Vivian Grieve:// Oooh, are you scared she's going to rise out of her cold grave and strangle me in my sleep, Mrs Frost?
+
+(click-replace: "rise out of her cold grave and strangle me in my sleep, Mrs Frost?")  [(go-to: "Extended Family")]</tw-passagedata><tw-passagedata pid="224" name="Extended Family" tags="Characters" position="700,1600" size="100,100">//Detective Inspector Deacon:// You have no other family here, Vivian? 
+
+(click-replace: "You have no other family here, Vivian?")  [(go-to: "Blood Sisters")]</tw-passagedata><tw-passagedata pid="225" name="Blood Sisters" tags="Characters" position="500,1700" size="100,100">//Vivian Grieve:// None, Dear Inspector. I have my friends, and they're all I need in the world. We're like blood sisters, you see. They would never desert me and I would never desert them. That's more than you can say for most families. 
+
+(click-replace: "That's more than you can say for most families.")  [(go-to: "Shared Opinions")]</tw-passagedata><tw-passagedata pid="226" name="Shared Opinions" tags="Characters" position="600,1700" size="100,100">//Detective Inspector Deacon:// You're all very close. Did you share the same opinion over your teacher, Miss Jones? You all liked her? Disliked her? 
+
+(click-replace: "You all liked her? Disliked her?") [(go-to: "They Adored Her")]</tw-passagedata><tw-passagedata pid="227" name="They Adored Her" tags="Characters" position="700,1700" size="100,100">//Vivian Grieve:// Oh no, my friends adored Miss Jones. I didn't like her. I thought she was a goody-goody. No one likes a goody-goody, Mr Detective. 
+
+(click-replace: "No one likes a goody-goody, Mr Detective.") [(go-to: "People You Hate")]</tw-passagedata><tw-passagedata pid="228" name="People You Hate" tags="Characters" position="500,1800" size="100,100">//Detective Inspector Deacon:// Did you harm Daphne Marie Jones, Vivian? 
+
+(click-replace: " Did you harm Daphne Marie Jones, Vivian?")  [(go-to: "If I Had A Dime...")]</tw-passagedata><tw-passagedata pid="229" name="If I Had A Dime..." tags="Characters" position="600,1800" size="100,100">//Vivian laughs.//
+
+//Vivian Grieve:// Detective, if I killed everyone in this town I hated...well, there'd be no one left.
+
+(click-replace: "well, there'd be no one left.")  [(go-to: "That's Not What I Asked")]</tw-passagedata><tw-passagedata pid="230" name="That&#39;s Not What I Asked" tags="Characters" position="700,1800" size="100,100">//Detective Inspector Deacon:// That's not what I asked you, Vivian. I asked you if you did anything to harm Daphne Marie Jones and if, so, I need you to tell me exactly what you did. 
+
+(click-replace: "I need you to tell me exactly what you did.") [(go-to: "Scared Yet?")]</tw-passagedata><tw-passagedata pid="231" name="Scared Yet?" tags="Characters" position="500,1900" size="100,100">//Vivian Grieve:// Please. The fact that you're all kicking up a stink, she would love this. She's probably out there somewhere right now, giggling at how all of you are running around in circles over her. Let me tell you this - nothing, absolutely //nothing// happened to that woman. She packed her little suitcase and off she went, back to the big city where she belongs. She told me herself. 
+
+(click-replace: "She told me herself.") [(go-to: "The Game")]</tw-passagedata><tw-passagedata pid="232" name="The Game" tags="Characters" position="600,1900" size="100,100">//Detective Inspector Grieve:// This isn't a game, Vivian. We're worried about Daphne's wellbeing. What did she tell you? 
+
+(click-replace: "What did she tell you?") [(go-to: "How Boring")]</tw-passagedata><tw-passagedata pid="233" name="How Boring" tags="Characters" position="700,1900" size="100,100">//Vivian Grieve:// She told me she was leaving to start up her pretty white-picket-fence life with her rich boyfriend in the city. How boring. 
+
+(click-replace: "How boring.") [(go-to: "Deadly Lies")]</tw-passagedata><tw-passagedata pid="234" name="Deadly Lies" tags="Characters" position="500,2000" size="100,100">//Detective Inspector Deacon:// Why did you dislike Daphne so much, Vivian? You speak of her with such disdain, you must forgive me for suspecting that you're not telling me the truth. 
+
+(click-replace: "you must forgive me for suspecting that you're not telling me the truth.") [(go-to: "Lies Upon Lies")]</tw-passagedata><tw-passagedata pid="235" name="Lies Upon Lies" tags="Characters" position="600,2000" size="100,100">//Vivian Grieve:// You're forgiven, Mr Detective. I don't like liars, and she was a liar. Always wanted to poke her nose in where it wasn't wanted, you know the type. 
+
+(click-replace: "you know the type.") [(go-to: "Were You Angry, Vivian?")]</tw-passagedata><tw-passagedata pid="236" name="Were You Angry, Vivian?" tags="Characters" position="700,2000" size="100,100">//Detective Inspector Deacon:// What did Daphne lie about, Vivian? Did it make you angry? 
+
+(click-replace: "Did it make you angry?") [(go-to: "With the Fishies")]</tw-passagedata><tw-passagedata pid="237" name="With the Fishies" tags="Characters" position="500,2100" size="100,100">//Vivian Grieve:// Oh yes, Detective, sir, she told Mrs Frost here that I've been sneaking around with boys twice my age, so I stuck a great big knife in her back and I threw her into the ocean with the fishies.  
+
+//Vivian bursts out laughing, clapping her hands together.//
+
+(click-replace: "Vivian bursts out laughing, clapping her hands together.") [(go-to: "Overactive Imagination")]</tw-passagedata><tw-passagedata pid="238" name="Overactive Imagination" tags="Characters" position="600,2100" size="100,100">//Margaret Frost:// VIVIAN! I should box you around the ears. I can't apologise enough, Detective Deacon, Vivian has a very hyperactive imagination that we've been trying to stamp out of her, haven't we, Vivian? Not even the belt is good enough incentive for this one.
+
+(click-replace: "Not even the belt is good enough incentive for this one.")  [(go-to: "Little Old Me?")]</tw-passagedata><tw-passagedata pid="239" name="Little Old Me?" tags="Characters" position="700,2100" size="100,100">//Vivian Grieve:// What, Detective, if I didn't know better, I'd say you look scared of a teenage girl.
+
+(click-replace: "I'd say you look scared of a teenage girl.") [(go-to: "Seriously Now")]</tw-passagedata><tw-passagedata pid="240" name="Seriously Now" tags="Characters" position="500,2200" size="100,100">//Detective Inspector Deacon:// I've had just about enough of you, Vivian. Do you know how easy it is for you kids to get forgotten about? To become nothing but a scribble in a ledger on a dusty bookshelf. You had best start telling the truth, the serious hard truth, or I can make you disappear to somewhere a whole lot nastier than Sentry Creek. Without your friends, without nice Mrs Frost here, looking out for you. 
+
+(click-replace: "Without your friends, without nice Mrs Frost here, looking out for you.")[(go-to: "Girls Never Die")] </tw-passagedata><tw-passagedata pid="241" name="Girls Never Die" tags="Characters" position="600,2200" size="100,100">//There is a long pause.//
+
+//Vivian Grieve:// Sure, Mr Detective, I'll tell you the truth. You can do whatever you want with me, you can put me wherever you like, but I've survived a whole lot worse than you. I didn't touch a hair on her pretty little head, I haven't seen her, I've been out of school the last couple of days. 
+
+(click-replace: "I've been out of school the last couple of days.") [(go-to: "Vivian on Halloween")] </tw-passagedata><tw-passagedata pid="242" name="Vivian on Halloween" tags="Characters" position="700,2200" size="100,100">//Detective Inspector Deacon:// Don't get cocky with me. On the 31st of October, you were not present at high school? Where were you, Vivian?
+
+(click-replace: "Where were you, Vivian?") [(go-to: "Sick In Bed")] </tw-passagedata><tw-passagedata pid="243" name="Sick In Bed" tags="Characters" position="500,2300" size="100,100">//Vivian Grieve:// I was sick, "nice Mrs Frost" can tell you all about it. I had the doctor out to visit me. I had tonsilitis. It's very nasty. 
+
+(click-replace: "I had tonsilitis. It's very nasty.") [(go-to: "Tonsilitis")] </tw-passagedata><tw-passagedata pid="244" name="Tonsilitis" tags="Characters" position="600,2300" size="100,100">//Margaret Frost:// Yes, that is true, Detective. Vivian was in bed both days with a fever. She couldn't speak, thank the Lord. 
+
+(click-replace: "She couldn't speak, thank the Lord.") [(go-to: "If I Catch You Lying")] </tw-passagedata><tw-passagedata pid="245" name="If I Catch You Lying" tags="Characters" position="700,2300" size="100,100">//Detective Inspector Deacon:// I'm going to have your room searched, Vivian, and if I find anything, //anything at all// that links you to the disappearance of that woman, so help me God, I will have you put away, you understand me?
+
+(click-replace: "I will have you put away, you understand me?") [(go-to: "Cross My Heart and Hope To Die")] </tw-passagedata><tw-passagedata pid="246" name="Cross My Heart and Hope To Die" tags="Characters" position="500,2400" size="100,100">//Vivian Grieve:// Oh, I believe you, Inspector. But you won't find anything, cross my heart and hope to die. 
+
+(click-replace: "cross my heart and hope to die.")  [(go-to: "Interview Terminated")] </tw-passagedata><tw-passagedata pid="247" name="Interview Terminated" tags="Characters" position="600,2400" size="100,100">//Detective Inspector Deacon:// For your sake, I hope so. Interview terminated at [[2:42 pm.]]</tw-passagedata><tw-passagedata pid="248" name="2:42 pm." tags="Evidence" position="500,2600" size="100,100">//You finish reading the transcript of Vivian's interview and remove the next item from the file.//
+
+(click-replace: "remove the next item from the file.")  [(go-to: "Graveyard")] 
+
+</tw-passagedata><tw-passagedata pid="249" name="Graveyard" tags="Evidence imagemap" position="600,2600" size="100,100">//The following items were not found until recently, when the Sentry Creek Boarding Home was demolished to create space for a retreat, spa and restaurant. They are (text-style:"underline")[unable] to be //fully// attributed, beyond dispute to Vivian Grieve; who has not been seen of or heard from since around 1970, when she herself disappeared. No investigation was carried out.//
+
+[[&lt;img class="story-image" src="./images/graveyard.jpg" alt="Graveyard" /&gt;-&gt;Angel of Death]]</tw-passagedata><tw-passagedata pid="250" name="Portrait of a Man" tags="Evidence imagemap" position="500,2700" size="100,100">&lt;!-- Image Map Generated by http://www.image-map.net/ --&gt;
+&lt;img src="./images/SLEEPTIGHT.jpg" usemap="#image-map"&gt;
+
+&lt;map name="image-map"&gt;
+    &lt;area target="" alt="SLEEP TIGHT" title="SLEEP TIGHT" href="" coords="51,77,1054,206" shape="rect"&gt;
+    &lt;area target="" alt="FRAMED?" title="FRAMED?" href="" coords="107,385,508,485" shape="rect"&gt;
+    &lt;area target="" alt="DUAL DEATHS" title="DUAL DEATHS" href="" coords="879,1170,1026,1323" shape="0"&gt;
+&lt;/map&gt;
+
+&lt;script&gt;
+ $('area').on('click', function(e){
+   e.preventDefault();
+   Harlowe.goto(this.alt);
+ });
+&lt;/script&gt;
+
+&lt;script&gt;
+ $('area').on('click', function(e){
+   e.preventDefault();
+   Harlowe.goto(this.alt);
+ });
+$('map').imageMapResize();
+&lt;/script&gt;
+
+&lt;div style="display:none;"
+[[SLEEP TIGHT]]
+[[FRAMED?]]
+[[DUAL DEATHS]]&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="251" name="SLEEP TIGHT" tags="Evidence" position="600,2700" size="100,100">&lt;span style="font-family: 'Meddon', monospace;"&gt; I bet you're feeling awfully sorry for yourself now, Mr Curran. I'll enjoy watching you hauled out in irons, flushed red and sweating. Telling them you did nothing wrong, that they'll be hearing from your Father. You should have seen me coming.  </tw-passagedata><tw-passagedata pid="252" name="FRAMED?" tags="Evidence" position="700,2700" size="100,100">&lt;span style="font-family: 'Meddon', monospace;"&gt; Didn't you know they would lie for me? They're like dandelion spores. All it took was a little jabbing and they were convinced.</tw-passagedata><tw-passagedata pid="253" name="DUAL DEATHS" tags="Evidence" position="500,2800" size="100,100">&lt;span style="font-family: 'Meddon', monospace;"&gt; This little piggy went to the slaughterhouse, this little piggy stayed home...
+
+(click-append: "this little piggy stayed home...") [ this little piggy never saw the sun,]
+
+(click-append: "this little piggy never saw the sun,") [ this little piggy paid for all to know none,] 
+
+(click-append: "this little piggy paid for all to know none,") [ this little piggy prayed for mercy,] 
+
+(click-append: "this little piggy prayed for mercy,") [ and this little piggy got none.]
+
+(click-replace: "and this little piggy got none.")  [(go-to: "The Summer We Met")] 
+
+</tw-passagedata><tw-passagedata pid="254" name="Angel of Death" tags="Evidence imagemap" position="700,2600" size="100,100">[&lt;img class="story-image" src="./images/angeldeath.jpg" alt="Angel Death" /&gt;]
+
+---
+
+&lt;span style="font-family: 'Meddon', monospace;"&gt; [//Memento Mori//]
+
+---
+
+&lt;span style="font-family: 'Meddon', monospace;"&gt; [Love me eternally, for I am yours.]
+
+&lt;span style="font-family: 'Meddon', monospace;"&gt; [A spell of a girl, an angel in life and death]
+
+&lt;span style="font-family: 'Meddon', monospace;"&gt; [Veritas omnia, the sweetest definition for two runaways]
+
+&lt;span style="font-family: 'Meddon', monospace;"&gt; [In my treachery I knew] 
+
+&lt;span style="font-family: 'Meddon', monospace;"&gt; [Nigh was the time, to hush your crimson lips] 
+
+&lt;span style="font-family: 'Meddon', monospace;"&gt; [In the place where Demeter presides] 
+
+&lt;span style="font-family: 'Meddon', monospace;"&gt; [All is silent again and you cannot leave me]
+
+(click-replace: "All is silent again and you cannot leave me") [(go-to: "Portrait of a Man")] 
+
+
+</tw-passagedata><tw-passagedata pid="255" name="The Summer We Met" tags="Evidence imagemap" position="600,2800" size="100,100">[[&lt;img class="story-image" src="./images/beach.jpg" alt="Beach" /&gt;-&gt;Lavinia, Dearest]]
+
+//The following is a photograph, the reverse enscribed.//</tw-passagedata><tw-passagedata pid="256" name="Lavinia, Dearest" tags="Evidence" position="700,2800" size="100,100">&lt;span style="font-family: 'Meddon', monospace;"&gt; Why are you abandoning me? Don't you understand that you can be happy here, with me? I would die before I would see you leave. You are blood of my blood, soul of my soul. ~~I won't let you go.~~
+
+(click-replace: "I won't let you go.") [(go-to: "If You're Reading This")] </tw-passagedata><tw-passagedata pid="257" name="If You&#39;re Reading This" tags="Evidence" position="500,2900" size="100,100">&lt;span style="font-family: 'Meddon', monospace;"&gt; [Crow. Girl. Grave. [[Blow.]] [[Disease]]. Rope. Swallow. [[Repent.]] Fall. Abduction. Dominant. Night. Lecherous. [[Twin]]. Run. Compel. Distraught. Tarnish. Apparition. Dissect.] 
+
+</tw-passagedata><tw-passagedata pid="258" name="Twin" tags="Evidence" position="600,2900" size="100,100">&lt;span style="font-family: 'Meddon', monospace;"&gt; When rot seeps into the bone of a limb, it must be amputated so as not to kill the beautiful equilibrium of the body. </tw-passagedata><tw-passagedata pid="259" name="Blow." tags="Evidence" position="700,2900" size="100,100">&lt;span style="font-family: 'Meddon', monospace;"&gt; Do you know how many blows it would take to crush the human skull? It differs, from a man to a woman, that's what the Biology teacher, Mr Franc, says. Women are capable of less force. Does he know, I wonder, what kind of anger can sink its delicious claws into a woman and supersede her usual strength? No, he wouldn't. Because he doesn't know what I know. </tw-passagedata><tw-passagedata pid="260" name="Disease" tags="Evidence" position="500,3000" size="100,100">&lt;span style="font-family: 'Meddon', monospace;"&gt; I know exactly who I am. I'm not afraid. Maybe that's what scares them all so much; they might be sitting next to me and thinking they know exactly what it is that's running through my head. Girls thinking about boys, girls thinking about being beautiful. They don't even know the half of it...</tw-passagedata><tw-passagedata pid="261" name="Repent." tags="Evidence" position="600,3000" size="100,100">&lt;span style="font-family: 'Meddon', monospace;"&gt; [I need to make her eternally sorry. She'll apologise and say that it was a complete accident, but she won't mean it. Not in the way that she needs to in order to keep breathing a moment longer. Don't you get it? I will always win.]
+
+(click-replace: "I will always win.") [(go-to: "Vivian End")] </tw-passagedata><tw-passagedata pid="262" name="Vivian End" tags="FINALSOLUTION Plot-Progression" position="600,3200" size="100,100">(set: $vivian to true) 
+
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Cedarville Cursive', monospace;"&gt;The Autopsy&lt;/span&gt;|The Autopsy]]  
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Pinyon Script', monospace;"&gt;Carmen&lt;/span&gt;|Carmen]] 
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Zeyada', monospace;"&gt;Priscilla&lt;/span&gt;|Priscilla]] 
+Read (t8n-depart: "flicker") [[&lt;span style="font-family: 'Nothing You Could Do', monospace;"&gt;Beverly&lt;/span&gt;|Beverly]] 
+
+(if: $carmen is true and $priscilla is true and $vivian is true and $beverly is true)[
+    [[Read &lt;span style="font-family: 'MonteCarlo', monospace;"&gt;Read Daphne&lt;/span&gt;|Read Daphne]]
+]</tw-passagedata><tw-passagedata pid="263" name="startup" tags="" position="775,0" size="100,100">(set: $carmen to false)
+(set: $priscilla to false)
+(set: $vivian to false)
+(set: $beverly to false)
+</tw-passagedata><tw-passagedata pid="264" name="Vivian&#39;s Wrath" tags="Dr-Hepworth Characters" position="500,3500" size="100,100">&lt;span style="font-family: 'MonteCarlo', monospace;"&gt; (text-color: black) [I think the other girls loved Lavinia, and are entrenched in thick guilt. I think Vivian did too, as more than a friend - and I think that she wanted to make sure Lavinia never left Sentry Creek. As you know, it's common for welfare children to be moved around, depending on finances and availabilities.] 
+
+&lt;span style="font-family: 'MonteCarlo', monospace;"&gt; (text-color: black) [It's strange, Paula...I cannot be sure, but they seem so ensconced in their own world, a lawless world where their togetherness will prevail no matter what, that they have subconsciously erased it from their memories. All, except for Vivian, who I believe is fully cognisant of exactly what she has done and why.]  
+
+&lt;span style="font-family: 'MonteCarlo', monospace;"&gt; (text-color: black) [Now comes the dubious bit, I expect you will be shaking your head at me whilst reading this at your desk at some ludicrously late hour: I did some digging. I went to the Sentry Creek Boarding House and I asked to speak to Mrs Frost, the Matron. She allowed me into Vivian's bedroom quarters, and I found something I believe will illustrate my story. I hope to have more conclusive proof soon.] 
+
+(click-replace: "I hope to have more conclusive proof soon.") [(go-to: "Conclusive Proof")]  </tw-passagedata><tw-passagedata pid="265" name="Conclusive Proof" tags="Characters" position="500,3600" size="100,100">[[&lt;img class="story-image" src="./images/thegonegirls.jpg" alt="The Girls" /&gt;-&gt;The Girls]]</tw-passagedata><tw-passagedata pid="266" name="The Girls" tags="Characters" position="500,3700" size="100,100">//The back of the photograph is inscribed with the following:// &lt;span style="font-family: 'Meddon', monospace;"&gt; [Lavinia, I'm sorry, my love. We will be reunited one day, but you cannot leave me. Everyone else has abandoned me, not you, never you.]
+
+(click-replace: "Everyone else has abandoned me, not you, never you.") [(go-to: "All My Love, Daphne")]  </tw-passagedata><tw-passagedata pid="267" name="All My Love, Daphne" tags="Characters" position="500,3800" size="100,100">&lt;span style="font-family: 'MonteCarlo', monospace;"&gt; (text-color: black) [Oh, must go! I think someone's at the door. I've invited Vivian, Priscilla, Beverly and Carmen over for tea. I thought it might be best to try and help them see reason, without bringing down the confrontation of the police upon them. Besides, they're only teenagers, I'm sure we will deal with this in a reasonable manner, terrible as it is.] 
+
+&lt;span style="font-family: 'MonteCarlo', monospace;"&gt; (text-color: black) [All my love, Daphne x]
+
+(after: 2s) [&lt;audio src="./audio/creakingdoor.mp3" autoplay&gt;&lt;/audio&gt;]
+
+(click-append: "All my love, Daphne x") [(go-to: "Goodnight &amp; Goodbye!")]  </tw-passagedata><tw-passagedata pid="268" name="Goodnight &amp; Goodbye!" tags="Plot-Progression" position="500,4000" size="100,100">=&gt;&lt;=
+
+&lt;span style="font-family: 'Meddon', monospace;"&gt; [[The End...]]
+
+</tw-passagedata><tw-passagedata pid="269" name="The End..." tags="Plot-Progression" position="500,4200" size="100,100">&lt;span style="font-family: 'Default', monospace;"&gt; Thank you for playing 'Who Killed Miss Jones?' - hopefully you had a lot of fun exploring Sentry Creek + its intriguing inhabitants - and got a little spooked, too! Do go back and play again to discover more clues that you might've missed (there are a few hidden ones!). 
+
+&lt;span style="font-family: 'Default', monospace;"&gt; I would like to thank the following creators for their incredible royalty-free content that has been utilised to make this project come to life. In no particular order, they are: //Museums Victoria, Te Papa Museum of New Zealand, Heather Green, Geoffrey Burch, freesoundcommunity, subhamita, ben299, Photoholgic, Kwinten De Pauw and Michael Lord. 
+
+&lt;span style="font-family: 'Default', monospace;"&gt; Well, that's about it from me. If you enjoyed your playing experience, be sure to tell a friend and perhaps share it on your socials! You can find me (Liv) on various social channels under the handle @livandothermysteries, which is the same user for my Substack blog. 
+
+...And if you're just //dying// to do it all over again, click here. 
+
+(click-replace: "click here.")  [(go-to: "Welcome to Who Killed Miss Jones")]  </tw-passagedata></tw-storydata>
+
+
+
+
+</body></html>
